@@ -2,6 +2,11 @@ import 'swiper/css';
 import 'swiper/css/bundle';
 import '../scss/index.scss';
 
+import './dev/kuloverova';
+import './dev/lgleb';
+import './dev/monsters';
+import './dev/hyperstone';
+
 import './pages/home';
 import './utils/swiper';
 
