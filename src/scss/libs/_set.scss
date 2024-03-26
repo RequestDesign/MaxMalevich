@@ -164,6 +164,9 @@ input[type='number'] {
 @media (max-width: 28em) {
 	html {
 		font-size: calc((100 / $mobileLayout) * 5vw); // где 375 это ширина моб версии макета
-		padding: 0 $containerPaddingMob;
+	
+	}
+	.container {
+		padding: 0 $containerPaddingMob; //
 	}
 }
