@@ -144,7 +144,7 @@ input[type='number'] {
 	html {
 		font-size: 5px;
 		font-size: 1.5625vw;
-		font-size: calc((100 / $mobileLayout) * 5vw); // где 375 это ширина моб версии макета
+		font-size: calc((100 / 768) * 5vw); // где 768 это ширина моб версии макета
 		-webkit-text-size-adjust: none;
 	}
 
@@ -159,5 +159,10 @@ input[type='number'] {
 	.container {
 		padding: 0 $containerPadding; // в моб версии отступ от края задаем для всех контейнеров, а там где не нужно можем точечно убрать
 		width: 100%;
+	}
+}
+@media (max-width: 28em) {
+	html {
+		font-size: calc((100 / $mobileLayout) * 5vw); // где 375 это ширина моб версии макета
 	}
 }
