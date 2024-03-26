@@ -1,0 +1,57 @@
+.header {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	transform: translateY(0);
+	transition: transform 1s ease-in-out;
+
+	// Если нужна будет анимация баннера убрать коммент
+
+	// &.anim {
+	// 	transform: translateY(-100%);
+	// }
+	&__container {
+		position: relative;
+		margin-top: 4.2rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__logo {
+		width: 16.5rem;
+		height: 4.6rem;
+		img {
+			height: 100%;
+		}
+	}
+	&__navigation {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-weight: 400;
+		font-size: 1.8rem;
+		letter-spacing: 0.08rem;
+		color: #fff;
+	}
+	&__menu {
+		display: flex;
+		flex-direction: row;
+		gap: 4rem;
+	}
+	&__phone {
+		width: fit-content;
+		display: flex;
+		align-items: center;
+		gap: 2.4rem;
+		&-icon {
+			width: 2.4rem;
+			height: 2.4rem;
+			img {
+				height: 100%;
+			}
+		}
+	}
+}
