@@ -3,6 +3,9 @@
 	@media (max-width: 48em) {
 		margin-top: 29.6rem;
 	}
+	@media (max-width: 28em) {
+		margin-top: 20.8rem;
+	}
 	// .designers-banner__inner
 
 	&__inner {
@@ -29,6 +32,9 @@
 		@media (max-width: 48em) {
 			font-size: 13rem;
 		}
+		@media (max-width: 28em) {
+			font-size: 8rem;
+		}
 	}
 
 	// .designers-banner__desc
@@ -36,7 +42,7 @@
 	&__desc {
 		font-weight: 300;
 		line-height: 140%;
-		@media (max-width: 48em) {
+		@media (max-width: 28em) {
 			display: none;
 		}
 	}
@@ -50,6 +56,9 @@
 		@media (max-width: 48em) {
 			gap: 12rem;
 		}
+		@media (max-width: 28em) {
+			gap: 6.4rem;
+		}
 	}
 
 	// .designers-banner__swiper-title
@@ -61,8 +70,11 @@
 		@media (max-width: 48em) {
 			align-self: flex-start;
 			font-size: 9.2rem;
-
+			letter-spacing: 0.06em;
 			line-height: 110%;
+		}
+		@media (max-width: 28em) {
+			font-size: 5rem;
 		}
 	}
 
@@ -73,6 +85,9 @@
 			display: flex;
 			flex-direction: column;
 			gap: 8rem;
+		}
+		@media (max-width: 28em) {
+			gap: 4.8rem;
 		}
 	}
 
@@ -135,12 +150,17 @@
 		padding: 4rem;
 		border-radius: 1.2rem;
 		border: 0.1rem solid rgba(255, 255, 255, 0.2);
+		flex-grow: 1;
 		@media (max-width: 48em) {
 			min-height: 75.8rem;
 			padding: 8rem;
 			gap: 2rem;
 			border-radius: 2.4rem;
 			border: 0.2rem solid rgba(255, 255, 255, 0.2);
+		}
+		@media (max-width: 28em) {
+			padding: 4rem;
+			min-height: 40.4rem;
 		}
 	}
 
@@ -167,6 +187,10 @@
 			width: 9.6rem;
 			height: 9.6rem;
 		}
+		@media (max-width: 28em) {
+			width: 6.4rem;
+			height: 6.4rem;
+		}
 	}
 
 	// .designers-banner__swiper-content-num
@@ -176,6 +200,9 @@
 		@media (max-width: 48em) {
 			font-size: 4rem;
 		}
+		@media (max-width: 28em) {
+			font-size: 3.6rem;
+		}
 	}
 
 	// .designers-banner__swiper-content-text
@@ -184,6 +211,9 @@
 		letter-spacing: 0.06em;
 		@media (max-width: 48em) {
 			font-size: 4.8rem;
+		}
+		@media (max-width: 28em) {
+			font-size: 3.6rem;
 		}
 	}
 
@@ -205,30 +235,20 @@
 			height: 75.8rem;
 			border-radius: 2.4rem;
 		}
+		@media (max-width: 28em) {
+			width: 71rem;
+			height: 40.4rem;
+		}
 	}
 
 	// .designers-banner__swiper-pagination
 
 	&__swiper-pagination {
+		display: flex;
+		justify-content: center;
+		gap: 2.4rem;
+		.swiper-pagination-bullet {
+			margin: 0 !important;
+		}
 	}
-}
-.container {
-}
-.h1 {
-}
-.desktop {
-}
-.text-18-r {
-}
-.h3 {
-}
-.swiper {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.text-20-r {
-}
-.pagination {
 }
