@@ -161,7 +161,7 @@ input[type='number'] {
 		width: 100%;
 	}
 }
-@media (max-width: 28em) {
+@media (max-width: 24em) {
 	html {
 		font-size: calc((100 / $mobileLayout) * 5vw); // где 375 это ширина моб версии макета
 	
