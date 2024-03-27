@@ -39,18 +39,24 @@ sliders.forEach(slider => {
 			init: swiper => {
 				curSlide.textContent = `0${swiper.activeIndex + 1}`;
 				lastSlide.textContent = `0${swiper.slides.length}`;
-				const svgWidth = svg.clientWidth;
-				const oneSlideWidth = svgWidth / swiper.slides.length;
-				console.log(oneSlideWidth, svgWidth);
-				lineSVG.setAttribute('d', `M0 1H${oneSlideWidth}`);
+				if(svg){
+					const svgWidth = svg.clientWidth;
+					console.log(svgWidth)
+					const oneSlideWidth = svgWidth / swiper.slides.length;
+					console.log(oneSlideWidth, svgWidth);
+					lineSVG?.setAttribute('d', `M0 1H${oneSlideWidth}`);
+
+				}
 			},
 			slideChange: function (swiper) {
 				curSlide.textContent = `0${swiper.activeIndex + 1}`;
-				const svgWidth = svg.clientWidth;
-				const oneSlideWidth = svgWidth / swiper.slides.length;
-				const lineWidth = (swiper.activeIndex + 1) * oneSlideWidth;
-				console.log(oneSlideWidth, svgWidth);
-				lineSVG.setAttribute('d', `M0 1H${lineWidth}`);
+				if(svg){
+					const svgWidth = svg.clientWidth;
+					const oneSlideWidth = svgWidth / swiper.slides.length;
+					const lineWidth = (swiper.activeIndex + 1) * oneSlideWidth;
+					console.log(oneSlideWidth, svgWidth);
+					lineSVG?.setAttribute('d', `M0 1H${lineWidth}`);
+				}
 				// Находим ближайшую svg этой полоски и берем ее path
 				// path d="M0 1H62.4" stroke="#D3965F" stroke-width="1.4"
 				// Далее у path нужно взять атрибут d - и у него поменять последние цифры после H,
