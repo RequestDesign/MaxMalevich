@@ -62,12 +62,221 @@
 			font-weight: 400;
 		}
 	}
+	&__mob {
+		display: none;
+	}
+}
+.accordion {
+	display: none;
 }
 
 @media (max-width: 48em) {
+	/* The accordion functionality */
 	.footer {
+		&__mob {
+			display: block;
+			&-logo {
+				display: inline-block;
+				width: 33rem;
+				height: 9.2rem;
+				margin-bottom: 8rem;
+			}
+		}
+		&__navigation {
+			display: none;
+		}
+		&__main {
+			display: none;
+			&.mob {
+				padding-top: 6.4rem;
+				border-top: 1px solid rgba(255, 255, 255, 0.2);
+				display: block;
+			}
+		}
+		&__info {
+			font-size: 3.8rem;
+		}
+		&__social {
+			gap: 2.4rem;
+			&-link {
+				width: 10.8rem;
+				height: 10.8rem;
+				border-radius: 50%;
+				img {
+					width: 6.4rem;
+					height: 6.4rem;
+				}
+			}
+		}
+	}
+	:root {
+		--transitionLength: 0.5s;
+		--transitionTiming: ease;
+	}
+
+	.accordion-animation-wrapper {
+		display: grid;
+		grid-template-rows: 0fr;
+		overflow: hidden;
+		transition: grid-template-rows var(--transitionLength) var(--transitionTiming);
+	}
+
+	.accordion-trigger-input:checked ~ .accordion-animation-wrapper {
+		grid-template-rows: 1fr;
+	}
+
+	.accordion-animation {
+		min-height: 0;
+	}
+
+	.accordion-transform-wrapper {
+		transform: translateY(-100%);
+		visibility: hidden;
+		transition: transform var(--transitionLength) var(--transitionTiming), visibility 0s var(--transitionLength) var(--transitionTiming);
+	}
+
+	.accordion-trigger-input:checked ~ .accordion-animation-wrapper .accordion-transform-wrapper {
+		transform: translateY(0);
+		visibility: visible;
+		transition: transform var(--transitionLength) var(--transitionTiming), visibility 0s linear;
+	}
+
+	/* Margins inside the container will throw animation height calculations off, better use paddings */
+	.accordion-content * {
+		margin: 0;
+	}
+
+	.accordion {
+		// min-width: 320px;
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		font-size: 3.6rem;
+		display: flex;
+		flex-direction: column;
+		gap: 6rem;
+		margin-bottom: 6.4rem;
+	}
+
+	.accordion-item {
+		margin-bottom: -2px;
+		overflow: hidden;
+	}
+
+	.accordion-trigger-input {
+		clip: rect(0 0 0 0);
+		clip-path: inset(50%);
+		height: 1px;
+		overflow: hidden;
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
+	}
+
+	.accordion-trigger {
+		display: flex;
+		align-items: center;
+		gap: 2.6rem;
+		position: relative;
+		transition: box-shadow var(--transitionLength) var(--transitionTiming);
+		z-index: 1;
+		cursor: pointer;
+		svg {
+			width: 2.8rem;
+			height: 1.4rem;
+		}
+	}
+
+	.accordion-trigger-input:focus-visible ~ .accordion-trigger {
+		outline: 2px solid;
+		outline-offset: -2px;
+	}
+
+	// .accordion-trigger::after {
+	// 	display: block;
+	// 	position: absolute;
+	// 	right: 16px;
+	// 	top: 18px;
+	// 	content: '';
+	// 	width: 8px;
+	// 	height: 8px;
+	// 	transform: rotate(135deg);
+	// 	transition: transform var(--transitionLength) var(--transitionTiming);
+	// }
+	.accordion-trigger svg {
+		transition: all var(--transitionLength) var(--transitionTiming);
+	}
+	.accordion-trigger-input:checked ~ .accordion-trigger svg {
+		transform: rotateZ(180deg);
+	}
+
+	.accordion-trigger-input:checked ~ .accordion-trigger {
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+		transition: box-shadow calc(var(--transitionLength) / 4) var(--transitionTiming);
+	}
+
+	.accordion-content {
+		padding: 1.6rem;
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+		font-weight: 300;
+	}
+
+	.accordion-content h2 {
+		padding-bottom: 0.75em;
+	}
+
+	.accordion-content p {
+		padding-bottom: 1.5em;
+	}
+
+	.accordion-content p:last-of-type {
+		padding-bottom: 0;
+	}
+
+	.accordion-content img {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 24em) {
+	.footer {
+		&__mob {
+			&-logo {
+				width: 23rem;
+				height: 6.4rem;
+				margin-bottom: 6.4rem;
+				img {
+					height: 100%;
+				}
+			}
+		}
 		&__container {
 			flex-direction: column;
+		}
+		&__logo {
+			width: 23rem;
+			height: 6.4rem;
+			margin-bottom: 6.4rem;
+		}
+		&__info {
+			gap: 4.8rem;
+			font-size: 3.2rem;
+		}
+		&__social {
+			width: 46rem;
+			flex-wrap: wrap;
+			gap: 2.4rem;
+			&-link {
+				width: 9.6rem;
+				height: 9.6rem;
+				border-radius: 50%;
+				img {
+					width: 5.2rem;
+					height: 5.2rem;
+				}
+			}
 		}
 	}
 }
