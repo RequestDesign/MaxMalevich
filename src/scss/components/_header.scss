@@ -226,6 +226,36 @@
 
 @media (max-width: 48em) {
 	.header {
+		&__logo {
+			width: 33rem;
+			height: 9.2rem;
+		}
+		&-wrapper {
+			gap: 10rem;
+			flex-wrap: wrap;
+		}
+		&__navigation {
+			position: relative;
+			top: auto;
+			left: auto;
+			width: 100%;
+			transform: none;
+			order: 3;
+		}
+		&__menu {
+			font-size: 3.6rem;
+			justify-content: space-between;
+			button,
+			a {
+				display: inline-block;
+				letter-spacing: 0.35rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 24em) {
+	.header {
 		// height: 100%;
 		&.active {
 			background-color: #130f0b;
