@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Главная</title>
+	</head>
+	<body>
+		<include src="./components/header.html" data-text='{"header": {"class": "anim"}}'></include>
+		<main>
+			<section class="events">
+				<div class="events__container container">
+					<div class="events__title">новости и события</div>
+					<div class="events__text text-18-r">Свежие события от производителя авторской мебели MaxMalevich. Только актуальные, интересные новости и предложения</div>
+				</div>
+				<div class="events__slider">
+					<div class="events__swiper swiper">
+						<div class="swiper-wrapper">
+							<div class="events__swiper-slide swiper-slide">
+								<div class="events__swiper-slide--img">
+									<img src="./assets/images/pages/news/events-slide-img-2.png" alt="" />
+								</div>
+								<div class="events__swiper-slide--text text-20-r">Акции</div>
+							</div>
+							<div class="events__swiper-slide swiper-slide">
+								<div class="events__swiper-slide--img">
+									<img src="./assets/images/pages/news/events-slide-img-2.png" alt="" />
+								</div>
+								<div class="events__swiper-slide--text text-20-r">Почему мы?</div>
+							</div>
+							<div class="events__swiper-slide swiper-slide">
+								<div class="events__swiper-slide--img">
+									<img src="./assets/images/pages/news/events-slide-img-3.png" alt="" />
+								</div>
+								<div class="events__swiper-slide--text text-20-r">Уникальные разработки</div>
+							</div>
+							<div class="events__swiper-slide swiper-slide">
+								<div class="events__swiper-slide--img">
+									<img src="./assets/images/pages/news/events-slide-img-4.png" alt="" />
+								</div>
+								<div class="events__swiper-slide--text text-20-r">Выставки и мероприятия</div>
+							</div>
+							<div class="events__swiper-slide swiper-slide">
+								<div class="events__swiper-slide--img">
+									<img src="./assets/images/pages/news/events-slide-img-5.png" alt="" />
+								</div>
+								<div class="events__swiper-slide--text text-20-r">Дизайнерам и архитекторам</div>
+							</div>
+							<div class="events__swiper-slide swiper-slide">
+								<div class="events__swiper-slide--img">
+									<img src="./assets/images/pages/news/events-slide-img-6.png" alt="" />
+								</div>
+								<div class="events__swiper-slide--text text-20-r">Рум-тур</div>
+							</div>
+							<div class="events__swiper-slide swiper-slide">
+								<div class="events__swiper-slide--img">
+									<img src="./assets/images/pages/news/events-slide-img-6.png" alt="" />
+								</div>
+								<div class="events__swiper-slide--text text-20-r">Процесс монтажа</div>
+							</div>
+						</div>
+					</div>
+					<div class="events__swiper-pagination"></div>
+					<include src="./components/ui/navigation.html" data-text='{".navigation-prev": {"class": "events__swiper-prev"}, ".navigation-next": {"class": "events__swiper-next"}}'></include>
+				</div>
+				<div class="events__background">
+					<img src="./assets/images/pages/news/events-background.png" alt="" />
+				</div>
+			</section>
+
+			<section class="news-list">
+				<div class="news-list__container container">
+					<div class="news-list__head">
+						<div class="news-list__title h3">все новости</div>
+						<div class="news-list__sort">
+							<div class="news-list__sort-head">
+								<div class="text-18-r">Сначала новые</div>
+								<div>
+									<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M3 9.5L7 5.5M7 5.5L11 9.5M7 5.5V19.5M21 15.5L17 19.5M17 19.5L13 15.5M17 19.5V5.5" stroke="white" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="news-list__body">
+						<div class="news-list__item">
+							<div class="news-list__item-date">13.03.2024</div>
+							<div class="news-list__item-img">
+								<img src="./assets/images/pages/news/news-list-item-img-1.png" alt="" />
+							</div>
+							<div class="news-list__item-descr">
+								<div class="news-list__item-title">Рабочий кабинет или место спокойствия — какие ассоциации знаете про ванные комнаты?</div>
+								<include src="./components/ui/btn_primary.html"></include>
+							</div>
+						</div>
+						<div class="news-list__item">
+							<div class="news-list__item-date">09.03.2024</div>
+							<div class="news-list__item-img">
+								<img src="./assets/images/pages/news/news-list-item-img-2.png" alt="" />
+							</div>
+							<div class="news-list__item-descr">
+								<div class="news-list__item-title">Любите готовить? На этой кухне есть место для всех приборов, посуды, продуктов и техники!</div>
+								<div class="news-list__item-text">
+									<p>В этом капсульном пространстве собран максимально возможный функционал, который позволит хозяевам разместить всё по полочками и наслаждаться красотой интерьера, содержа кухню в порядке, и быстро и легко иметь доступ к каждой зоне хранения или приготовления пищи.</p>
+									<p>Мы заботимся, чтобы ваша мебель полностью соответствовала...</p>
+								</div>
+								<include src="./components/ui/btn_primary.html"></include>
+							</div>
+						</div>
+						<div class="news-list__item">
+							<div class="news-list__item-date">28.02.2024</div>
+							<div class="news-list__item-img">
+								<img src="./assets/images/pages/news/news-list-item-img-3.png" alt="" />
+								<include src="./components/ui/btn_play.html"></include>
+							</div>
+							<div class="news-list__item-descr">
+								<div class="news-list__item-title">Важно в ремонте: избегаем «я думал, будет по-другому»</div>
+								<div class="news-list__item-text">
+									<p>Планируя интерьер, заказчик мечтает, чтобы результат соответствовал ожиданиям. Однако, иногда в конце работ возникают недопонимания и разочарования. Как избежать таких ситуаций?</p>
+									<p>📐 Ключевой момент — подробное изучение чертежей перед подписанием. Дизайнер вместе с заказчиком должны внимательно рассмотреть все детали, выверить размеры, выступы, материалы. Только так вы убедитесь, что мебель гармонично впишется в интерьер...</p>
+								</div>
+								<include src="./components/ui/btn_primary.html"></include>
+							</div>
+						</div>
+						<div class="news-list__item">
+							<div class="news-list__item-date">21.02.2024</div>
+							<div class="news-list__item-img">
+								<img src="./assets/images/pages/news/news-list-item-img-4.png" alt="" />
+								<include src="./components/ui/btn_play.html"></include>
+							</div>
+							<div class="news-list__item-descr">
+								<div class="news-list__item-title">Наконец завершена комплексная меблировка нашего третьего проекта на Саввинской набережной — ещё одной квартиры для большой семьи</div>
+								<div class="news-list__item-text">Здесь мы реализовали отделку входной группы стеновыми панелями и скрытую за ними постирочную зону. Кроме этого, кухню с дополнительным кладовым помещением, гостиную, 2 гардеробные и шкаф в нише в спальне для создания эффекта монохромной стены и удобного хранения.</div>
+								<include src="./components/ui/btn_primary.html"></include>
+							</div>
+						</div>
+					</div>
+					<button class="news-list__more text-20-r">
+						<div>Показать ещё</div>
+						<div>
+							<img src="./assets/images/pages/news/news-list-more.svg" alt="" />
+						</div>
+					</button>
+				</div>
+			</section>
+
+			<include src="./components/subscribe.html"></include>
+
+			<include src="./components/feedback.html"></include>
+		</main>
+		<include src="./components/ui/btn_top.html"></include>
+		<include src="./components/footer.html"></include>
+	</body>
+</html>
