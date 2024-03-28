@@ -99,7 +99,7 @@
 			transform: translate(-50%, -50%);
 			z-index: 10;
 			&.play {
-				display: block;
+				display: flex;
 			}
 			&.pause {
 				display: none;
@@ -148,8 +148,88 @@
 	letter-spacing: 0.1rem;
 	color: #fff;
 }
-
+.tablet {
+	display: none;
+}
+.desk {
+	display: block;
+}
 @media (max-width: 48em) {
+	.h3 {
+		font-size: 9.2rem;
+	}
+	.h5 {
+		font-size: 5.6rem;
+	}
+	.btn {
+		padding: 3.2rem 3.2rem 3.2rem 8rem;
+		img {
+			width: 17.2rem;
+			height: 13.6rem;
+		}
+		&__text {
+			font-size: 4rem;
+		}
+		&__secondary {
+		}
+		&__play {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 13.6rem;
+			height: 13.6rem;
+
+			img {
+				width: 4.8rem;
+				height: 4.8rem;
+			}
+		}
+		// &_top {
+		// 	position: fixed;
+		// 	bottom: 12rem;
+		// 	right: 6rem;
+		// 	width: 6rem;
+		// 	height: 6rem;
+		// 	display: none;
+		// 	align-items: center;
+		// 	justify-content: center;
+		// 	border-radius: 100%;
+		// 	border: 2px solid $orange;
+		// 	img {
+		// 		width: 3rem;
+		// 		height: 3.2rem;
+		// 	}
+		// }
+	}
+	.navigation {
+		gap: 4rem;
+
+		&-next,
+		&-prev {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 15.2rem;
+			height: 10.4rem;
+			border-radius: 20rem;
+			img {
+				width: 5.6rem;
+				height: 1.6rem;
+			}
+		}
+	}
+	.tablet {
+		display: block;
+	}
+	.desk {
+		display: none;
+	}
+}
+
+@media (max-width: 24em) {
+	.tablet {
+		display: none;
+	}
 	.h1 {
 		font-size: 6.4rem;
 	}
