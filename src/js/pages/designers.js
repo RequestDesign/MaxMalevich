@@ -17,6 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	try {
 		magazinesSwiper();
 	} catch {}
+	try {
+		reviewsDisignersSwiper();
+	} catch {}
 });
 
 function disignersBannerSwiper() {
@@ -60,7 +63,53 @@ function magazinesSwiper() {
 				slidesPerView: 2,
 				spaceBetween: rem(2),
 				slidesPerGroup: 2,
-			}
+			},
+		},
+	});
+}
+
+function reviewsDisignersSwiper() {
+	const pagBox = document.querySelector('.reviews-disigners__video-pagination-box');
+	const pag = document.querySelector('.reviews-disigners__video-pagination');
+	const curSlide = pagBox.querySelector('.pag-cur');
+	const lastSlide = pagBox.querySelector('.pag-last');
+
+	const swiper = new Swiper('.reviews-disigners__video-swiper', {
+		slidesPerView: 1,
+		spaceBetween: rem(2),
+		loop: true,
+		pagination: {
+			el: '.reviews-disigners__video-pagination',
+			type: 'bullets',
+		},
+        navigation: {
+			prevEl: '.reviews-disigners__video-navigation .navigation-prev',
+			nextEl: '.reviews-disigners__video-navigation .navigation-next',
+		},
+		breakpoints: {
+			769: {
+				slidesPerView: 3,
+				spaceBetween: rem(4.8),
+				slidesPerGroup: 1,
+				pagination: {
+					type: 'progressbar',
+				},
+			},
+            385: {
+                slidesPerView: 1,
+                pagination: {
+					type: 'progressbar',
+				},
+            }
+		},
+		on: {
+			init: swiper => {
+				curSlide.textContent = `0${swiper.slides[swiper.activeIndex].getAttribute('data-num')}`;
+				lastSlide.textContent = `0${swiper.slides.length}`;
+			},
+			slideChange: function (swiper) {
+				curSlide.textContent = `0${swiper.slides[swiper.activeIndex].getAttribute('data-num')}`;
+			},
 		},
 	});
 }
