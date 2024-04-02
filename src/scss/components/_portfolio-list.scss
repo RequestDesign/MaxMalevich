@@ -89,7 +89,7 @@
 		}
 	}
 
-	@media (max-width: 48em) {
+	@media (max-width: 75em) {
 		&__item {
 			position: relative;
 			flex-direction: column;
@@ -234,7 +234,7 @@
 				line-height: 5rem;
 
 				img {
-					width: 11.2rem;
+					width: 12.4rem;
 					height: 9.8rem;
 				}
 			}

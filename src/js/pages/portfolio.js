@@ -96,7 +96,7 @@ const portfolioSwipers = () => {
 
 				coverflowEffect: {
 					rotate: 0,
-					stretch: 170,
+					stretch: 169,
 					depth: 150,
 					modifier: 1,
 					slideShadows: true,
@@ -117,7 +117,7 @@ const portfolioSwipers = () => {
 					},
 					1166: {
 						coverflowEffect: {
-							stretch: 200,
+							stretch: 138,
 							depth: 170,
 						},
 					},
@@ -137,6 +137,24 @@ const portfolioSwipers = () => {
 						coverflowEffect: {
 							stretch: 50,
 							depth: 425,
+						},
+					},
+					625: {
+						coverflowEffect: {
+							stretch: 348,
+							depth: 150,
+						},
+					},
+					505: {
+						coverflowEffect: {
+							stretch: 282,
+							depth: 150,
+						},
+					},
+					410: {
+						coverflowEffect: {
+							stretch: 185,
+							depth: 150,
 						},
 					},
 				},
@@ -165,7 +183,7 @@ const portfolioSwipers = () => {
 				},
 
 				pagination: {
-					el: window.screen.width > 768 ? slider.querySelector('.pagination') : '.portfolio-list__swiper-pagination',
+					el: window.screen.width > 768 ? slider.querySelector('.pagination') : slider.closest('.portfolio-list__item').querySelector('.portfolio-list__swiper-pagination'),
 				},
 
 				navigation: {
