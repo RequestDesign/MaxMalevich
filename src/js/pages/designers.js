@@ -56,7 +56,7 @@ function magazinesSwiper() {
 			el: '.magazines__swiper-pagination',
 		},
 		breakpoints: {
-			1201: {
+			1200: {
 				slidesPerView: 4,
 				spaceBetween: rem(4.8),
 				slidesPerGroup: 1,
@@ -90,7 +90,7 @@ function reviewsDisignersSwiper() {
 			nextEl: '.reviews-disigners__video-navigation .navigation-next',
 		},
 		breakpoints: {
-			1201: {
+			1200: {
 				slidesPerView: 3,
 				spaceBetween: rem(4.8),
 				slidesPerGroup: 1,
