@@ -3,8 +3,11 @@
 		display: flex;
 		justify-content: space-between;
 
-		&:not(:last-child) {
+		&:not(:last-of-type) {
 			margin-bottom: 20rem;
+		}
+		&:last-of-type {
+			margin-bottom: 8rem;
 		}
 
 		&-left {
@@ -95,8 +98,12 @@
 			flex-direction: column;
 			padding-bottom: 23.2rem;
 
-			&:not(:last-child) {
+			&:not(:last-of-type) {
 				margin-bottom: 32rem;
+			}
+
+			&:last-of-type {
+				margin-bottom: 16rem;
 			}
 
 			&-left,
@@ -200,8 +207,12 @@
 		&__item {
 			padding-bottom: 26.4rem;
 
-			&:not(:last-child) {
+			&:not(:last-of-type) {
 				margin-bottom: 24rem;
+			}
+
+			&:last-of-type {
+				margin-bottom: 10.4rem;
 			}
 
 			&-left {
