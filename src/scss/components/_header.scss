@@ -249,7 +249,7 @@
 	border-bottom: 1px solid #fff;
 }
 
-@media (max-width: 48em) {
+@media (max-width: 75em) {
 	.header {
 		&__logo {
 			width: 33rem;
@@ -279,7 +279,7 @@
 	}
 }
 
-@media (max-width: 24em) {
+@media (max-width: 48em) {
 	.header {
 		// height: 100%;
 		&.active {
