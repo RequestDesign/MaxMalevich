@@ -31,7 +31,7 @@ function lettersSwiper() {
 			nextEl: '.letters-slider__navigation .navigation-next',
 		},
 		breakpoints: {
-			1201: {
+			1200: {
 				slidesPerView: 3,
 				spaceBetween: rem(4.8),
 				slidesPerGroup: 1,
@@ -39,7 +39,7 @@ function lettersSwiper() {
 					type: 'progressbar',
 				},
 			},
-            769: {
+            768: {
                 slidesPerView: 1,
                 pagination: {
 					type: 'progressbar',
@@ -78,14 +78,14 @@ function premiumApproachSwiper() {
 			nextEl: '.premium-approach__navigation-box .navigation-next',
 		},
 		breakpoints: {
-			1201: {
+			1200: {
 				slidesPerView: 'auto',
 				spaceBetween: rem(4.8),
 				pagination: {
 					type: 'progressbar',
 				},
 			},
-            769: {
+            768: {
                 slidesPerView: 'auto',
 				spaceBetween: rem(6.4),
                 pagination: {
@@ -115,7 +115,7 @@ function premiumApproachSwiper() {
 			el: '.premium-approach__list-pagination',
 		},
 		breakpoints: {
-			769: {
+			768: {
 				// slidesPerView: listSlides.length,
 				slidesPerView: 3,
 				spaceBetween: 0,
