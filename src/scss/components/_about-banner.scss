@@ -3,7 +3,7 @@
 	@media (max-width: 75em) {
 		margin-top: 29.6rem;
 	}
-	@media (max-width: 48em) {
+	@media (max-width: 47.9375em) {
 		margin-top: 20.8rem;
 	}
 	// .about-banner__inner
@@ -14,7 +14,7 @@
 		@media (max-width: 75em) {
 			gap: 9.6rem;
 		}
-		@media (max-width: 48em) {
+		@media (max-width: 47.9375em) {
 			gap: 6.4rem;
 		}
 	}
@@ -26,7 +26,7 @@
 			font-size: 13rem;
 			letter-spacing: 0.06em;
 		}
-		@media (max-width: 48em) {
+		@media (max-width: 47.9375em) {
 			font-size: 8rem;
 		}
 	}
@@ -43,7 +43,7 @@
 			flex-direction: column-reverse;
 			gap: 9.6rem;
 		}
-		@media (max-width: 48em) {
+		@media (max-width: 47.9375em) {
 			gap: 6.4rem;
 		}
 	}
@@ -63,7 +63,7 @@
 			grid-template-rows: unset;
 			align-items: start;
 		}
-		@media (max-width: 48em) {
+		@media (max-width: 47.9375em) {
 			gap: 6.4rem;
 		}
 	}
@@ -81,7 +81,7 @@
 			grid-row: 1/2;
 			grid-column: 1/2;
 		}
-		@media (max-width: 48em) {
+		@media (max-width: 47.9375em) {
 			font-size: 3.2rem;
 			font-weight: 300;
 		}
@@ -98,7 +98,7 @@
 			width: fit-content;
 			gap: 7rem;
 		}
-		@media (max-width: 48em) {
+		@media (max-width: 47.9375em) {
 			width: 100%;
 		}
 
@@ -124,7 +124,7 @@
 			flex-direction: row;
 			gap: 18rem;
 		}
-		@media (max-width: 48em) {
+		@media (max-width: 47.9375em) {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
 			gap: 4rem;
@@ -140,7 +140,7 @@
 		@media (max-width: 75em) {
 			gap: 6.4rem;
 		}
-		@media (max-width: 48em) {
+		@media (max-width: 47.9375em) {
 			gap: 4rem;
 		}
 	}
@@ -155,7 +155,7 @@
 			border-bottom: 0.2rem solid $white;
 			font-size: 8rem;
 		}
-		@media (max-width: 48em) {
+		@media (max-width: 47.9375em) {
 			padding-bottom: 1.6rem;
 			font-size: 4.8rem;
 		}
@@ -168,7 +168,7 @@
 			font-size: 4rem;
 			letter-spacing: 0.06em;
 		}
-		@media (max-width: 48em) {
+		@media (max-width: 47.9375em) {
 			font-size: 3.2rem;
 		}
 	}
@@ -190,7 +190,7 @@
 			height: 99rem;
 			border-radius: 2.4rem;
 		}
-		@media (max-width: 48em) {
+		@media (max-width: 47.9375em) {
 			width: 71rem;
 			height: 51.2rem;
 		}

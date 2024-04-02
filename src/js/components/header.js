@@ -55,7 +55,7 @@ function headerNav() {
 					$(`.${itemMenu}`).addClass('active');
 					$(item).addClass('active');
 				}, 0);
-				if (window.outerWidth <= 768) {
+				if (window.outerWidth <= 1200) {
 					$('.header__menu-bottom').addClass('active');
 					$('.header__menu-top').removeClass('active');
 					$('.header__menu-btn').css('display', 'none');
@@ -65,7 +65,7 @@ function headerNav() {
 				}
 			});
 	});
-	if (window.outerWidth <= 768) {
+	if (window.outerWidth <= 1200) {
 		if ($('.header__back-btn').hasClass('active')) {
 			$('.header__menu-btn').css('display', 'flex');
 			$('.header__menu-social').css('display', 'none');

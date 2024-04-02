@@ -39,6 +39,17 @@
     left: 6rem !important;
 }
 
+.has-html5video {
+    .fancybox__content {
+        background: initial !important;
+        .fancybox__html5video {
+            width: fit-content;
+            margin: auto;
+        }
+    }
+}
+
+
 @media (max-width: 75em) {
     .fancybox__toolbar.is-absolute {
         padding: 0 4rem;
@@ -83,9 +94,9 @@
     }
 }
 
-@media (max-width: 48em) {
+@media (max-width: 47.9375em) {
     .fancybox__toolbar.is-absolute {
-        padding: 0 4rem;
+        padding: 0 2.8rem;
     }
     .fancybox__toolbar__column.is-right {
         .f-button {
@@ -114,15 +125,15 @@
         }
     }
     .is-horizontal .fancybox__nav .f-button.is-next {
-        right: 4rem !important;
+        right: 2.8rem !important;
         top: auto !important;
-        bottom: 6.4rem;
+        bottom: 6rem;
         transform: initial !important;
     }
     .is-horizontal .fancybox__nav .f-button.is-prev {
-        left: 4rem !important;
+        left: 2.8rem !important;
         top: auto !important;
-        bottom: 6.4rem;
+        bottom: 6rem;
         transform: initial !important;
     }
 }
