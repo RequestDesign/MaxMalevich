@@ -1,55 +1,377 @@
-<div class="feedback-modal modal">
-	<div class="modal-back"></div>
-	<div class="modal-wrapper">
-		<button class="modal-exit">
-			<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
-				<path d="M1 1L12.9389 12.9389" stroke="white" />
-				<path d="M1.11328 25L24.9911 1.12214" stroke="white" />
-				<path d="M13.0586 13.0605L24.9975 24.9995" stroke="white" />
-			</svg>
-		</button>
-		<div class="feedback-modal__content modal-content modal-content--first active">
-			<div class="feedback-modal__wrapper">
-				<form class="feedback-modal__form form">
-					<h4 class="feedback__form-title form-title">Свяжитесь с нами</h4>
-					<div class="feedback__form-container form-container">
-						<label class="feedback__form-wrapper form-wrapper">
-							<input type="text" class="feedback__form-inp form-inp" data-required="true" />
-							<div class="feedback__form-label form-label">ФИО <b>*</b></div>
-						</label>
-						<label class="feedback__form-wrapper form-wrapper">
-							<input type="tel" class="feedback__form-inp form-inp" data-required="true" data-min-length="11" />
-							<div class="feedback__form-label form-label">номер телефона <b>*</b></div>
-						</label>
-						<label class="feedback__form-wrapper form-wrapper">
-							<input type="text" class="feedback__form-inp form-inp" />
-							<div class="feedback__form-label form-label">Ваш комментарий</div>
-						</label>
+<div id="popup__success-meet" aria-hidden="true" class="popup popup--success">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__body">
+				<button data-close type="button" class="popup__body-close-btn">
+					<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2 2.33398L29.9998 30.3338" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+						<path d="M2.00023 30.3338L30 2.33398" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+					</svg>
+				</button>
+				<div class="popup__body-content-box">
+					<div class="popup__body-content-text-box">
+						<p class="popup__body-content-box-title h5">ваша заявка успешно отправлена</p>
+						<p class="popup__body-content-box-desk text-18-r">Вы отправили заявку на встречу-презентацию в нашем шоуруме. В течение часа с вами свяжется наш менеджер для подтверждения записи.</p>
 					</div>
-					<button class="feedback__form-btn form-btn btn-primary">
-						<span>
-							<svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
-								<path d="M5 20C4.72386 20 4.5 20.2239 4.5 20.5C4.5 20.7761 4.72386 21 5 21V20ZM35.3536 20.8536C35.5488 20.6583 35.5488 20.3417 35.3536 20.1464L32.1716 16.9645C31.9763 16.7692 31.6597 16.7692 31.4645 16.9645C31.2692 17.1597 31.2692 17.4763 31.4645 17.6716L34.2929 20.5L31.4645 23.3284C31.2692 23.5237 31.2692 23.8403 31.4645 24.0355C31.6597 24.2308 31.9763 24.2308 32.1716 24.0355L35.3536 20.8536ZM5 21H35V20H5V21Z" fill="#DD921E" />
-							</svg>
-						</span>
-						<strong>отправить</strong>
-						<span>
-							<svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
-								<path d="M5 20C4.72386 20 4.5 20.2239 4.5 20.5C4.5 20.7761 4.72386 21 5 21V20ZM35.3536 20.8536C35.5488 20.6583 35.5488 20.3417 35.3536 20.1464L32.1716 16.9645C31.9763 16.7692 31.6597 16.7692 31.4645 16.9645C31.2692 17.1597 31.2692 17.4763 31.4645 17.6716L34.2929 20.5L31.4645 23.3284C31.2692 23.5237 31.2692 23.8403 31.4645 24.0355C31.6597 24.2308 31.9763 24.2308 32.1716 24.0355L35.3536 20.8536ZM5 21H35V20H5V21Z" fill="#DD921E" />
-							</svg>
-						</span>
-					</button>
+
+					<a href="#" class="popup__body-btn btn btn__primary">
+						<span class="btn__text">Вернуться на главную</span>
+						<img src="./assets/images/icons/arrow.svg" alt="" />
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="popup__success-project" aria-hidden="true" class="popup popup--success">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__body">
+				<button data-close type="button" class="popup__body-close-btn">
+					<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2 2.33398L29.9998 30.3338" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+						<path d="M2.00023 30.3338L30 2.33398" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+					</svg>
+				</button>
+				<div class="popup__body-content-box">
+					<div class="popup__body-content-text-box">
+						<p class="popup__body-content-box-title h5">ваша заявка успешно отправлена</p>
+						<p class="popup__body-content-box-desk text-18-r">Ваш проект успешно направлен, после ознакомления с проектом с вами свяжется наш специалист для обсуждения всех нюансов.</p>
+					</div>
+
+					<a href="#" class="popup__body-btn btn btn__primary">
+						<span class="btn__text">Вернуться на главную</span>
+						<img src="./assets/images/icons/arrow.svg" alt="" />
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="popup__success-call" aria-hidden="true" class="popup popup--success">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__body">
+				<button data-close type="button" class="popup__body-close-btn">
+					<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2 2.33398L29.9998 30.3338" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+						<path d="M2.00023 30.3338L30 2.33398" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+					</svg>
+				</button>
+				<div class="popup__body-content-box">
+					<div class="popup__body-content-text-box">
+						<p class="popup__body-content-box-title h5">ваша заявка успешно отправлена</p>
+						<p class="popup__body-content-box-desk text-18-r">Ожидайте и мы свяжемся с вами в ближайшее время. Наша команда сделает все, чтобы Ваш реальный интерьер выглядел как на картинке!</p>
+					</div>
+
+					<a href="#" class="popup__body-btn btn btn__primary">
+						<span class="btn__text">Вернуться на главную</span>
+						<img src="./assets/images/icons/arrow.svg" alt="" />
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="popup__success-cooperation" aria-hidden="true" class="popup popup--success">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__body">
+				<button data-close type="button" class="popup__body-close-btn">
+					<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2 2.33398L29.9998 30.3338" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+						<path d="M2.00023 30.3338L30 2.33398" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+					</svg>
+				</button>
+				<div class="popup__body-content-box">
+					<div class="popup__body-content-text-box">
+						<p class="popup__body-content-box-title h5">ваша заявка успешно отправлена</p>
+						<p class="popup__body-content-box-desk text-18-r">Спасибо за проявленный интерес к нашей компании! Мы всегда рады приветствовать новых талантливых людей в нашей команде. После ознакомления вашего резюме и портфолио мы свяжемся с вами в ближайшее время.</p>
+					</div>
+					<a href="#" class="popup__body-btn btn btn__primary">
+						<span class="btn__text">Вернуться на главную</span>
+						<img src="./assets/images/icons/arrow.svg" alt="" />
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="popup__meet" aria-hidden="true" class="popup popup--big">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__body">
+				<button data-close type="button" class="popup__body-close-btn">
+					<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2 2.33398L29.9998 30.3338" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+						<path d="M2.00023 30.3338L30 2.33398" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+					</svg>
+				</button>
+
+				<form data-popup-message="#popup__success-meet" data-dev action="" class="popup__form-wrapper">
+					<div class="popup__form-title-box">
+						<h5 class="popup__form-title h5">
+							Приезжайте к нам <br />
+							на встречу-презентацию в шоуруме
+						</h5>
+						<p class="popup__form-text text-18-r">Самый лучший вариант - встретиться в шоуруме, обсудить и разработать проект лично со своим заказчиком. Мы очень рады гостям и с теплотой и заботой проводим каждую встречу!</p>
+					</div>
+
+					<div class="popup__form-input-wrapper">
+						<div class="popup__form-input-box">
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="input--name popup__form-input" type="text" placeholder="Ваше имя" data-validate data-required autocomplete="off" name="form[]" />
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="input--tel popup__form-input phone-mask" type="text" placeholder="Номер телефона" data-validate data-required="tel" autocomplete="off" name="form[]" />
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="input--mail popup__form-input" type="text" placeholder="E-mail" data-validate data-required="email" autocomplete="off" name="form[]" />
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="input--date popup__form-input" type="date" placeholder="Дата посещения (ДД.ММ.ГГ)" autocomplete="off" name="form[]" />
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input type="text" class="input--textarea" placeholder="Укажите номер и марку машины , если вам нужно парковочное место" autocomplete="off" name="form[]" />
+									<span class="error-span"></span>
+								</span>
+							</label>
+						</div>
+					</div>
+					<div class="popup__btn-box">
+						<button type="submit" class="popup__btn btn btn__primary">
+							<span class="btn__text">Записаться на встречу</span>
+							<img src="./assets/images/icons/arrow.svg" alt="" />
+						</button>
+
+						<p class="popup__agreement-text">Отправляя заявку, Вы даете согласие на обработку ваших персональных данных</p>
+					</div>
 				</form>
 			</div>
 		</div>
-		<div class="feedback-modal__content modal-content modal-content--second">
-			<div class="feedback-modal__wrapper">
-				<div class="feedback-modal__title">
-					<span>заявка успешно отправлена</span>
-				</div>
-				<div class="feedback-modal__description">
-					<span>Спасибо за заполнение формы! Мы свяжемся с вами в течение 3 рабочих дней</span>
-				</div>
+	</div>
+</div>
+
+<div id="popup__project" aria-hidden="true" class="popup popup--big">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__body">
+				<button data-close type="button" class="popup__body-close-btn">
+					<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2 2.33398L29.9998 30.3338" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+						<path d="M2.00023 30.3338L30 2.33398" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+					</svg>
+				</button>
+
+				<form data-popup-message="#popup__success-project" data-dev action="" class="popup__form-wrapper">
+					<div class="popup__form-title-box">
+						<h5 class="popup__form-title h5">
+							Пришлите нам <br />
+							дизайн-проект
+						</h5>
+						<p class="popup__form-text text-18-r">Мы внимательно изучим их. Свяжемся с вами, расскажем, чем сможем помочь в реализации проекта. Рассчитаем примерную стоимость реализации проекта</p>
+					</div>
+
+					<div class="popup__form-input-wrapper">
+						<div class="popup__form-input-box">
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="input--name popup__form-input" type="text" placeholder="Ваше имя" data-validate data-required autocomplete="off" name="form[]" />
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="input--tel popup__form-input phone-mask" type="text" placeholder="Номер телефона" data-validate data-required="tel" autocomplete="off" name="form[]" />
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="input--mail popup__form-input" type="text" placeholder="E-mail" data-validate data-required="email" autocomplete="off" name="form[]" />
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+						</div>
+
+						<div class="popup__file-box">
+							<label class="popup__label-input-file label-input-file">
+								<input class="popup__input-file input-file" type="file" multiple="" data-validate data-required="file" name="file_project" />
+								<span class="popup__label-input-file-text-wrapper label-input-file-text-wrapper">
+									<span class="popup__label-input-file-svg-box label-input-file-svg-box">
+										<svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M27.9492 18.8867L20.3829 26.4531" stroke="#D3965F" stroke-width="2" stroke-linecap="square" />
+											<path d="M21.1923 13.7491L24.2757 10.6657C27.4976 7.44383 32.7212 7.44384 35.943 10.6657L36.1652 10.8878C39.387 14.1097 39.387 19.3333 36.1652 22.5551L33.0817 25.6385" stroke="#D3965F" stroke-width="2" stroke-linecap="square" />
+											<path d="M27.1397 31.5868L24.0563 34.6703C20.8345 37.8921 15.6109 37.8921 12.389 34.6703L12.1669 34.4481C8.94503 31.2263 8.94503 26.0027 12.1669 22.7808L15.2503 19.6974" stroke="#D3965F" stroke-width="2" stroke-linecap="square" />
+										</svg>
+									</span>
+									<span class="popup__label-input-file-text-box label-input-file-text-box">
+										<span class="popup__label-input-file-text-title label-input-file-text-title">Прикрепите дизайн-проект</span>
+										<span class="popup__label-input-file-text-type label-input-file-text-type">JPEG, PDF, ZIP, DWG, DWT</span>
+									</span>
+								</span>
+								<span class="error-span"></span>
+							</label>
+							<div class="popup__form-files-items form-files-items file_project"></div>
+						</div>
+					</div>
+					<div class="popup__btn-box">
+						<button type="submit" class="popup__btn btn btn__primary">
+							<span class="btn__text">Отправить проект</span>
+							<img src="./assets/images/icons/arrow.svg" alt="" />
+						</button>
+
+						<p class="popup__agreement-text">Отправляя заявку, Вы даете согласие на <a href="#">обработку ваших персональных данных</a></p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="popup__call" aria-hidden="true" class="popup popup--big">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__body">
+				<button data-close type="button" class="popup__body-close-btn">
+					<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2 2.33398L29.9998 30.3338" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+						<path d="M2.00023 30.3338L30 2.33398" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+					</svg>
+				</button>
+
+				<form data-popup-message="#popup__success-call" data-dev action="" class="popup__form-wrapper">
+					<div class="popup__form-title-box">
+						<h5 class="popup__form-title h5">
+							Оставьте заявку <br />
+							на звонок
+						</h5>
+						<p class="popup__form-text text-18-r">Оставьте заявку и мы свяжемся с вами в ближайшее время. Наша команда сделает все, чтобы Ваш реальный интерьер выглядел как на картинке!</p>
+					</div>
+
+					<div class="popup__form-input-wrapper">
+						<div class="popup__form-input-box">
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="input--name popup__form-input" type="text" placeholder="Ваше имя" data-validate data-required autocomplete="off" name="form[]" />
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="input--tel popup__form-input phone-mask" type="text" placeholder="Номер телефона" data-validate data-required="tel" autocomplete="off" name="form[]" />
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+						</div>
+					</div>
+					<div class="popup__btn-box">
+						<button type="submit" class="popup__btn btn btn__primary">
+							<span class="btn__text">Отправить заявку</span>
+							<img src="./assets/images/icons/arrow.svg" alt="" />
+						</button>
+
+						<p class="popup__agreement-text">Отправляя заявку, Вы даете согласие на <a href="#">обработку ваших персональных данных</a></p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="popup__cooperation" aria-hidden="true" class="popup popup--big">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__body">
+				<button data-close type="button" class="popup__body-close-btn">
+					<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2 2.33398L29.9998 30.3338" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+						<path d="M2.00023 30.3338L30 2.33398" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+					</svg>
+				</button>
+
+				<form data-popup-message="#popup__success-cooperation" data-dev action="" class="popup__form-wrapper">
+					<div class="popup__form-title-box">
+						<h5 class="popup__form-title h5">хотите работать с нами?</h5>
+						<p class="popup__form-text text-18-r">Оставьте заявку на сотрудничество и будьте частью нашей команды. Стань одним из авторов индивидуальных проектов мечты в MaxMalevich!</p>
+					</div>
+
+					<div class="popup__form-input-wrapper">
+						<div class="popup__form-input-box">
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="input--name popup__form-input" type="text" placeholder="Ваше имя" data-validate data-required autocomplete="off" name="form[]" />
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="input--tel popup__form-input phone-mask" type="text" placeholder="Номер телефона" data-validate data-required="tel" autocomplete="off" name="form[]" />
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="input--mail popup__form-input" type="text" placeholder="E-mail" data-validate data-required="email" autocomplete="off" name="form[]" />
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input type="text" class="input--textarea" placeholder="Комментарий (ваш комментарий/ссылка на портфолио)" autocomplete="off" name="form[]" />
+									<span class="error-span"></span>
+								</span>
+							</label>
+						</div>
+
+						<div class="popup__file-box">
+							<label class="popup__label-input-file label-input-file">
+								<input class="popup__input-file input-file" type="file" multiple="" data-validate data-required="file" name="file_cooperation" />
+								<span class="popup__label-input-file-text-wrapper label-input-file-text-wrapper">
+									<span class="popup__label-input-file-svg-box label-input-file-svg-box">
+										<svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M27.9492 18.8867L20.3829 26.4531" stroke="#D3965F" stroke-width="2" stroke-linecap="square" />
+											<path d="M21.1923 13.7491L24.2757 10.6657C27.4976 7.44383 32.7212 7.44384 35.943 10.6657L36.1652 10.8878C39.387 14.1097 39.387 19.3333 36.1652 22.5551L33.0817 25.6385" stroke="#D3965F" stroke-width="2" stroke-linecap="square" />
+											<path d="M27.1397 31.5868L24.0563 34.6703C20.8345 37.8921 15.6109 37.8921 12.389 34.6703L12.1669 34.4481C8.94503 31.2263 8.94503 26.0027 12.1669 22.7808L15.2503 19.6974" stroke="#D3965F" stroke-width="2" stroke-linecap="square" />
+										</svg>
+									</span>
+									<span class="popup__label-input-file-text-box label-input-file-text-box">
+										<span class="popup__label-input-file-text-title label-input-file-text-title">Прикрепите дизайн-проект</span>
+										<span class="popup__label-input-file-text-type label-input-file-text-type">JPEG, PDF, ZIP, DWG, DWT</span>
+									</span>
+								</span>
+								<span class="error-span"></span>
+							</label>
+							<div class="popup__form-files-items form-files-items file_cooperation"></div>
+						</div>
+					</div>
+					<div class="popup__btn-box">
+						<button type="submit" class="popup__btn btn btn__primary">
+							<span class="btn__text">Работать с нами</span>
+							<img src="./assets/images/icons/arrow.svg" alt="" />
+						</button>
+
+						<p class="popup__agreement-text">Отправляя заявку, Вы даете согласие на обработку ваших персональных данных</p>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>

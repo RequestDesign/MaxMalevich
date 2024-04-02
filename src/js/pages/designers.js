@@ -1,14 +1,10 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
+import popup from '../utils/popup';
+import form from '../utils/form';
 
-const rem = function (rem) {
-	if (window.innerWidth > 768) {
-		return 0.005208335 * window.innerWidth * rem;
-	} else {
-		// где 375 это ширина мобильной версии макета
-		return (100 / 375) * (0.05 * window.innerWidth) * rem;
-	}
-};
+
+import { rem } from '../utils/constants';
 
 document.addEventListener('DOMContentLoaded', () => {
 	try {
@@ -16,6 +12,15 @@ document.addEventListener('DOMContentLoaded', () => {
 	} catch {}
 	try {
 		magazinesSwiper();
+	} catch {}
+	try {
+		reviewsDisignersSwiper();
+	} catch {}
+	try {
+		popup();
+	} catch {}
+	try {
+		form();
 	} catch {}
 });
 
@@ -60,7 +65,55 @@ function magazinesSwiper() {
 				slidesPerView: 2,
 				spaceBetween: rem(2),
 				slidesPerGroup: 2,
-			}
+			},
+		},
+	});
+}
+
+function reviewsDisignersSwiper() {
+	const pagBox = document.querySelector('.reviews-disigners__video-pagination-box');
+	const pag = document.querySelector('.reviews-disigners__video-pagination');
+	const curSlide = pagBox.querySelector('.pag-cur');
+	const lastSlide = pagBox.querySelector('.pag-last');
+
+	const swiper = new Swiper('.reviews-disigners__video-swiper', {
+		slidesPerView: 1,
+		spaceBetween: rem(2),
+		loop: true,
+		autoHeight: true,
+		pagination: {
+			el: '.reviews-disigners__video-pagination',
+			type: 'bullets',
+		},
+        navigation: {
+			prevEl: '.reviews-disigners__video-navigation .navigation-prev',
+			nextEl: '.reviews-disigners__video-navigation .navigation-next',
+		},
+		breakpoints: {
+			769: {
+				slidesPerView: 3,
+				spaceBetween: rem(4.8),
+				slidesPerGroup: 1,
+				pagination: {
+					type: 'progressbar',
+				},
+			
+			},
+            385: {
+                slidesPerView: 1,
+                pagination: {
+					type: 'progressbar',
+				},
+            }
+		},
+		on: {
+			init: swiper => {
+				curSlide.textContent = `0${swiper.slides[swiper.activeIndex].getAttribute('data-num')}`;
+				lastSlide.textContent = `0${swiper.slides.length}`;
+			},
+			slideChange: function (swiper) {
+				curSlide.textContent = `0${swiper.slides[swiper.activeIndex].getAttribute('data-num')}`;
+			},
 		},
 	});
 }
