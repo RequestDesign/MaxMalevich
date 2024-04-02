@@ -85,7 +85,8 @@ const portfolioSwipers = () => {
 				curSlide = pag.querySelector('.pag-cur'),
 				lastSlide = pag.querySelector('.pag-last'),
 				lineSVG = pag.querySelector('svg path'),
-				svg = pag.querySelector('svg');
+				svg = pag.querySelector('svg'),
+				svgWidth = svg.querySelector('line').getAttribute('x2');
 
 			new Swiper(slider, {
 				slidesPerView: 'auto',
@@ -142,7 +143,6 @@ const portfolioSwipers = () => {
 
 				on: {
 					init: swiper => {
-						const svgWidth = svg.getAttribute('width');
 						const oneSlideWidth = svgWidth / swiper.slides.length;
 
 						curSlide.textContent = `0${swiper.activeIndex + 1}`;
@@ -151,7 +151,6 @@ const portfolioSwipers = () => {
 						lineSVG.setAttribute('d', `M0 1H${oneSlideWidth}`);
 					},
 					slideChange: function (swiper) {
-						const svgWidth = svg.getAttribute('width');
 						const oneSlideWidth = svgWidth / swiper.slides.length;
 						const lineWidth = (swiper.activeIndex + 1) * oneSlideWidth;
 
