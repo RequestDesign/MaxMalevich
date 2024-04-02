@@ -37,7 +37,7 @@ function disignersBannerSwiper() {
 			el: '.designers-banner__swiper-pagination',
 		},
 		breakpoints: {
-			1201: {
+			1200: {
 				slidesPerView: 4,
 				spaceBetween: 0,
 				grid: {
@@ -56,12 +56,12 @@ function magazinesSwiper() {
 			el: '.magazines__swiper-pagination',
 		},
 		breakpoints: {
-			1201: {
+			1200: {
 				slidesPerView: 4,
 				spaceBetween: rem(4.8),
 				slidesPerGroup: 1,
 			},
-			769: {
+			768: {
 				slidesPerView: 2,
 				spaceBetween: rem(2),
 				slidesPerGroup: 2,
@@ -90,7 +90,7 @@ function reviewsDisignersSwiper() {
 			nextEl: '.reviews-disigners__video-navigation .navigation-next',
 		},
 		breakpoints: {
-			1201: {
+			1200: {
 				slidesPerView: 3,
 				spaceBetween: rem(4.8),
 				slidesPerGroup: 1,
@@ -99,7 +99,7 @@ function reviewsDisignersSwiper() {
 				},
 			
 			},
-            769: {
+            768: {
                 slidesPerView: 1,
                 pagination: {
 					type: 'progressbar',

@@ -29,6 +29,9 @@
 	// .designers-banner__title
 
 	&__title {
+		font-weight: 300;
+		text-transform: uppercase;
+		font-size: 10rem;
 		@media (max-width: 75em) {
 			font-size: 13rem;
 		}
@@ -42,7 +45,7 @@
 	&__desc {
 		font-weight: 300;
 		line-height: 140%;
-		@media (max-width: 48em) {
+		@media (max-width: 75em) {
 			display: none;
 		}
 	}
