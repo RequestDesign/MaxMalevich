@@ -5,10 +5,10 @@
 		display: flex;
 		flex-direction: column;
 		gap: 6.4rem;
-		@media (max-width: 48em) {
+		@media (max-width: 75em) {
 			gap: 9.6rem;
 		}
-		@media (max-width: 24em) {
+		@media (max-width: 48em) {
 			gap: 6.4rem;
 		}
 	}
@@ -22,12 +22,12 @@
 		text-align: center;
 		text-transform: uppercase;
 		align-self: center;
-		@media (max-width: 48em) {
+		@media (max-width: 75em) {
 			font-size: 9.2rem;
 			width: 100%;
             font-weight: 300;
 		}
-		@media (max-width: 24em) {
+		@media (max-width: 48em) {
 			font-size: 5.2rem;
 		}
 	}
@@ -38,10 +38,10 @@
 		display: flex;
 		flex-direction: column;
 		gap: 8rem;
-		@media (max-width: 48em) {
+		@media (max-width: 75em) {
 			gap: 16rem;
 		}
-		@media (max-width: 24em) {
+		@media (max-width: 48em) {
 			gap: 10.4rem;
 		}
 	}
@@ -52,11 +52,11 @@
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		gap: 4.8rem;
-		@media (max-width: 48em) {
+		@media (max-width: 75em) {
 			grid-template-columns: repeat(2, 1fr);
 			gap: 6.4rem 4rem;
 		}
-		@media (max-width: 24em) {
+		@media (max-width: 48em) {
 			grid-template-columns: 1fr;
 			gap: 4rem;
 		}
@@ -68,10 +68,10 @@
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
-		@media (max-width: 48em) {
+		@media (max-width: 75em) {
 			gap: 4rem;
 		}
-		@media (max-width: 24em) {
+		@media (max-width: 48em) {
 		}
 	}
 
@@ -87,11 +87,11 @@
 			height: 100%;
 			object-fit: cover;
 		}
-		@media (max-width: 48em) {
+		@media (max-width: 75em) {
 			height: 88.4rem;
 			border-radius: 2.4rem;
 		}
-		@media (max-width: 24em) {
+		@media (max-width: 48em) {
 			height: 84.2rem;
 			border-radius: 2rem;
 		}
@@ -103,10 +103,10 @@
 		display: flex;
 		flex-direction: column;
 		gap: 0.8rem;
-		@media (max-width: 48em) {
+		@media (max-width: 75em) {
 			gap: 1.6rem;
 		}
-		@media (max-width: 24em) {
+		@media (max-width: 48em) {
 		}
 	}
 
@@ -117,10 +117,10 @@
 		font-size: 2.8rem;
 		line-height: 140%;
 		letter-spacing: 0.1em;
-		@media (max-width: 48em) {
+		@media (max-width: 75em) {
 			font-size: 4.8rem;
 		}
-		@media (max-width: 24em) {
+		@media (max-width: 48em) {
 			font-size: 3.6;
 		}
 	}
@@ -130,10 +130,10 @@
 	&__position {
 		font-weight: 300;
 		letter-spacing: 0.06em;
-		@media (max-width: 48em) {
+		@media (max-width: 75em) {
 			font-size: 3.6rem;
 		}
-		@media (max-width: 24em) {
+		@media (max-width: 48em) {
 			font-size: 3.2rem;
 		}
 	}
@@ -145,10 +145,10 @@
 		flex-wrap: wrap;
 		align-items: center;
 		gap: 0.8rem;
-		@media (max-width: 48em) {
+		@media (max-width: 75em) {
 			gap: 1.6rem;
 		}
-		@media (max-width: 24em) {
+		@media (max-width: 48em) {
 		}
 	}
 
@@ -162,12 +162,12 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		@media (max-width: 48em) {
+		@media (max-width: 75em) {
 			width: 10.8rem;
 			height: 10.8rem;
 			border: 0.2rem solid $white;
 		}
-		@media (max-width: 24em) {
+		@media (max-width: 48em) {
 			width: 9.6rem;
 			height: 9.6rem;
 		}
@@ -183,11 +183,11 @@
 			height: 100%;
 			object-fit: cover;
 		}
-		@media (max-width: 48em) {
+		@media (max-width: 75em) {
 			width: 6.4rem;
 			height: 6.4rem;
 		}
-		@media (max-width: 24em) {
+		@media (max-width: 48em) {
 			width: 5.2rem;
 			height: 5.2rem;
 		}
@@ -199,10 +199,10 @@
 		display: flex;
 		align-items: center;
 		gap: 2.4rem;
-		@media (max-width: 48em) {
+		@media (max-width: 75em) {
 			gap: 4.8rem;
 		}
-		@media (max-width: 24em) {
+		@media (max-width: 48em) {
 			gap: 6.4rem;
 		}
 	}
@@ -213,10 +213,10 @@
 		font-size: 1.8rem;
 		font-weight: 400;
 		letter-spacing: 0.08em;
-		@media (max-width: 48em) {
+		@media (max-width: 75em) {
 			font-size: 3.6rem;
 		}
-		@media (max-width: 24em) {
+		@media (max-width: 48em) {
 			font-size: 3.2rem;
 		}
 	}
@@ -231,11 +231,11 @@
 			height: 100%;
 			object-fit: contain;
 		}
-		@media (max-width: 48em) {
+		@media (max-width: 75em) {
 			width: 17.6rem;
 			height: 13.8rem;
 		}
-		@media (max-width: 24em) {
+		@media (max-width: 48em) {
 			width: 10.2rem;
 			height: 8rem;
 		}
@@ -248,10 +248,10 @@
 		align-items: center;
 		gap: 2.4rem;
 		align-self: center;
-		@media (max-width: 48em) {
+		@media (max-width: 75em) {
 			gap: 4.8rem;
 		}
-		@media (max-width: 24em) {
+		@media (max-width: 48em) {
 			gap: 4.4rem;
 		}
 	}
@@ -263,10 +263,10 @@
 		font-size: 2rem;
 		line-height: 140%;
 		letter-spacing: 0.06em;
-		@media (max-width: 48em) {
+		@media (max-width: 75em) {
 			font-size: 4rem;
 		}
-		@media (max-width: 24em) {
+		@media (max-width: 48em) {
 			font-size: 3.6rem;
 		}
 	}
@@ -279,11 +279,11 @@
 			height: 100%;
 			object-fit: cover;
 		}
-		@media (max-width: 48em) {
+		@media (max-width: 75em) {
 			width: 13.6rem;
 			height: 16.8rem;
 		}
-		@media (max-width: 24em) {
+		@media (max-width: 48em) {
 			width: 8.8rem;
 			height: 11.036rem;
 		}

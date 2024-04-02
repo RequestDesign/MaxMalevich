@@ -154,7 +154,7 @@
 .desk {
 	display: block;
 }
-@media (max-width: 48em) {
+@media (max-width: 75em) {
 	.h3 {
 		font-size: 9.2rem;
 	}
@@ -226,7 +226,7 @@
 	}
 }
 
-@media (max-width: 24em) {
+@media (max-width: 48em) {
 	.tablet {
 		display: none;
 	}

@@ -1,0 +1,128 @@
+.fancybox__backdrop {
+    background: rgba(19, 15, 11, 0.3) !important;
+    backdrop-filter: blur(32px);
+}
+.fancybox__toolbar.is-absolute {
+    padding: 0 6rem;
+}
+.fancybox__toolbar__column.is-right {
+    .f-button {
+        width: 4.8rem;
+        height: 4.8rem;
+        background: none;
+
+        &:hover {
+            background: none;
+        }
+
+        svg {
+            width: 3.2rem;
+            height: 3.2rem;
+        }
+    }
+}
+.fancybox__nav {
+    .f-button {
+        width: 7.6rem;
+        height: 6.2rem;
+
+        svg {
+            width: 7.6rem;
+            height: 6.2rem;
+        }
+    }
+}
+.is-horizontal .fancybox__nav .f-button.is-next {
+    right: 6rem !important;
+}
+.is-horizontal .fancybox__nav .f-button.is-prev {
+    left: 6rem !important;
+}
+
+@media (max-width: 75em) {
+    .fancybox__toolbar.is-absolute {
+        padding: 0 4rem;
+    }
+    .fancybox__toolbar__column.is-right {
+        .f-button {
+            width: 9.6rem;
+            height: 9.6rem;
+    
+            &:hover {
+                background: none;
+            }
+    
+            svg {
+                width: 6.4rem;
+                height: 6.4rem;
+            }
+        }
+    }
+    .fancybox__nav {
+        .f-button {
+            width: 12rem;
+            height: 8.2rem;
+    
+            svg {
+                width: 12rem;
+                height: 8.2rem;
+            }
+        }
+    }
+    .is-horizontal .fancybox__nav .f-button.is-next {
+        right: 4rem !important;
+        top: auto !important;
+        bottom: 6.4rem;
+        transform: initial !important;
+    }
+    .is-horizontal .fancybox__nav .f-button.is-prev {
+        left: 4rem !important;
+        top: auto !important;
+        bottom: 6.4rem;
+        transform: initial !important;
+    }
+}
+
+@media (max-width: 48em) {
+    .fancybox__toolbar.is-absolute {
+        padding: 0 4rem;
+    }
+    .fancybox__toolbar__column.is-right {
+        .f-button {
+            width: 9.6rem;
+            height: 9.6rem;
+    
+            &:hover {
+                background: none;
+            }
+    
+            svg {
+                width: 6.4rem;
+                height: 6.4rem;
+            }
+        }
+    }
+    .fancybox__nav {
+        .f-button {
+            width: 12rem;
+            height: 8.2rem;
+    
+            svg {
+                width: 12rem;
+                height: 8.2rem;
+            }
+        }
+    }
+    .is-horizontal .fancybox__nav .f-button.is-next {
+        right: 4rem !important;
+        top: auto !important;
+        bottom: 6.4rem;
+        transform: initial !important;
+    }
+    .is-horizontal .fancybox__nav .f-button.is-prev {
+        left: 4rem !important;
+        top: auto !important;
+        bottom: 6.4rem;
+        transform: initial !important;
+    }
+}

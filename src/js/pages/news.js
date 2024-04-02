@@ -11,11 +11,11 @@ const newsSwipers = () => {
 		spaceBetween: 4,
 
 		breakpoints: {
-			376: {
+			768: {
 				spaceBetween: 32,
 			},
 
-			768: {
+			1200: {
 				centeredSlides: true,
 				spaceBetween: 50,
 				initialSlide: 3,

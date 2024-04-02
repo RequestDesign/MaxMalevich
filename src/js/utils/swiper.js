@@ -63,10 +63,10 @@ sliders.forEach(slider => {
 			},
 		},
 		breakpoints: {
-			769: {
+			1200: {
 				pagination: false,
 			},
-			385: {
+			768: {
 				pagination: false,
 			},
 		},
@@ -144,7 +144,7 @@ if (furnitureSlider) {
 					},
 				},
 			},
-			385: {
+			768: {
 				allowTouchMove: true,
 				slidesPerView: 1,
 				// spaceBetween: `${remToPx(10)}rem`,
@@ -192,12 +192,12 @@ const swiperExText = new Swiper('.examples__slider-thumbs', {
 		},
 	},
 	breakpoints: {
-		769: {
+		1200: {
 			// spaceBetween: 0,
 			// slidesPerView: 'auto',
 			// initialSlide: 3,
 		},
-		385: {
+		768: {
 			// effect: 'slide',
 			slidesPerView: 3,
 			initialSlide: 3,
@@ -246,13 +246,13 @@ var swiper = new Swiper('.examples__slider', {
 		el: '.examples-pag',
 	},
 	breakpoints: {
-		769: {
+		1200: {
 			spaceBetween: 0,
 			slidesPerView: 'auto',
 			initialSlide: 3,
 			allowTouchMove: false,
 		},
-		385: {
+		768: {
 			// effect: 'slide',
 			allowTouchMove: false,
 			slidesPerView: 'auto',
@@ -325,7 +325,7 @@ const swiper1 = new Swiper('.authors__facades-slider', {
 	loop: true,
 	thumbs: { swiper: swiper2 },
 	breakpoints: {
-		769: {
+		1200: {
 			spaceBetween: remToPx(2),
 			allowTouchMove: false,
 		},
@@ -367,13 +367,13 @@ const swiperNews = new Swiper('.news__slider', {
 		el: newsPag ? newsPag : null,
 	},
 	breakpoints: {
-		769: {
+		1200: {
 			spaceBetween: remToPx(4.8),
 			pagination: {
 				el: null,
 			},
 		},
-		385: {
+		768: {
 			pagination: {
 				el: null,
 			},
