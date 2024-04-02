@@ -79,6 +79,7 @@ function premiumApproachSwiper() {
 		},
 		breakpoints: {
 			769: {
+				slidesPerView: 'auto',
 				spaceBetween: rem(4.8),
 				pagination: {
 					type: 'progressbar',
