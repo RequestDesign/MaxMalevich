@@ -150,4 +150,22 @@
 			}
 		}
 	}
+
+	& .reviews__block {
+		@media (min-width: 24em) and (max-width: 48em) {
+			padding: 12rem 6rem;
+		}
+	}
+	& .reviews__block-icon {
+		@media (min-width: 24em) and (max-width: 48em)  {
+			width: 40rem;
+			height: 40rem;
+		}
+	}
+	& .reviews__block-text {
+	}
+	& .reviews__block-link {
+	}
+	& .reviews__block-link--text {
+	}
 }
