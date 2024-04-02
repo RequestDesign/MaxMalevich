@@ -85,7 +85,8 @@ const portfolioSwipers = () => {
 				curSlide = pag.querySelector('.pag-cur'),
 				lastSlide = pag.querySelector('.pag-last'),
 				lineSVG = pag.querySelector('svg path'),
-				svg = pag.querySelector('svg');
+				svg = pag.querySelector('svg'),
+				svgWidth = svg.querySelector('line').getAttribute('x2');
 
 			new Swiper(slider, {
 				slidesPerView: 'auto',
@@ -95,7 +96,7 @@ const portfolioSwipers = () => {
 
 				coverflowEffect: {
 					rotate: 0,
-					stretch: 170,
+					stretch: 169,
 					depth: 150,
 					modifier: 1,
 					slideShadows: true,
@@ -116,7 +117,7 @@ const portfolioSwipers = () => {
 					},
 					1166: {
 						coverflowEffect: {
-							stretch: 200,
+							stretch: 138,
 							depth: 170,
 						},
 					},
@@ -138,11 +139,28 @@ const portfolioSwipers = () => {
 							depth: 425,
 						},
 					},
+					625: {
+						coverflowEffect: {
+							stretch: 348,
+							depth: 150,
+						},
+					},
+					505: {
+						coverflowEffect: {
+							stretch: 282,
+							depth: 150,
+						},
+					},
+					410: {
+						coverflowEffect: {
+							stretch: 185,
+							depth: 150,
+						},
+					},
 				},
 
 				on: {
 					init: swiper => {
-						const svgWidth = svg.getAttribute('width');
 						const oneSlideWidth = svgWidth / swiper.slides.length;
 
 						curSlide.textContent = `0${swiper.activeIndex + 1}`;
@@ -151,7 +169,6 @@ const portfolioSwipers = () => {
 						lineSVG.setAttribute('d', `M0 1H${oneSlideWidth}`);
 					},
 					slideChange: function (swiper) {
-						const svgWidth = svg.getAttribute('width');
 						const oneSlideWidth = svgWidth / swiper.slides.length;
 						const lineWidth = (swiper.activeIndex + 1) * oneSlideWidth;
 
@@ -166,7 +183,7 @@ const portfolioSwipers = () => {
 				},
 
 				pagination: {
-					el: window.screen.width > 768 ? slider.querySelector('.pagination') : '.portfolio-list__swiper-pagination',
+					el: window.screen.width > 768 ? slider.querySelector('.pagination') : slider.closest('.portfolio-list__item').querySelector('.portfolio-list__swiper-pagination'),
 				},
 
 				navigation: {
