@@ -116,7 +116,8 @@
 		@media (max-width: 75em) {
 			gap: 6.4rem;
 		}
-		@media (max-width: 48em) {gap: 6rem;
+		@media (max-width: 48em) {
+			gap: 6rem;
 		}
 	}
 
@@ -137,11 +138,10 @@
 		justify-content: space-between;
 		gap: 10rem;
 
-        @media (max-width: 48em) {   
-            gap: 4rem;
-            flex-direction: column;
+		@media (max-width: 48em) {
+			gap: 4rem;
+			flex-direction: column;
 		}
-     
 	}
 
 	// .application-designers__label-input-file
@@ -189,7 +189,7 @@
 			gap: 4.4rem;
 		}
 		@media (max-width: 48em) {
-            flex-direction: column-reverse;
+			flex-direction: column-reverse;
 		}
 	}
 
@@ -208,7 +208,7 @@
 			font-size: 2.8rem;
 		}
 		@media (max-width: 48em) {
-            width: 100%;
+			width: 100%;
 		}
 	}
 
@@ -219,7 +219,7 @@
 			height: 100%;
 		}
 		@media (max-width: 48em) {
-            width: 100%;
+			width: 100%;
 		}
 	}
 }
