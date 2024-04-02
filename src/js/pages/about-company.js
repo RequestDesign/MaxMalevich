@@ -39,7 +39,7 @@ function lettersSwiper() {
 					type: 'progressbar',
 				},
 			},
-            768: {
+            767: {
                 slidesPerView: 1,
                 pagination: {
 					type: 'progressbar',
@@ -85,7 +85,7 @@ function premiumApproachSwiper() {
 					type: 'progressbar',
 				},
 			},
-            768: {
+            767: {
                 slidesPerView: 'auto',
 				spaceBetween: rem(3.2),
                 pagination: {
@@ -115,7 +115,7 @@ function premiumApproachSwiper() {
 			el: '.premium-approach__list-pagination',
 		},
 		breakpoints: {
-			768: {
+			767: {
 				// slidesPerView: listSlides.length,
 				slidesPerView: 3,
 				spaceBetween: 0,

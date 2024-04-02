@@ -11,7 +11,7 @@ const newsSwipers = () => {
 		spaceBetween: 4,
 
 		breakpoints: {
-			768: {
+			767: {
 				spaceBetween: 32,
 			},
 

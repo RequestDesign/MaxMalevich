@@ -66,7 +66,7 @@ sliders.forEach(slider => {
 			1200: {
 				pagination: false,
 			},
-			768: {
+			767: {
 				pagination: false,
 			},
 		},
@@ -127,7 +127,7 @@ if (furnitureSlider) {
 			},
 		},
 		breakpoints: {
-			768: {
+			767: {
 				allowTouchMove: true,
 				slidesPerView: 3,
 				// spaceBetween: `${remToPx(10)}rem`,
@@ -144,7 +144,7 @@ if (furnitureSlider) {
 					},
 				},
 			},
-			768: {
+			767: {
 				allowTouchMove: true,
 				slidesPerView: 1,
 				// spaceBetween: `${remToPx(10)}rem`,
@@ -197,7 +197,7 @@ const swiperExText = new Swiper('.examples__slider-thumbs', {
 			// slidesPerView: 'auto',
 			// initialSlide: 3,
 		},
-		768: {
+		767: {
 			// effect: 'slide',
 			slidesPerView: 3,
 			initialSlide: 3,
@@ -252,7 +252,7 @@ var swiper = new Swiper('.examples__slider', {
 			initialSlide: 3,
 			allowTouchMove: false,
 		},
-		768: {
+		767: {
 			// effect: 'slide',
 			allowTouchMove: false,
 			slidesPerView: 'auto',
@@ -373,7 +373,7 @@ const swiperNews = new Swiper('.news__slider', {
 				el: null,
 			},
 		},
-		768: {
+		767: {
 			pagination: {
 				el: null,
 			},

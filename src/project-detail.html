@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://api-maps.yandex.ru/v3/?apikey=4d7b8985-4ebf-4fde-8884-668550d59df1&lang=ru_RU"></script>
+        <title>Детальная проекта</title>
+	</head>
+	<body>
+		<include src="./components/header.html" data-text='{"header": {"class": "anim"}}'></include>
+        <include src="./components/modal.html"></include>
+		<main>
+            <section class="project-detail-baner">
+                <div class="container">
+                    <h1 class="project-detail-baner__title h1">Проект Гранат</h1>
+                    <div class="project-detail-baner__back">
+                        <img src="./assets/images/pages/project-detail/project-baner.webp" alt="">
+                    </div>
+                    <div class="project-detail-baner__box">
+                        <div class="project-detail-baner__box--img">
+                            <img src="./assets/images/pages/project-detail/baner-person.webp" alt="">
+                        </div>
+                        <div class="project-detail-baner__box--text">
+                            <p class="project-detail-baner__box--job">Дизайнер проекта</p>
+                            <h5 class="project-detail-baner__box--name">Оксана Цымбылова</h5>
+                            <a class="project-detail-baner__box--link">
+                                <span>Написать дизайнеру</span>
+                                <img src="./assets/images/icons/arrow.svg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <include src="./components/feedback.html"></include>
+		</main>
+		<include src="./components/ui/btn_top.html"></include>
+		<include src="./components/footer.html"></include>
+	</body>
+</html>

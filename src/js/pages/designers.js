@@ -61,7 +61,7 @@ function magazinesSwiper() {
 				spaceBetween: rem(4.8),
 				slidesPerGroup: 1,
 			},
-			768: {
+			767: {
 				slidesPerView: 2,
 				spaceBetween: rem(2),
 				slidesPerGroup: 2,
@@ -99,7 +99,7 @@ function reviewsDisignersSwiper() {
 				},
 			
 			},
-            768: {
+            767: {
                 slidesPerView: 1,
                 pagination: {
 					type: 'progressbar',

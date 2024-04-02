@@ -2,7 +2,13 @@ import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
 Fancybox.bind("[data-fancybox]", {
-
+    Toolbar: {
+        display: {
+            left: [],
+            middle: [],
+            right: ["close"],
+        },
+    },
 });
 
 Fancybox.bind('[data-fancybox="img-gallery"]', {
