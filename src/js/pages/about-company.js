@@ -31,7 +31,7 @@ function lettersSwiper() {
 			nextEl: '.letters-slider__navigation .navigation-next',
 		},
 		breakpoints: {
-			1200: {
+			1201: {
 				slidesPerView: 3,
 				spaceBetween: rem(4.8),
 				slidesPerGroup: 1,
@@ -78,7 +78,7 @@ function premiumApproachSwiper() {
 			nextEl: '.premium-approach__navigation-box .navigation-next',
 		},
 		breakpoints: {
-			1200: {
+			1201: {
 				slidesPerView: 'auto',
 				spaceBetween: rem(4.8),
 				pagination: {
@@ -87,7 +87,7 @@ function premiumApproachSwiper() {
 			},
             767: {
                 slidesPerView: 'auto',
-				spaceBetween: rem(3.2),
+				spaceBetween: rem(6.4),
                 pagination: {
 					type: 'progressbar',
 				},
