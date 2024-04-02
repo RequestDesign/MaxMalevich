@@ -8,6 +8,8 @@
 		}
 		@media (max-width: 47.9375em) {
 		}
+		@media (max-width: 24em) {
+		}
 	}
 
 	// .application-designers__img-box
@@ -23,7 +25,7 @@
 			height: 100%;
 			object-fit: cover;
 		}
-		@media (max-width: 75em) {
+		@media (max-width: 48em) {
 			display: none;
 		}
 		@media (max-width: 47.9375em) {
@@ -39,7 +41,7 @@
 		padding: 4rem;
 		border-radius: 1.2rem;
 		border: 0.1rem solid rgba(255, 255, 255, 0.6);
-		@media (max-width: 75em) {
+		@media (max-width: 48em) {
 			padding: 6.4rem;
 			border: 0.2rem solid rgba(255, 255, 255, 0.6);
 			border-radius: 2.4rem;
@@ -58,7 +60,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 3.2rem;
-		@media (max-width: 75em) {
+		@media (max-width: 48em) {
 			gap: 6.4rem;
 		}
 		@media (max-width: 47.9375em) {
@@ -71,7 +73,7 @@
 	&__form-title {
 		font-weight: 300;
 		letter-spacing: 0.06em;
-		@media (max-width: 75em) {
+		@media (max-width: 48em) {
 			font-size: 7.2rem;
 		}
 		@media (max-width: 47.9375em) {
@@ -84,7 +86,7 @@
 	&__form-text {
 		font-weight: 300;
 		letter-spacing: 0.06em;
-		@media (max-width: 75em) {
+		@media (max-width: 48em) {
 			font-size: 3.6rem;
 		}
 		@media (max-width: 47.9375em) {
@@ -98,7 +100,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 3.2rem;
-		@media (max-width: 75em) {
+		@media (max-width: 48em) {
 			gap: 6.4rem;
 		}
 		@media (max-width: 47.9375em) {
@@ -112,7 +114,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 3.2rem;
-		@media (max-width: 75em) {
+		@media (max-width: 48em) {
 			gap: 6.4rem;
 		}
 		@media (max-width: 47.9375em) {gap: 6rem;
@@ -184,7 +186,7 @@
 		display: flex;
 		gap: 4.8rem;
 		align-items: center;
-		@media (max-width: 75em) {
+		@media (max-width: 48em) {
 			gap: 4.4rem;
 		}
 		@media (max-width: 47.9375em) {
@@ -202,7 +204,7 @@
 		color: rgba(255, 255, 255, 0.6);
 		width: 32.6rem;
 		flex-shrink: 0;
-		@media (max-width: 75em) {
+		@media (max-width: 48em) {
 			width: 61.4rem;
 			font-size: 2.8rem;
 		}
@@ -214,7 +216,7 @@
 	&__btn {
 		flex-grow: 1;
 		justify-content: space-between;
-		@media (max-width: 75em) {
+		@media (max-width: 48em) {
 			height: 100%;
 		}
 		@media (max-width: 47.9375em) {
