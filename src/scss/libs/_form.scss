@@ -20,11 +20,11 @@
 		transition: color 0.3s;
 		color: rgba(255, 255, 255, 0.6);
 	}
-	&.input--textarea {
-		@media (max-width: 47.9375em) {
-			padding-bottom: 8rem;
-		}
-	}
+	// &.input--textarea {
+	// 	@media (max-width: 48em) {
+	// 		padding-bottom: 8rem;
+	// 	}
+	// }
 	@media (max-width: 75em) {
 		padding-bottom: 3.2rem;
 		border-bottom: 0.2rem solid rgba(255, 255, 255, 0.6);
@@ -42,9 +42,12 @@
 
 .input-group textarea {
 	resize: none;
-	height: 12.5rem;
+	height: 4.3rem;
 	@media (max-width: 75em) {
-		height: 18rem;
+		height: 8rem;
+	}
+	@media (max-width: 75em) {
+		height: 12rem;
 	}
 	// &::-webkit-scrollbar {
 	//   width: 2px;

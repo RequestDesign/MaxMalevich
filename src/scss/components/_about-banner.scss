@@ -22,6 +22,9 @@
 	// .about-banner__title.h1
 
 	&__title {
+		font-weight: 300;
+		font-size: 10rem;
+		text-transform: uppercase;
 		@media (max-width: 75em) {
 			font-size: 13rem;
 			letter-spacing: 0.06em;
