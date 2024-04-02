@@ -38,7 +38,7 @@ body::before {
 	padding: 4rem;
 	visibility: hidden;
 	transition: visibility 0.8s ease 0s;
-	@media (max-width: 48em) {
+	@media (max-width: 75em) {
 		padding: 2rem;
 	}
 	._loaded & {
@@ -80,7 +80,7 @@ body::before {
 		border: 0.1rem solid rgba(255, 255, 255, 0.2);
 		border-radius: 1.2rem;
 		padding: 4rem;
-		@media (max-width: 48em) {
+		@media (max-width: 75em) {
 			border: 0.2rem solid rgba(255, 255, 255, 0.2);
 			border-radius: 2.4rem;
 			padding: 8rem;
@@ -105,7 +105,7 @@ body::before {
 			object-fit: contain;
 			pointer-events: none;
 		}
-		@media (max-width: 48em) {
+		@media (max-width: 75em) {
 			width: 9.6em;
 			height: 9.6em;
 			top: 8rem;
@@ -115,7 +115,7 @@ body::before {
 				height: 6.4rem;
 			}
 		}
-		@media (max-width: 24em) {
+		@media (max-width: 48em) {
 			width: 6.4rem;
 			height: 6.4rem;
 			& svg {
@@ -134,16 +134,16 @@ body::before {
 		}
 		& .popup__body {
 			width: 77.3rem;
-			@media (max-width: 48em) {
+			@media (max-width: 75em) {
 				width: 145.6rem;
 			}
-			@media (max-width: 24em) {
+			@media (max-width: 48em) {
 				width: 100%;
 				padding: 13.6rem 4rem 4rem;
 			}
 		}
 		& .popup__body-close-btn {
-			@media (max-width: 24em) {
+			@media (max-width: 48em) {
 				top: 4rem;
 				right: 4rem;
 			}
@@ -152,30 +152,30 @@ body::before {
 			display: flex;
 			flex-direction: column;
 			gap: 4.5rem;
-			@media (max-width: 48em) {
+			@media (max-width: 75em) {
 				gap: 6.4rem;
 			}
-			@media (max-width: 24em) {
+			@media (max-width: 48em) {
 			}
 		}
 		& .popup__body-content-text-box {
 			display: flex;
 			flex-direction: column;
 			gap: 3.2rem;
-			@media (max-width: 48em) {
+			@media (max-width: 75em) {
 				gap: 4rem;
 			}
-			@media (max-width: 24em) {
+			@media (max-width: 48em) {
 			}
 		}
 		& .popup__body-content-box-title {
 			letter-spacing: 0.06em;
 			text-transform: uppercase;
-			@media (max-width: 48em) {
+			@media (max-width: 75em) {
 				width: 111.2rem;
 				font-size: 7.2rem;
 			}
-			@media (max-width: 24em) {
+			@media (max-width: 48em) {
 				width: 100%;
 				font-size: 4rem;
 			}
@@ -184,16 +184,16 @@ body::before {
 			font-weight: 300;
 			letter-spacing: 0.06em;
 			width: 60rem;
-			@media (max-width: 48em) {
+			@media (max-width: 75em) {
 				width: 100%;
 				font-size: 3.6rem;
 			}
-			@media (max-width: 24em) {
+			@media (max-width: 48em) {
 				font-size: 3.2rem;
 			}
 		}
 		& .popup__body-btn {
-			@media (max-width: 48em) {
+			@media (max-width: 75em) {
 				width: fit-content;
 				gap: 12rem;
 				& img {
@@ -201,7 +201,7 @@ body::before {
 					height: 13.6rem;
 				}
 			}
-			@media (max-width: 24em) {
+			@media (max-width: 48em) {
 				width: 100%;
 
 				& img {
@@ -211,7 +211,7 @@ body::before {
 			}
 
 			& .btn__text {
-				@media (max-width: 24em) {
+				@media (max-width: 48em) {
 					font-size: 3rem;
 				}
 			}
@@ -222,26 +222,26 @@ body::before {
 	// ----------------------------------------big-------------------------------------------
 	// ----------------------------------------big-------------------------------------------
 	&--big {
-		@media (max-width: 24em) {
+		@media (max-width: 48em) {
 			padding: 0;
 		}
 		& .popup__wrapper {
-			@media (max-width: 24em) {
+			@media (max-width: 48em) {
 				justify-content: flex-start;
 			}
 		}
 		& .popup__content {
-			@media (max-width: 24em) {
+			@media (max-width: 48em) {
 				flex-grow: 1;
 				display: flex;
 			}
 		}
 		& .popup__body {
 			width: 92.5rem;
-			@media (max-width: 48em) {
+			@media (max-width: 75em) {
 				width: 145.6rem;
 			}
-			@media (max-width: 24em) {
+			@media (max-width: 48em) {
 				flex-grow: 1;
 				border: unset;
 				border-radius: unset;
@@ -250,7 +250,7 @@ body::before {
 			}
 		}
 		& .popup__body-close-btn {
-			@media (max-width: 24em) {
+			@media (max-width: 48em) {
 				top: 2.4rem;
 				right: 2rem;
 			}
@@ -259,7 +259,7 @@ body::before {
 			display: flex;
 			flex-direction: column;
 			gap: 4rem;
-			@media (max-width: 48em) {
+			@media (max-width: 75em) {
 				gap: 6.4rem;
 			}
 		}
@@ -267,10 +267,10 @@ body::before {
 			display: flex;
 			flex-direction: column;
 			gap: 3.2rem;
-			@media (max-width: 48em) {
+			@media (max-width: 75em) {
 				gap: 4rem;
 			}
-			@media (max-width: 24em) {
+			@media (max-width: 48em) {
 			}
 		}
 		& .popup__form-title {
@@ -279,27 +279,27 @@ body::before {
 			font-weight: 300;
 			& br {
 				display: none;
-				@media (max-width: 48em) {
+				@media (max-width: 75em) {
 					display: block;
 				}
-				@media (max-width: 24em) {
+				@media (max-width: 48em) {
 					display: none;
 				}
 			}
-			@media (max-width: 48em) {
+			@media (max-width: 75em) {
 				font-size: 7.2rem;
 			}
-			@media (max-width: 24em) {
+			@media (max-width: 48em) {
 				font-size: 4rem;
 			}
 		}
 		& .popup__form-text {
 			font-weight: 300;
 			letter-spacing: 0.06em;
-			@media (max-width: 48em) {
+			@media (max-width: 75em) {
 				font-size: 3.6rem;
 			}
-			@media (max-width: 24em) {
+			@media (max-width: 48em) {
 				font-size: 3.2rem;
 			}
 		}
@@ -307,10 +307,10 @@ body::before {
 			display: flex;
 			flex-direction: column;
 			gap: 3.2rem;
-			@media (max-width: 48em) {
+			@media (max-width: 75em) {
 				gap: 4rem;
 			}
-			@media (max-width: 24em) {
+			@media (max-width: 48em) {
 				gap: 6.4rem;
 			}
 		}
@@ -318,10 +318,10 @@ body::before {
 			display: flex;
 			flex-direction: column;
 			gap: 3.2rem;
-			@media (max-width: 48em) {
+			@media (max-width: 75em) {
 				gap: 4rem;
 			}
-			@media (max-width: 24em) {
+			@media (max-width: 48em) {
 				gap: 6.4rem;
 			}
 		}
@@ -336,7 +336,7 @@ body::before {
 			align-items: center;
 			justify-content: space-between;
 			gap: 4rem;
-			@media (max-width: 24em) {
+			@media (max-width: 48em) {
 				flex-direction: column-reverse;
 				gap: 4rem;
 			}
@@ -353,11 +353,11 @@ body::before {
 			color: $lightGray;
 			width: 38.5rem;
 			flex-shrink: 0;
-			@media (max-width: 48em) {
+			@media (max-width: 75em) {
 				width: 62.4rem;
 				font-size: 2.8rem;
 			}
-			@media (max-width: 24em) {
+			@media (max-width: 48em) {
 				width: 100%;
 			}
 		}
@@ -365,7 +365,7 @@ body::before {
 			display: flex;
 			justify-content: space-between;
 			gap: 10rem;
-			@media (max-width: 48em) {
+			@media (max-width: 75em) {
 				flex-direction: column;
 				gap: 4rem;
 				width: 100%;
