@@ -119,7 +119,7 @@
 		}
 	}
 
-	@media (max-width: 48em) {
+	@media (max-width: 75em) {
 		&__head {
 			margin-bottom: 12rem;
 		}
@@ -221,7 +221,7 @@
 		}
 	}
 
-	@media (max-width: 24em) {
+	@media (max-width: 48em) {
 		&__head {
 			flex-direction: column;
 			row-gap: 6.4rem;
