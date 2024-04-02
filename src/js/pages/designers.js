@@ -1,14 +1,10 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
+import popup from '../utils/popup';
+import form from '../utils/form';
 
-const rem = function (rem) {
-	if (window.innerWidth > 768) {
-		return 0.005208335 * window.innerWidth * rem;
-	} else {
-		// где 375 это ширина мобильной версии макета
-		return (100 / 375) * (0.05 * window.innerWidth) * rem;
-	}
-};
+
+import { rem } from '../utils/constants';
 
 document.addEventListener('DOMContentLoaded', () => {
 	try {
@@ -19,6 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
 	} catch {}
 	try {
 		reviewsDisignersSwiper();
+	} catch {}
+	try {
+		popup();
+	} catch {}
+	try {
+		form();
 	} catch {}
 });
 
@@ -78,6 +80,7 @@ function reviewsDisignersSwiper() {
 		slidesPerView: 1,
 		spaceBetween: rem(2),
 		loop: true,
+		autoHeight: true,
 		pagination: {
 			el: '.reviews-disigners__video-pagination',
 			type: 'bullets',
@@ -94,6 +97,7 @@ function reviewsDisignersSwiper() {
 				pagination: {
 					type: 'progressbar',
 				},
+			
 			},
             385: {
                 slidesPerView: 1,
