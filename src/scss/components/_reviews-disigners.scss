@@ -207,7 +207,7 @@
 		}
 		@media (max-width: 24em) {
 			width: 71rem;
-			gap: 6.4rem;
+			gap: 8rem;
 		}
 	}
 
@@ -258,7 +258,7 @@
 			gap: 6rem;
 		}
 		@media (max-width: 24em) {
-            width: 100%;
+			width: 100%;
 		}
 	}
 
@@ -277,13 +277,12 @@
 			background-color: transparent !important;
 			display: flex !important;
 			justify-content: center;
-			width: 100%!important;;
-            gap: 2.4rem;
-           
+			width: 100% !important;
+			gap: 2.4rem;
 		}
-        & .swiper-pagination-bullet {
-            margin: 0 !important;
-        }
+		& .swiper-pagination-bullet {
+			margin: 0 !important;
+		}
 	}
 
 	// .reviews-disigners__video-pagination-num
@@ -332,6 +331,60 @@
 			@media (max-width: 24em) {
 				display: none;
 			}
+		}
+	}
+
+	// .reviews__video
+
+	& .reviews__video {
+		@media (max-width: 48em) {
+			gap: 9.6rem;
+		}
+		@media (max-width: 24em) {
+			gap: 4rem;
+		}
+	}
+
+	// .reviews__video-img
+
+	& .reviews__video-img {
+		height: 47.4rem;
+		@media (max-width: 48em) {
+			width: 145.6rem;
+			height: 145.6rem;
+		}
+		@media (max-width: 24em) {
+			width: 71rem;
+			height: 70.4rem;
+		}
+	}
+
+	// .reviews__video-img--play
+
+	& .reviews__video-img--play {
+	}
+
+	// .reviews__video-text
+
+	& .reviews__video-text {
+	}
+
+	// .reviews__video-text--date
+
+	& .reviews__video-text--date {
+	}
+
+	// .reviews__video-text--title
+
+	& .reviews__video-text--title {
+		font-size: 2.4rem;
+		letter-spacing: 0.06em;
+		@media (max-width: 48em) {
+			font-size: 4.8rem;
+		}
+		@media (max-width: 24em) {
+			font-size: 3.2rem;
+			line-height: 140%;
 		}
 	}
 }
