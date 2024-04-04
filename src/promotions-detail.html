@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Главная</title>
+	</head>
+	<body>
+		<include src="./components/header.html" data-text='{"header": {"class": "anim"}}'></include>
+		<include src="./components/modal.html"></include>
+		<main>
+			<section class="timer">
+				<div class="timer__container container">
+					<div class="timer__title h2">техника Bork в подарок</div>
+					<div class="timer__subtitle">при заказе комплексной меблировки MaxMalevich</div>
+					<div class="timer__box">
+						<div class="timer__items" data-deadline="2024 03 09 00 00 00">
+							<div class="timer__days">
+								<div class="timer__value">00</div>
+								<div class="timer__item-text">Дней</div>
+							</div>
+							<div class="timer__hours">
+								<div class="timer__value">00</div>
+								<div class="timer__item-text">Часов</div>
+							</div>
+							<div class="timer__minutes">
+								<div class="timer__value">00</div>
+								<div class="timer__item-text">Минут</div>
+							</div>
+							<div class="timer__seconds">
+								<div class="timer__value">00</div>
+								<div class="timer__item-text">Секунд</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="timer__background">
+					<img src="./assets/images/pages/promotions-detail/timer-background.png" alt="" />
+				</div>
+			</section>
+
+			<section class="article">
+				<div class="article__container container">
+					<div class="article__title h5">Техника Bork в подарок</div>
+					<div class="article__text text-18-r">Ванная комната для мужчин — это не просто комната быстрого использования, это священное место, где они проводят много времени. Несколько причин, почему она так важна:</div>
+					<ul class="article__list text-18-r">
+						<li>1. Место гигиенических процедур: бритье, уход за волосами и кожей. Это время, когда мужчина может уделить внимание себе и почувствовать себя ухоженными.</li>
+						<li>2. Место отдыха и расслабления, уединения, где можно и побыть наедине с собой, подумать о делах или просто отдохнуть после трудного дня.</li>
+						<li>3. Место саморазвития. Многие мужчины любят читать, просматривать новости или изучать что-то новое.</li>
+						<li>4. И наконец — место для саморефлексии и самоанализа, где в тихой обстановке можно задуматься о целях, планах и принять важные решения.</li>
+					</ul>
+					<div class="article__text text-18-r">Это не просто унитаз и раковина. Даже такому, кажется, обычному пространству, важно придать эстетику и необходимую функциональность.</div>
+				</div>
+			</section>
+
+			<include src="./components/article-slider.html"></include>
+
+			<include src="./components/application-promotions.html"></include>
+
+			<section class="news-list promotions-list">
+				<div class="news-list__container container">
+					<div class="news-list__head">
+						<div class="news-list__title h3">Все акции</div>
+					</div>
+					<div class="news-list__body">
+						<div class="news-list__item">
+							<div class="news-list__item-date">13.03.2024</div>
+							<div class="news-list__item-img">
+								<img src="./assets/images/pages/promotions/item-img-1.png" alt="" />
+							</div>
+							<div class="news-list__item-descr">
+								<div class="news-list__item-title">Дарим технику BORK на 500 000₽! При заказе комплексной мебелировки MaxMalevich</div>
+								<include src="./components/ui/btn_primary.html"></include>
+							</div>
+						</div>
+						<div class="news-list__item">
+							<div class="news-list__item-date">13.03.2024</div>
+							<div class="news-list__item-img">
+								<img src="./assets/images/pages/promotions/item-img-1.png" alt="" />
+							</div>
+							<div class="news-list__item-descr">
+								<div class="news-list__item-title">Дарим технику BORK на 500 000₽! При заказе комплексной мебелировки MaxMalevich</div>
+								<include src="./components/ui/btn_primary.html"></include>
+							</div>
+						</div>
+						<div class="news-list__item">
+							<div class="news-list__item-date">13.03.2024</div>
+							<div class="news-list__item-img">
+								<img src="./assets/images/pages/promotions/item-img-1.png" alt="" />
+								<include src="./components/ui/btn_play.html"></include>
+							</div>
+							<div class="news-list__item-descr">
+								<div class="news-list__item-title">Дарим технику BORK на 500 000₽! При заказе комплексной мебелировки MaxMalevich</div>
+								<include src="./components/ui/btn_primary.html"></include>
+							</div>
+						</div>
+						<div class="news-list__item">
+							<div class="news-list__item-date">13.03.2024</div>
+							<div class="news-list__item-img">
+								<img src="./assets/images/pages/promotions/item-img-1.png" alt="" />
+								<include src="./components/ui/btn_play.html"></include>
+							</div>
+							<div class="news-list__item-descr">
+								<div class="news-list__item-title">Дарим технику BORK на 500 000₽! При заказе комплексной мебелировки MaxMalevich</div>
+								<include src="./components/ui/btn_primary.html"></include>
+							</div>
+						</div>
+					</div>
+					<button class="news-list__more text-20-r">
+						<div>Показать ещё</div>
+						<div>
+							<img src="./assets/images/pages/news/news-list-more.svg" alt="" />
+						</div>
+					</button>
+				</div>
+			</section>
+
+			<include src="./components/subscribe.html"></include>
+		</main>
+		<include src="./components/ui/btn_top.html"></include>
+		<include src="./components/footer.html"></include>
+	</body>
+</html>

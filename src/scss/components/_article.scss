@@ -1,5 +1,7 @@
 .article {
-	padding-top: 17rem;
+	&:first-child {
+		padding-top: 17rem;
+	}
 
 	&__date {
 		text-align: center;
@@ -43,7 +45,9 @@
 	}
 
 	@media (max-width: 75em) {
-		padding-top: 37.6rem;
+		&:first-child {
+			padding-top: 37.6rem;
+		}
 
 		&__date {
 			font-size: 4.8rem;
@@ -74,8 +78,10 @@
 		}
 	}
 
-	@media (max-width: 48em) {
-		padding-top: 20.8rem;
+	@media (max-width: 47.9375em) {
+		&:first-child {
+			padding-top: 20.8rem;
+		}
 
 		&__date {
 			font-size: 3.6rem;
