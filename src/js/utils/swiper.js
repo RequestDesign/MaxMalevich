@@ -342,13 +342,13 @@ btnZoom.forEach(btn => {
 	});
 });
 
-facadesPrev.addEventListener('click', () => {
+facadesPrev?.addEventListener('click', () => {
 	swiper1.slidePrev();
 	swiper2.slidePrev();
 	swiper3.slidePrev();
 });
 
-facadesNext.addEventListener('click', () => {
+facadesNext?.addEventListener('click', () => {
 	swiper1.slideNext();
 	swiper2.slideNext();
 	swiper3.slideNext();
@@ -385,5 +385,98 @@ if (window.innerWidth < 769 && window.innerWidth > 385) {
 	const swiperProcess = new Swiper('.process__list-slider', {
 		slidesPerView: 'auto',
 		spaceBetween: remToPx(9.6),
+	});
+}
+
+const reviewsBlock = document.querySelector('.reviews__list');
+
+if (reviewsBlock) {
+	const pagination = reviewsBlock.querySelector('.pagination');
+	const cur = reviewsBlock.querySelector('.pag-cur');
+	const last = reviewsBlock.querySelector('.pag-last');
+	const lineSVG = pagination.querySelector('svg path');
+	const svg = pagination.querySelector('svg');
+	const swiperReviews = new Swiper('.reviews__list', {
+		// modules: [Navigation, Pagination],
+		slidesPerView: 3,
+		spaceBetween: remToPx(4.8),
+		navigation: {
+			prevEl: '.reviews__list-controls .navigation-prev',
+			nextEl: '.reviews__list-controls .navigation-next',
+		},
+		on: {
+			init: swiper => {
+				cur.textContent = `0${swiper.activeIndex + 1}`;
+				last.textContent = `0${swiper.slides.length}`;
+				if (svg) {
+					const svgWidth = 312;
+					console.log(svgWidth);
+					if (svgWidth) {
+						const oneSlideWidth = svgWidth / swiper.slides.length;
+						console.log(oneSlideWidth, svgWidth);
+						lineSVG?.setAttribute('d', `M0 1H${oneSlideWidth}`);
+					}
+				}
+			},
+			slideChange: function (swiper) {
+				cur.textContent = `0${swiper.activeIndex + 1}`;
+				if (svg) {
+					const svgWidth = 312;
+					if (svgWidth) {
+						const oneSlideWidth = svgWidth / swiper.slides.length;
+						const lineWidth = (swiper.activeIndex + 1) * oneSlideWidth;
+						console.log(oneSlideWidth, svgWidth);
+						lineSVG?.setAttribute('d', `M0 1H${lineWidth}`);
+					}
+				}
+			},
+		},
+	});
+}
+
+const mailsList = document.querySelector('.mails__list');
+
+if (mailsList) {
+	const pagination = mailsList.closest('.container').querySelector('.pagination');
+	const navigation = mailsList.closest('.container').querySelector('.navigation');
+	const cur = pagination.querySelector('.pag-cur');
+	const last = pagination.querySelector('.pag-last');
+	const lineSVG = pagination.querySelector('svg path');
+	const svg = pagination.querySelector('svg');
+	const mailsSwiper = new Swiper('.mails__list', {
+		// modules: [Navigation, Pagination],
+		slidesPerView: 3,
+		spaceBetween: remToPx(4.8),
+		navigation: {
+			prevEl: navigation.querySelector('.navigation-prev'),
+			nextEl: navigation.querySelector('.navigation-next'),
+		},
+		on: {
+			init: swiper => {
+				cur.textContent = `0${swiper.activeIndex + 1}`;
+				last.textContent = `0${swiper.slides.length}`;
+				if (svg) {
+					const svgWidth = 312;
+					console.log(svgWidth);
+					if (svgWidth) {
+						const oneSlideWidth = svgWidth / swiper.slides.length;
+						console.log(oneSlideWidth, svgWidth);
+						lineSVG?.setAttribute('d', `M0 1H${oneSlideWidth}`);
+					}
+				}
+			},
+			slideChange: function (swiper) {
+				cur.textContent = `0${swiper.activeIndex + 1}`;
+				if (svg) {
+					const svgWidth = 312;
+					if (svgWidth) {
+						const oneSlideWidth = svgWidth / swiper.slides.length;
+						const lineWidth = (swiper.activeIndex + 1) * oneSlideWidth;
+						console.log(oneSlideWidth, svgWidth);
+						lineSVG?.setAttribute('d', `M0 1H${lineWidth}`);
+					}
+				}
+			},
+		},
 	});
 }
