@@ -495,7 +495,7 @@
 
 .examples {
 	padding-bottom: 10rem;
-    margin-bottom: 10rem;
+	margin-bottom: 10rem;
 	overflow: hidden;
 	.container {
 		position: relative;
@@ -1307,7 +1307,7 @@
 	}
 	.quality {
 		&__container {
-			flex-direction: column-reverse;
+			flex-direction: column;
 			gap: 9.6rem;
 		}
 		&__main {
@@ -1645,7 +1645,9 @@
 				font-size: 5.6rem;
 			}
 			&-photos {
-				height: 149.6rem;
+				height: 100rem;
+				border-radius: 4rem;
+				overflow: hidden;
 			}
 		}
 	}
@@ -1747,6 +1749,8 @@
 			&-img {
 				width: 70.8rem;
 				height: 70.2rem;
+				border-radius: 4rem;
+				overflow: hidden;
 			}
 			&-short {
 				gap: 4rem;
@@ -1875,12 +1879,32 @@
 				gap: 3.2rem;
 			}
 			&-bottom {
-				display: none;
+				flex-direction: column;
+				row-gap: 6.4rem;
+
+				.pagination {
+					gap: 2.4rem;
+					justify-content: center;
+
+					.swiper-pagination-bullet {
+						margin: 0;
+						background-color: $white;
+						opacity: 0.6;
+
+						&-active {
+							opacity: 1;
+						}
+					}
+				}
 			}
 			&-img {
 				width: 51.2rem;
 				height: 57.4rem;
 				border-radius: 1.6rem;
+			}
+			&-text {
+				font-size: 3.6rem;
+				line-height: 5rem;
 			}
 		}
 	}
@@ -1890,6 +1914,7 @@
 			gap: 6.4rem;
 		}
 		&__info {
+			height: auto;
 			font-size: 4rem;
 			border: none;
 			.btn {
@@ -1902,11 +1927,13 @@
 		&__text {
 			&-title {
 				padding: 0;
+				font-size: 4rem;
+				line-height: 5.2rem;
 			}
 		}
 		&__content {
 			flex: auto;
-			height: 97.2rem;
+			height: 75.2rem;
 		}
 	}
 	.quality {
@@ -1944,7 +1971,7 @@
 		}
 		&__video {
 			width: 100%;
-			height: 97.2rem;
+			height: 75.2rem;
 		}
 	}
 	.production {
@@ -1989,6 +2016,16 @@
 		.pagination {
 			gap: 2.4rem;
 			justify-content: center;
+
+			.swiper-pagination-bullet {
+				margin: 0;
+				background-color: $white;
+				opacity: 0.6;
+
+				&-active {
+					opacity: 1;
+				}
+			}
 		}
 		.navigation {
 			display: none;
@@ -2003,6 +2040,9 @@
 			.btn {
 				margin-bottom: 8rem;
 			}
+		}
+		&__video {
+			height: 75.2rem;
 		}
 	}
 
@@ -2035,11 +2075,20 @@
 			}
 		}
 		&__slider {
+			position: relative;
+
 			&-item {
 				height: 90.4rem;
 			}
 			&-thumbs {
 				display: none;
+			}
+
+			&-text {
+				position: absolute;
+				bottom: 3.2rem;
+				width: 100%;
+				text-align: center;
 			}
 		}
 		&-pag {
@@ -2208,6 +2257,7 @@
 	.project {
 		&__top {
 			flex-direction: column;
+			margin-bottom: 0;
 			&-title {
 				width: 100%;
 				margin-bottom: 6.4rem;
@@ -2218,17 +2268,18 @@
 		}
 		&__content {
 			&-photos {
-				height: 75.4rem;
+				height: 90.2rem;
 				margin-bottom: 8rem;
 			}
 
 			&-item {
-				font-size: 3.2rem;
+				top: calc(100% - 10rem);
+				font-size: 4.8rem;
 			}
 		}
 		.btn {
 			&.mob {
-				display: block;
+				display: none;
 			}
 		}
 	}
@@ -2242,11 +2293,11 @@
 			gap: 24rem;
 		}
 		&__list {
-			flex-direction: column;
+			// flex-direction: column;
 			&-item {
 				padding: 0;
 				height: auto;
-				width: 100%;
+				width: 58.6rem;
 				background-color: #26201d;
 			}
 			&-link {

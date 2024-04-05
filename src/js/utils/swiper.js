@@ -17,41 +17,41 @@ const sliders = document.querySelectorAll('.swiper');
 sliders.forEach(slider => {
 	const nav = slider.closest('.swiper').querySelector('.navigation');
 	const pag = slider.closest('.swiper').querySelector('.pagination');
-	const prevEl = nav.querySelector('.navigation-prev');
-	const nextEl = nav.querySelector('.navigation-next');
-	const curSlide = pag.querySelector('.pag-cur');
-	const lastSlide = pag.querySelector('.pag-last');
-	const lineSVG = pag.querySelector('svg path');
-	const svg = pag.querySelector('svg');
+	const prevEl = nav && nav.querySelector('.navigation-prev');
+	const nextEl = nav && nav.querySelector('.navigation-next');
+	const curSlide = pag && pag.querySelector('.pag-cur');
+	const lastSlide = pag && pag.querySelector('.pag-last');
+	const lineSVG = pag && pag.querySelector('svg path');
+	const svg = pag && pag.querySelector('svg');
 	new Swiper(slider, {
 		modules: [Navigation, Pagination],
 		slidesPerView: 1,
 		spaceBetween: 20,
 		allowTouchMove: true,
 		navigation: {
-			prevEl,
-			nextEl,
+			prevEl: prevEl ? prevEl : false,
+			nextEl: nextEl ? nextEl : false,
 		},
 		pagination: {
 			el: slider.querySelector('.pagination') || false,
 		},
 		on: {
 			init: swiper => {
-				curSlide.textContent = `0${swiper.activeIndex + 1}`;
-				lastSlide.textContent = `0${swiper.slides.length}`;
+				curSlide && (curSlide.textContent = `0${swiper.activeIndex + 1}`);
+				lastSlide && (lastSlide.textContent = `0${swiper.slides.length}`);
 				if (svg) {
 					const svgWidth = svg.clientWidth;
 					console.log(svgWidth);
-					const oneSlideWidth = svgWidth / swiper.slides.length;
+					const oneSlideWidth = swiper.slides.length ? svgWidth / swiper.slides.length : 0;
 					console.log(oneSlideWidth, svgWidth);
 					lineSVG?.setAttribute('d', `M0 1H${oneSlideWidth}`);
 				}
 			},
 			slideChange: function (swiper) {
-				curSlide.textContent = `0${swiper.activeIndex + 1}`;
+				curSlide && (curSlide.textContent = `0${swiper.activeIndex + 1}`);
 				if (svg) {
 					const svgWidth = svg.clientWidth;
-					const oneSlideWidth = svgWidth / swiper.slides.length;
+					const oneSlideWidth = swiper.slides.length ? svgWidth / swiper.slides.length : 0;
 					const lineWidth = (swiper.activeIndex + 1) * oneSlideWidth;
 					console.log(oneSlideWidth, svgWidth);
 					lineSVG?.setAttribute('d', `M0 1H${lineWidth}`);
@@ -126,8 +126,11 @@ if (furnitureSlider) {
 				translate: ['54.6rem', '-8.5rem', 0],
 			},
 		},
+		pagination: {
+			el: window.screen.width < 768 && '.furniture__slider-bottom .pagination',
+		},
 		breakpoints: {
-			767: {
+			1201: {
 				allowTouchMove: true,
 				slidesPerView: 3,
 				// spaceBetween: `${remToPx(10)}rem`,
@@ -144,20 +147,14 @@ if (furnitureSlider) {
 					},
 				},
 			},
-			767: {
-				allowTouchMove: true,
+			768: {
 				slidesPerView: 1,
-				// spaceBetween: `${remToPx(10)}rem`,
+
 				creativeEffect: {
 					limitProgress: 2,
-					progressMultiplier: 1,
-					prev: {
-						translate: ['0', '20.1rem', 0],
-						opacity: 0,
-						zIndex: -1,
-					},
+
 					next: {
-						translate: ['103.6rem', '-15.5rem', 0],
+						translate: ['104.6rem', '-18rem', 0],
 					},
 				},
 			},
@@ -192,12 +189,12 @@ const swiperExText = new Swiper('.examples__slider-thumbs', {
 		},
 	},
 	breakpoints: {
-		1200: {
+		1201: {
 			// spaceBetween: 0,
 			// slidesPerView: 'auto',
 			// initialSlide: 3,
 		},
-		767: {
+		768: {
 			// effect: 'slide',
 			slidesPerView: 3,
 			initialSlide: 3,
@@ -367,23 +364,28 @@ const swiperNews = new Swiper('.news__slider', {
 		el: newsPag ? newsPag : null,
 	},
 	breakpoints: {
-		1200: {
+		1201: {
 			spaceBetween: remToPx(4.8),
 			pagination: {
 				el: null,
 			},
 		},
-		767: {
+		768: {
 			pagination: {
 				el: null,
+			},
+			navigation: {
+				prevEl: '.news__pag .navigation-prev',
+				nextEl: '.news__pag .navigation-next',
 			},
 		},
 	},
 });
 
-if (window.innerWidth < 769 && window.innerWidth > 385) {
+if (window.innerWidth < 1201) {
 	const swiperProcess = new Swiper('.process__list-slider', {
 		slidesPerView: 'auto',
+		slidesPerGroup: 1.5,
 		spaceBetween: remToPx(9.6),
 	});
 }
@@ -477,6 +479,18 @@ if (mailsList) {
 					}
 				}
 			},
+		},
+	});
+}
+
+if (document.querySelector('.image_slider__container') && window.screen.width < 768) {
+	const imageSlider = new Swiper('.image_slider__container', {
+		slidesPerView: 1,
+		slidesPerGroup: 1,
+		spaceBetween: 10,
+
+		pagination: {
+			el: '.image-container__pagination',
 		},
 	});
 }
