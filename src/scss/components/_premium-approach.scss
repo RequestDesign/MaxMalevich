@@ -113,10 +113,12 @@
 		gap: 3.2rem;
 		padding: 2.4rem 0;
 		border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+
 		@media (max-width: 75em) {
 			padding: 4.8rem 0;
 			gap: 6.4rem;
 			border-top: 0.2rem solid rgba(255, 255, 255, 0.2);
+	
 		}
 		@media (max-width: 47.9375em) {
 			border: 0.2rem solid rgba(255, 255, 255, 0.2);
@@ -125,6 +127,7 @@
 			padding: 4rem;
 			flex-direction: column;
 			justify-content: space-between;
+			margin: 0.2rem;
 		}
 	}
 
