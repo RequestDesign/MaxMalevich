@@ -77,6 +77,7 @@ body::before {
 	&__body {
 		display: flex;
 		background-color: #261e16;
+		background-image: url(./assets/images/ui/modal-bg.webp);
 		border: 0.1rem solid rgba(255, 255, 255, 0.2);
 		border-radius: 1.2rem;
 		padding: 4rem;
@@ -115,7 +116,7 @@ body::before {
 				height: 6.4rem;
 			}
 		}
-		@media (max-width: 47.9375em) {
+		@media (max-width: 47.9375em){
 			width: 6.4rem;
 			height: 6.4rem;
 			& svg {
@@ -137,13 +138,13 @@ body::before {
 			@media (max-width: 75em) {
 				width: 145.6rem;
 			}
-			@media (max-width: 47.9375em) {
+			@media (max-width: 47.9375em){
 				width: 100%;
 				padding: 13.6rem 4rem 4rem;
 			}
 		}
 		& .popup__body-close-btn {
-			@media (max-width: 47.9375em) {
+			@media (max-width: 47.9375em){
 				top: 4rem;
 				right: 4rem;
 			}
@@ -155,7 +156,7 @@ body::before {
 			@media (max-width: 75em) {
 				gap: 6.4rem;
 			}
-			@media (max-width: 47.9375em) {
+			@media (max-width: 47.9375em){
 			}
 		}
 		& .popup__body-content-text-box {
@@ -165,7 +166,7 @@ body::before {
 			@media (max-width: 75em) {
 				gap: 4rem;
 			}
-			@media (max-width: 47.9375em) {
+			@media (max-width: 47.9375em){
 			}
 		}
 		& .popup__body-content-box-title {
@@ -175,7 +176,7 @@ body::before {
 				width: 111.2rem;
 				font-size: 7.2rem;
 			}
-			@media (max-width: 47.9375em) {
+			@media (max-width: 47.9375em){
 				width: 100%;
 				font-size: 4rem;
 			}
@@ -188,7 +189,7 @@ body::before {
 				width: 100%;
 				font-size: 3.6rem;
 			}
-			@media (max-width: 47.9375em) {
+			@media (max-width: 47.9375em){
 				font-size: 3.2rem;
 			}
 		}
@@ -201,7 +202,7 @@ body::before {
 					height: 13.6rem;
 				}
 			}
-			@media (max-width: 47.9375em) {
+			@media (max-width: 47.9375em){
 				width: 100%;
 
 				& img {
@@ -211,7 +212,7 @@ body::before {
 			}
 
 			& .btn__text {
-				@media (max-width: 47.9375em) {
+				@media (max-width: 47.9375em){
 					font-size: 3rem;
 				}
 			}
@@ -222,16 +223,16 @@ body::before {
 	// ----------------------------------------big-------------------------------------------
 	// ----------------------------------------big-------------------------------------------
 	&--big {
-		@media (max-width: 47.9375em) {
+		@media (max-width: 47.9375em){
 			padding: 0;
 		}
 		& .popup__wrapper {
-			@media (max-width: 47.9375em) {
+			@media (max-width: 47.9375em){
 				justify-content: flex-start;
 			}
 		}
 		& .popup__content {
-			@media (max-width: 47.9375em) {
+			@media (max-width: 47.9375em){
 				flex-grow: 1;
 				display: flex;
 			}
@@ -241,16 +242,17 @@ body::before {
 			@media (max-width: 75em) {
 				width: 145.6rem;
 			}
-			@media (max-width: 47.9375em) {
+			@media (max-width: 47.9375em){
 				flex-grow: 1;
 				border: unset;
 				border-radius: unset;
 				background-color: #130f0b;
+				background-image: url(./assets/images/ui/modal-bg-mob.webp);;
 				padding: 12.8rem 2rem;
 			}
 		}
 		& .popup__body-close-btn {
-			@media (max-width: 47.9375em) {
+			@media (max-width: 47.9375em){
 				top: 2.4rem;
 				right: 2rem;
 			}
@@ -270,7 +272,7 @@ body::before {
 			@media (max-width: 75em) {
 				gap: 4rem;
 			}
-			@media (max-width: 47.9375em) {
+			@media (max-width: 47.9375em){
 			}
 		}
 		& .popup__form-title {
@@ -282,14 +284,14 @@ body::before {
 				@media (max-width: 75em) {
 					display: block;
 				}
-				@media (max-width: 47.9375em) {
+				@media (max-width: 47.9375em){
 					display: none;
 				}
 			}
 			@media (max-width: 75em) {
 				font-size: 7.2rem;
 			}
-			@media (max-width: 47.9375em) {
+			@media (max-width: 47.9375em){
 				font-size: 4rem;
 			}
 		}
@@ -299,7 +301,7 @@ body::before {
 			@media (max-width: 75em) {
 				font-size: 3.6rem;
 			}
-			@media (max-width: 47.9375em) {
+			@media (max-width: 47.9375em){
 				font-size: 3.2rem;
 			}
 		}
@@ -310,7 +312,7 @@ body::before {
 			@media (max-width: 75em) {
 				gap: 4rem;
 			}
-			@media (max-width: 47.9375em) {
+			@media (max-width: 47.9375em){
 				gap: 6.4rem;
 			}
 		}
@@ -321,7 +323,7 @@ body::before {
 			@media (max-width: 75em) {
 				gap: 4rem;
 			}
-			@media (max-width: 47.9375em) {
+			@media (max-width: 47.9375em){
 				gap: 6.4rem;
 			}
 		}
@@ -336,7 +338,7 @@ body::before {
 			align-items: center;
 			justify-content: space-between;
 			gap: 4rem;
-			@media (max-width: 47.9375em) {
+			@media (max-width: 47.9375em){
 				flex-direction: column-reverse;
 				gap: 4rem;
 			}
@@ -357,7 +359,7 @@ body::before {
 				width: 62.4rem;
 				font-size: 2.8rem;
 			}
-			@media (max-width: 47.9375em) {
+			@media (max-width: 47.9375em){
 				width: 100%;
 			}
 		}
