@@ -1,0 +1,63 @@
+<section class="project">
+	<div class="container">
+		<div class="project__top">
+			<h2 class="project__top-title h3">на 100% точно реализуем ваш проект</h2>
+			<include src="./components/ui/btn_primary.html"></include>
+		</div>
+		<div class="project__content">
+			<div class="project__content-top"></div>
+			<div class="project__content-photos">
+				<div class="image_slider__container swiper">
+					<div class="image-container swiper-wrapper">
+						<div class="image_slider-img img-before swiper-slide">
+							<span class="project__content-item">Визуал</span>
+							<img class="image-before image_slider-image" src="./assets/images/pages/home/project_1.png" alt="color photo" />
+						</div>
+						<div class="image_slider-img img-after swiper-slide">
+							<span class="project__content-item">Реальное фото</span>
+							<img class="image-after image_slider-image" src="./assets/images/pages/home/project.png" alt="black and white" />
+						</div>
+					</div>
+					<div class="pagination"></div>
+					<!-- step="10" -->
+					<input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown" class="image_slider" />
+					<div class="image_slider-line" aria-hidden="true"></div>
+					<button class="image_slider-button">
+						<svg width="53" height="72" viewBox="0 0 53 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g filter="url(#filter0_b_4598_6265)">
+								<path d="M0 36L12 29.0718L12 42.9282L0 36Z" fill="#ADA59E" />
+							</g>
+							<g filter="url(#filter1_b_4598_6265)">
+								<rect x="19" width="14" height="72" fill="#ADA69E" />
+							</g>
+							<g filter="url(#filter2_b_4598_6265)">
+								<path d="M52.9688 36L40.9688 42.9282V29.0718L52.9688 36Z" fill="white" fill-opacity="0.5" />
+							</g>
+							<defs>
+								<filter id="filter0_b_4598_6265" x="-8.5" y="20.5718" width="29" height="30.8564" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+									<feFlood flood-opacity="0" result="BackgroundImageFix" />
+									<feGaussianBlur in="BackgroundImageFix" stdDeviation="4.25" />
+									<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_4598_6265" />
+									<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_4598_6265" result="shape" />
+								</filter>
+								<filter id="filter1_b_4598_6265" x="2" y="-17" width="48" height="106" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+									<feFlood flood-opacity="0" result="BackgroundImageFix" />
+									<feGaussianBlur in="BackgroundImageFix" stdDeviation="8.5" />
+									<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_4598_6265" />
+									<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_4598_6265" result="shape" />
+								</filter>
+								<filter id="filter2_b_4598_6265" x="32.4688" y="20.5718" width="29" height="30.8564" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+									<feFlood flood-opacity="0" result="BackgroundImageFix" />
+									<feGaussianBlur in="BackgroundImageFix" stdDeviation="4.25" />
+									<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_4598_6265" />
+									<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_4598_6265" result="shape" />
+								</filter>
+							</defs>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+		<include src="./components/ui/btn_primary.html" data-text='{".btn": {"class": "mob"}}'></include>
+	</div>
+</section>
