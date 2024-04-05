@@ -1,0 +1,30 @@
+.designer-projects-list {
+	// .designer-projects-list__inner
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		gap: 6.4rem;
+		@media (max-width: 75em) {
+			gap: 16rem;
+		}
+		@media (max-width: 47.9375em) {
+			gap: 6.4rem;
+		}
+	}
+
+	// .designer-projects-list__title
+
+	&__title {
+		align-self: center;
+		font-weight: 300;
+		@media (max-width: 75em) {
+			font-weight: 300;
+			font-size: 9.2rem;
+		}
+		@media (max-width: 47.9375em) {
+			font-weight: 300;
+			font-size: 8rem;
+		}
+	}
+}

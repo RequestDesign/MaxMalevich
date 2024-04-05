@@ -3,7 +3,7 @@
 	@media (max-width: 75em) {
 		margin-top: 29.6rem;
 	}
-	@media (max-width: 47.9375em) {
+	@media (max-width: 47.9375em){
 		margin-top: 20.8rem;
 	}
 	// .designers-banner__inner
@@ -29,10 +29,15 @@
 	// .designers-banner__title
 
 	&__title {
+		font-weight: 300;
+		text-transform: uppercase;
+		font-size: 10rem;
+		line-height: 110%;
+		letter-spacing: 0.06em;
 		@media (max-width: 75em) {
 			font-size: 13rem;
 		}
-		@media (max-width: 47.9375em) {
+		@media (max-width: 47.9375em){
 			font-size: 8rem;
 		}
 	}
@@ -42,7 +47,8 @@
 	&__desc {
 		font-weight: 300;
 		line-height: 140%;
-		@media (max-width: 47.9375em) {
+		letter-spacing: 0.06em;
+		@media (max-width: 75em) {
 			display: none;
 		}
 	}
@@ -56,7 +62,7 @@
 		@media (max-width: 75em) {
 			gap: 12rem;
 		}
-		@media (max-width: 47.9375em) {
+		@media (max-width: 47.9375em){
 			gap: 6.4rem;
 		}
 	}
@@ -73,7 +79,7 @@
 			letter-spacing: 0.06em;
 			line-height: 110%;
 		}
-		@media (max-width: 47.9375em) {
+		@media (max-width: 47.9375em){
 			font-size: 5rem;
 		}
 	}
@@ -86,7 +92,7 @@
 			flex-direction: column;
 			gap: 8rem;
 		}
-		@media (max-width: 47.9375em) {
+		@media (max-width: 47.9375em){
 			gap: 4.8rem;
 		}
 	}
@@ -103,6 +109,7 @@
 		flex-direction: row !important;
 		width: 100% !important;
 		gap: 4.8rem;
+		margin: 0.2rem 0;
 		@media (max-width: 75em) {
 			gap: 0;
 		}
@@ -158,7 +165,7 @@
 			border-radius: 2.4rem;
 			border: 0.2rem solid rgba(255, 255, 255, 0.2);
 		}
-		@media (max-width: 47.9375em) {
+		@media (max-width: 47.9375em){
 			padding: 4rem;
 			min-height: 40.4rem;
 		}
@@ -187,7 +194,7 @@
 			width: 9.6rem;
 			height: 9.6rem;
 		}
-		@media (max-width: 47.9375em) {
+		@media (max-width: 47.9375em){
 			width: 6.4rem;
 			height: 6.4rem;
 		}
@@ -200,7 +207,7 @@
 		@media (max-width: 75em) {
 			font-size: 4rem;
 		}
-		@media (max-width: 47.9375em) {
+		@media (max-width: 47.9375em){
 			font-size: 3.6rem;
 		}
 	}
@@ -212,7 +219,7 @@
 		@media (max-width: 75em) {
 			font-size: 4.8rem;
 		}
-		@media (max-width: 47.9375em) {
+		@media (max-width: 47.9375em){
 			font-size: 3.6rem;
 		}
 	}
@@ -235,7 +242,7 @@
 			height: 75.8rem;
 			border-radius: 2.4rem;
 		}
-		@media (max-width: 47.9375em) {
+		@media (max-width: 47.9375em){
 			width: 71rem;
 			height: 40.4rem;
 		}
