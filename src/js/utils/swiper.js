@@ -14,17 +14,19 @@ function remToPx(remValue) {
 
 const sliders = document.querySelectorAll('.swiper');
 
+console.log('sliders: ', sliders);
 sliders.forEach(slider => {
-	const nav = slider.closest('.swiper').querySelector('.navigation');
-	const pag = slider.closest('.swiper').querySelector('.pagination');
+	const nav = slider.querySelector('.navigation');
+	const pag = slider.querySelector('.pagination');
 	const prevEl = nav && nav.querySelector('.navigation-prev');
 	const nextEl = nav && nav.querySelector('.navigation-next');
 	const curSlide = pag && pag.querySelector('.pag-cur');
 	const lastSlide = pag && pag.querySelector('.pag-last');
 	const lineSVG = pag && pag.querySelector('svg path');
 	const svg = pag && pag.querySelector('svg');
-	new Swiper(slider, {
-		modules: [Navigation, Pagination],
+	console.log('slider, prevEl, nextEl: ', slider, prevEl, nextEl, prevEl ? true : false);
+	const sliderSw = new Swiper(slider, {
+		modules: [Pagination],
 		slidesPerView: 1,
 		spaceBetween: 20,
 		allowTouchMove: true,
@@ -71,6 +73,12 @@ sliders.forEach(slider => {
 			},
 		},
 	});
+	// prevEl.addEventListener('click', e => {
+	// 	sliderSw.slidePrev();
+	// });
+	// nextEl.addEventListener('click', e => {
+	// 	sliderSw.slideNext();
+	// });
 });
 
 const furnitureSlider = document.querySelector('.furniture__slider');
