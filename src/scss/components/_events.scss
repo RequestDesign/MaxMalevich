@@ -1,4 +1,5 @@
 .events {
+	overflow: hidden;
 	position: relative;
 	padding: 19.1rem 0 0 0;
 	margin-bottom: $sectionMargin;
@@ -9,6 +10,7 @@
 		left: 0;
 		width: 100%;
 		height: 116.4rem;
+		z-index: -1;
 	}
 
 	&__container {
@@ -38,6 +40,14 @@
 	}
 
 	&__swiper {
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		overflow: hidden;
+		list-style: none;
+		padding: 0;
+		z-index: 1;
+		display: block;
 		margin-bottom: 5rem;
 
 		&-slide {

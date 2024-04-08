@@ -38,6 +38,15 @@
 	}
 
 	&__swiper {
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		overflow: hidden;
+		list-style: none;
+		padding: 0;
+		z-index: 1;
+		display: block;
+
 		&-slide {
 			cursor: pointer;
 			width: min-content;
