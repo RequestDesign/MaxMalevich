@@ -37,8 +37,8 @@ const Swipers = () => {
 				init: swiper => {
 					const oneSlideWidth = svgWidth / swiper.slides.length;
 
-					curSlide.textContent = `0${swiper.activeIndex + 1}`;
-					lastSlide.textContent = swiper.slides.length >= 10 ? `${swiper.slides.length}` : 0`${swiper.slides.length}`;
+					curSlide.textContent = swiper.activeIndex >= 10 ? `${swiper.activeIndex + 1}` : `0${swiper.activeIndex + 1}`;
+					lastSlide.textContent = swiper.slides.length >= 10 ? `${swiper.slides.length}` : `0${swiper.slides.length}`;
 
 					lineSVG.setAttribute('d', `M0 1H${oneSlideWidth * (swiper.activeIndex + 1)}`);
 				},
@@ -46,7 +46,7 @@ const Swipers = () => {
 					const oneSlideWidth = svgWidth / swiper.slides.length;
 					const lineWidth = (swiper.activeIndex + 1) * oneSlideWidth;
 
-					curSlide.textContent = `0${swiper.activeIndex + 1}`;
+					curSlide.textContent = swiper.activeIndex + 1 >= 10 ? `${swiper.activeIndex + 1}` : `0${swiper.activeIndex + 1}`;
 
 					lineSVG.setAttribute('d', `M0 1H${lineWidth}`);
 					// Находим ближайшую svg этой полоски и берем ее path
