@@ -204,6 +204,9 @@
 			}
 		}
 	}
+	.container {
+		position: relative;
+	}
 	&__slider {
 		width: 153.3rem;
 
@@ -218,7 +221,12 @@
 		// 	transform: translate(20rem, 20rem) !important;
 		// }
 		&-bottom {
-			display: none;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			display: flex;
+			align-items: end;
+			gap: 43.9rem;
 		}
 		.swiper-slide-active,
 		.swiper-slide-prev {
@@ -1240,9 +1248,12 @@
 		&__slider {
 			width: 95.8rem;
 			&-bottom {
+				position: relative;
+				gap: inherit;
 				margin-top: 12.8rem;
 				width: 100%;
 				display: flex;
+				align-items: center;
 				justify-content: space-between;
 				.pagination {
 					width: 70.8rem;
