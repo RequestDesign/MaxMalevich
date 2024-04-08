@@ -41,34 +41,36 @@ const btnPlays = document.querySelectorAll('.btn-play');
 const videos = document.querySelectorAll('.video-company');
 
 videos.forEach((video, id) => {
-	video.addEventListener('loadeddata', () => {
-		let isPause = true;
-		setTimeout(() => {
-			btnPlays[id].classList.add('play');
-			btnPlays[id]?.addEventListener('click', () => {
-				video.play();
-				btnPlays[id].classList.add('pause');
-				isPause = false;
-			});
-			video.addEventListener('play', () => {
-				btnPlays[id].classList.add('pause');
-				isPause = false;
-			});
-
-			video.addEventListener('pause', () => {
-				console.log('pause');
-				btnPlays[id].classList.remove('pause');
-				isPause = true;
-			});
-			video.addEventListener('click', () => {
-				if (isPause) {
+	// video.addEventListener('loadeddata', () => {
+		if(btnPlays[id]) {
+			let isPause = true;
+			setTimeout(() => {
+				btnPlays[id].classList.add('play');
+				btnPlays[id]?.addEventListener('click', () => {
 					video.play();
-				} else {
-					video.pause();
-				}
-			});
-		}, 1200);
-	});
+					btnPlays[id].classList.add('pause');
+					isPause = false;
+				});
+				video.addEventListener('play', () => {
+					btnPlays[id].classList.add('pause');
+					isPause = false;
+				});
+	
+				video.addEventListener('pause', () => {
+					console.log('pause');
+					btnPlays[id].classList.remove('pause');
+					isPause = true;
+				});
+				video.addEventListener('click', () => {
+					if (isPause) {
+						video.play();
+					} else {
+						video.pause();
+					}
+				});
+			}, 1200);
+		}
+	// });
 });
 
 const imageContainer = document.querySelector('.image_slider__container');

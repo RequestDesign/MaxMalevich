@@ -1,4 +1,4 @@
-.reviews-block.reviews {
+.reviews {
     margin-top: 19.1rem;
     .reviews {
         &__top {
@@ -166,7 +166,7 @@
 }
 
 @media (max-width: 75em) {
-    .reviews-block.reviews {
+    .reviews {
         margin-top: 29.6rem;
         .reviews {
             &__top {
@@ -276,7 +276,7 @@
     }
 }
 @media (max-width: 47.9375em) {
-    .reviews-block.reviews {
+    .reviews {
         margin-top: 20.8rem;
         .reviews {
             &__top {

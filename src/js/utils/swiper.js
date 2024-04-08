@@ -385,7 +385,6 @@ const swiperNews = new Swiper('.news__slider', {
 if (window.innerWidth < 1201) {
 	const swiperProcess = new Swiper('.process__list-slider', {
 		slidesPerView: 'auto',
-		slidesPerGroup: 1.5,
 		spaceBetween: remToPx(9.6),
 	});
 }
