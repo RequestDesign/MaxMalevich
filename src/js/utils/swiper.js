@@ -371,6 +371,10 @@ const swiperNews = new Swiper('.news__slider', {
 	pagination: {
 		el: newsPag ? newsPag : null,
 	},
+	navigation: {
+		prevEl: '.news__pag .navigation-prev',
+		nextEl: '.news__pag .navigation-next',
+	},
 	breakpoints: {
 		1201: {
 			spaceBetween: remToPx(4.8),
@@ -381,10 +385,6 @@ const swiperNews = new Swiper('.news__slider', {
 		768: {
 			pagination: {
 				el: null,
-			},
-			navigation: {
-				prevEl: '.news__pag .navigation-prev',
-				nextEl: '.news__pag .navigation-next',
 			},
 		},
 	},
@@ -486,6 +486,18 @@ if (mailsList) {
 					}
 				}
 			},
+		},
+	});
+}
+const projectSlider = document.querySelector('.project__slider');
+
+if (projectSlider) {
+	const swiperExText = new Swiper(projectSlider, {
+		modules: [Pagination],
+		slidesPerView: 1,
+		spaceBetween: 20,
+		pagination: {
+			el: '.project__content-slider .pagination',
 		},
 	});
 }
