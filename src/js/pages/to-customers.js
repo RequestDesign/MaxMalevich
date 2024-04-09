@@ -15,11 +15,12 @@ function toCustomersBannerSwiper () {
 		slidesPerView: 'auto',
 		spaceBetween: rem(4),
 		loop: true,
-        grabCursor: true,     centeredSlides: true,
+        grabCursor: true,     
+		centeredSlides: true,
 		breakpoints: {
 			1201: {
                 spaceBetween: rem(4.8),
-                centeredSlides: false,
+                centeredSlides: true,
 			},
 			768: {
                 spaceBetween: rem(4),

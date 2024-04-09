@@ -1,10 +1,25 @@
 .to-customers-banner {
 	margin-top: 17rem;
+
 	@media (max-width: 75em) {
 		margin-top: 29.6rem;
 	}
 	@media (max-width: 47.9375em) {
 		margin-top: 20.8rem;
+	}
+
+	&__container {
+		max-width: 192rem;
+		width: 100%;
+
+		@media (max-width: 75em) {
+			width: 100%;
+			padding: 0;
+		}
+		@media (max-width: 47.9375em) {
+			width: 100%;
+			padding: 0;
+		}
 	}
 	// .to-customers-banner__inner
 
@@ -12,6 +27,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 12rem;
+
 		@media (max-width: 75em) {
 		}
 		@media (max-width: 47.9375em) {
@@ -23,12 +39,15 @@
 	&__title-box {
 		display: flex;
 		justify-content: space-between;
+		padding: 0 5rem;
 		@media (max-width: 75em) {
 			flex-direction: column;
 			gap: 6rem;
+			padding: 0 4rem;
 		}
 		@media (max-width: 47.9375em) {
 			gap: 6.4rem;
+			padding: 0 2rem;
 		}
 	}
 
@@ -85,23 +104,27 @@
 	// .to-customers-banner__swiper-box
 
 	&__swiper-box {
-		margin: 0 -6rem 0 -20rem;
+		// margin: 0 -6rem;
+
 		@media (max-width: 75em) {
-			margin: 0 -4rem;
+			// margin: 0 -4rem;
 		}
-        @media (max-width: 47.9375em) {
-			margin: 0 -2rem;
+		@media (max-width: 47.9375em) {
+			// margin: 0 -2rem;
 		}
 	}
 
 	// .to-customers-banner__swiper
 
 	&__swiper {
+		width: 100%;
+		overflow: hidden;
 	}
 
 	// .to-customers-banner__swiper-wrapper
 
 	&__swiper-wrapper {
+		width: 100%;
 	}
 
 	// .to-customers-banner__swiper-slide
@@ -134,12 +157,11 @@
 		@media (max-width: 75em) {
 			width: 80rem;
 			height: 78rem;
-	
 		}
 		@media (max-width: 47.9375em) {
 			width: 42rem;
 			height: 42rem;
-            border-radius: 1.6rem;
+			border-radius: 1.6rem;
 		}
 	}
 }

@@ -75,6 +75,7 @@
 
 	&__list-swiper {
 		width: 72.2rem;
+		overflow: hidden;
 		// max-height: 43.2rem;
 		@media (max-width: 75em) {
 			width: 100%;
@@ -211,6 +212,7 @@
 
 	&__photo-swiper {
 		width: 103rem;
+		overflow: hidden;
 		// margin-right: -15.4rem;
 		// flex-shrink: 0;
 		@media (max-width: 75em) {
