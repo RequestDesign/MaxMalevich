@@ -22,6 +22,7 @@ function lettersSwiper() {
 		slidesPerView: 1,
 		spaceBetween: rem(2),
 		loop: true,
+		grabCursor: true,
 		pagination: {
 			el: '.letters-slider__pagination',
 			type: 'bullets',
@@ -34,13 +35,14 @@ function lettersSwiper() {
 			1201: {
 				slidesPerView: 3,
 				spaceBetween: rem(4.8),
-				slidesPerGroup: 1,
+			
 				pagination: {
 					type: 'progressbar',
 				},
 			},
             768: {
                 slidesPerView: 1,
+			
                 pagination: {
 					type: 'progressbar',
 				},

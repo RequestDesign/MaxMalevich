@@ -10,7 +10,343 @@
 		<include src="./components/modal.html"></include>
 		<main>
 			<include src="./components/about-banner.html"></include>
+
+			<section class="quality">
+				<div class="container quality__container">
+					<div class="quality__video">
+						<include src="./components/ui/btn_play.html" data-text='{".btn__play": {"class": "btn-play"}}'></include>
+						<video class="video-company" src="./assets/video/intro.mp4">
+							<source src="./assets/video/intro.mp4" type="mp4" />
+						</video>
+					</div>
+					<div class="quality__main">
+						<h2 class="quality__main-title h3">
+							безупречное качество <br />
+							и уникальные разработки
+						</h2>
+						<ul class="quality__list">
+							<li class="quality__list-item">
+								<div class="quality__list-title">
+									<img src="./assets/images/icons/workspace.svg" alt="Premium и lux" />
+									<span>Premium и lux</span>
+								</div>
+								<span class="quality__list-text">
+									Сегмент, <br />
+									в котором работаем
+								</span>
+							</li>
+							<li class="quality__list-item">
+								<div class="quality__list-title">
+									<img src="./assets/images/icons/handyman.svg" alt="под ключ" />
+									<span>под ключ</span>
+								</div>
+								<span class="quality__list-text">
+									Комплексная меблировка <br />
+									вашего дизайн-проекта
+								</span>
+							</li>
+							<li class="quality__list-item">
+								<div class="quality__list-title">
+									<img src="./assets/images/icons/roller.svg" alt="с 2019" />
+									<span>с 2019</span>
+								</div>
+								<span class="quality__list-text">
+									Изготавливаем кухни <br />
+									и корпусную мебель на заказ
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="production">
+				<div class="container production__container">
+					<div class="production__main">
+						<h2 class="production__main-title h3">собственное производство полного цикла</h2>
+						<include src="./components/ui/btn_primary.html"></include>
+
+						<div class="production__slider swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide production__slider-item">
+									<div class="production__card">
+										<div class="production__card-wrapper">
+											<div class="production__card-top">
+												<div class="production__card-icon">
+													<img src="./assets/images/icons/factory.svg" alt="Cобственное производство" />
+												</div>
+												<span class="production__card-number">01</span>
+											</div>
+											<span class="production__card-text"> Cобственное производство в г. Щёлково  </span>
+										</div>
+									</div>
+
+									<div class="production__card">
+										<div class="production__card-wrapper">
+											<div class="production__card-top">
+												<div class="production__card-icon">
+													<img src="./assets/images/icons/edit_road.svg" alt="Работаем со всеми материалами" />
+												</div>
+												<span class="production__card-number">02</span>
+											</div>
+											<span class="production__card-text"> Работаем со всеми материалами: металл, стекло, камень, мдф, шпон, эмаль и др. </span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide production__slider-item">
+									<div class="production__card">
+										<div class="production__card-wrapper">
+											<div class="production__card-top">
+												<div class="production__card-icon">
+													<img src="./assets/images/icons/factory.svg" alt="Cобственное производство" />
+												</div>
+												<span class="production__card-number">03</span>
+											</div>
+											<span class="production__card-text"> Cобственное производство в г. Щёлково  </span>
+										</div>
+									</div>
+
+									<div class="production__card">
+										<div class="production__card-wrapper">
+											<div class="production__card-top">
+												<div class="production__card-icon">
+													<img src="./assets/images/icons/edit_road.svg" alt="Работаем со всеми материалами" />
+												</div>
+												<span class="production__card-number">04</span>
+											</div>
+											<span class="production__card-text"> Работаем со всеми материалами: металл, стекло, камень, мдф, шпон, эмаль и др. </span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide production__slider-item">
+									<div class="production__card">
+										<div class="production__card-wrapper">
+											<div class="production__card-top">
+												<div class="production__card-icon">
+													<img src="./assets/images/icons/factory.svg" alt="Cобственное производство" />
+												</div>
+												<span class="production__card-number">05</span>
+											</div>
+											<span class="production__card-text"> Cобственное производство в г. Щёлково  Cобственное производство в г. Щёлково  Cобственное производство в г. Щёлково  </span>
+										</div>
+									</div>
+
+									<div class="production__card">
+										<div class="production__card-wrapper">
+											<div class="production__card-top">
+												<div class="production__card-icon">
+													<img src="./assets/images/icons/edit_road.svg" alt="Работаем со всеми материалами" />
+												</div>
+												<span class="production__card-number">06</span>
+											</div>
+											<span class="production__card-text"> Работаем со всеми материалами: металл, стекло, камень, мдф, шпон, эмаль и др. </span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="production__controls">
+								<div class="pagination">
+									<span class="pagination__number pag-cur">01</span>
+
+									<svg width="77" height="2" viewBox="0 0 77 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<line y1="0.8" x2="77" y2="0.8" stroke="white" stroke-opacity="0.2" stroke-width="1.4" />
+										<path d="M0 1H27" stroke="#D3965F" stroke-width="1.4" />
+									</svg>
+
+									<span class="pagination__number pag-last">03</span>
+								</div>
+								<include src="./components/ui/navigation.html"></include>
+							</div>
+						</div>
+						<div class="production__slider--mob swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide production__slider-item">
+									<div class="production__card">
+										<div class="production__card-wrapper">
+											<div class="production__card-top">
+												<div class="production__card-icon">
+													<img src="./assets/images/icons/factory.svg" alt="Cобственное производство" />
+												</div>
+												<span class="production__card-number">01</span>
+											</div>
+											<span class="production__card-text"> Cобственное производство в г. Щёлково  </span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide production__slider-item">
+									<div class="production__card">
+										<div class="production__card-wrapper">
+											<div class="production__card-top">
+												<div class="production__card-icon">
+													<img src="./assets/images/icons/edit_road.svg" alt="Работаем со всеми материалами" />
+												</div>
+												<span class="production__card-number">02</span>
+											</div>
+											<span class="production__card-text"> Работаем со всеми материалами: металл, стекло, камень, мдф, шпон, эмаль и др. </span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide production__slider-item">
+									<div class="production__card">
+										<div class="production__card-wrapper">
+											<div class="production__card-top">
+												<div class="production__card-icon">
+													<img src="./assets/images/icons/factory.svg" alt="Cобственное производство" />
+												</div>
+												<span class="production__card-number">03</span>
+											</div>
+											<span class="production__card-text"> Cобственное производство в г. Щёлково  </span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide production__slider-item">
+									<div class="production__card">
+										<div class="production__card-wrapper">
+											<div class="production__card-top">
+												<div class="production__card-icon">
+													<img src="./assets/images/icons/edit_road.svg" alt="Работаем со всеми материалами" />
+												</div>
+												<span class="production__card-number">04</span>
+											</div>
+											<span class="production__card-text"> Работаем со всеми материалами: металл, стекло, камень, мдф, шпон, эмаль и др. </span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide production__slider-item">
+									<div class="production__card">
+										<div class="production__card-wrapper">
+											<div class="production__card-top">
+												<div class="production__card-icon">
+													<img src="./assets/images/icons/factory.svg" alt="Cобственное производство" />
+												</div>
+												<span class="production__card-number">05</span>
+											</div>
+											<span class="production__card-text"> Cобственное производство в г. Щёлково  Cобственное производство в г. Щёлково  Cобственное производство в г. Щёлково  </span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide production__slider-item">
+									<div class="production__card">
+										<div class="production__card-wrapper">
+											<div class="production__card-top">
+												<div class="production__card-icon">
+													<img src="./assets/images/icons/edit_road.svg" alt="Работаем со всеми материалами" />
+												</div>
+												<span class="production__card-number">06</span>
+											</div>
+											<span class="production__card-text"> Работаем со всеми материалами: металл, стекло, камень, мдф, шпон, эмаль и др. </span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="production__controls">
+								<div class="pagination">
+									<span class="pagination__number pag-cur">01</span>
+
+									<svg width="77" height="2" viewBox="0 0 77 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<line y1="0.8" x2="77" y2="0.8" stroke="white" stroke-opacity="0.2" stroke-width="1.4" />
+										<path d="M0 1H27" stroke="#D3965F" stroke-width="1.4" />
+									</svg>
+
+									<span class="pagination__number pag-last">03</span>
+								</div>
+								<!-- <include src="./components/ui/navigation.html"></include> -->
+							</div>
+						</div>
+					</div>
+					<div class="production__video">
+						<button class="btn__play btn-play">
+							<img src="../../assets/images/icons/play.svg" alt="" />
+						</button>
+						<video class="video-company" src="./assets/video/intro.mp4">
+							<source src="./assets/video/intro.mp4" type="mp4" />
+						</video>
+					</div>
+				</div>
+			</section>
+
+
 			<include src="./components/premium-approach.html"></include>
+			<include src="./components/facades.html"></include>
+
+			<section class="process">
+				<div class="container">
+					<h2 class="process__title h3">Как мы работаем</h2>
+					<div class="process__main">
+						<div class="process__list-slider">
+							<div class="process__list swiper-wrapper">
+								<div class="process__list-item swiper-slide">
+									<div class="process__list-img">
+										<img src="./assets/images/pages/home/process_1.png" alt="" />
+									</div>
+
+									<div class="process__list-info">
+										<span class="process__list-number">01</span>
+										<span class="process__list-name"
+											>Выбор <br />
+											материала</span
+										>
+									</div>
+									<div class="process__list-desc">На встрече в офисе мы выбираем цвет, материалы для фасадов и внутренней отделки вашей будущей кухни. Распределяем зонирование.</div>
+									<a href="" class="process__list-link">
+										<img src="./assets/images/pages/home/arrow.svg" alt="" />
+									</a>
+								</div>
+								<div class="process__list-item swiper-slide">
+									<div class="process__list-img">
+										<img src="./assets/images/pages/home/process_2.png" alt="" />
+									</div>
+									<div class="process__list-info">
+										<span class="process__list-number">02</span>
+										<span class="process__list-name"
+											>Готовим 3D <br />
+											план-чертёж</span
+										>
+									</div>
+									<div class="process__list-desc">На встрече в офисе мы выбираем цвет, материалы для фасадов и внутренней отделки вашей будущей кухни. Распределяем зонирование.</div>
+									<a href="" class="process__list-link">
+										<img src="./assets/images/pages/home/arrow.svg" alt="" />
+									</a>
+								</div>
+								<div class="process__list-item swiper-slide">
+									<div class="process__list-img">
+										<img src="./assets/images/pages/home/process_3.png" alt="" />
+									</div>
+									<div class="process__list-info">
+										<span class="process__list-number">03</span>
+										<span class="process__list-name"
+											>Визуал для <br />
+											комплексной <br />
+											меблировки</span
+										>
+									</div>
+									<div class="process__list-desc">На встрече в офисе мы выбираем цвет, материалы для фасадов и внутренней отделки вашей будущей кухни. Распределяем зонирование.</div>
+									<a href="" class="process__list-link">
+										<img src="./assets/images/pages/home/arrow.svg" alt="" />
+									</a>
+								</div>
+								<div class="process__list-item swiper-slide">
+									<div class="process__list-img">
+										<img src="./assets/images/pages/home/process_4.png" alt="" />
+									</div>
+									<div class="process__list-info">
+										<span class="process__list-number">04</span>
+										<span class="process__list-name"
+											>Изготавливаем кухню <br />
+											и производим монтаж</span
+										>
+									</div>
+									<div class="process__list-desc">На встрече в офисе мы выбираем цвет, материалы для фасадов и внутренней отделки вашей будущей кухни. Распределяем зонирование.</div>
+									<a href="" class="process__list-link">
+										<img src="./assets/images/pages/home/arrow.svg" alt="" />
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
 			<include src="./components/reviews-customer.html"></include>
 			<include src="./components/letters-slider.html"></include>
             <include src="./components/feedback.html"></include>
