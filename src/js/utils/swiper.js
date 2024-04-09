@@ -14,72 +14,73 @@ function remToPx(remValue) {
 
 const sliders = document.querySelectorAll('.swiper');
 
-console.log('sliders: ', sliders);
-sliders.forEach(slider => {
-	const nav = slider.querySelector('.navigation');
-	const pag = slider.querySelector('.pagination');
-	const prevEl = nav && nav.querySelector('.navigation-prev');
-	const nextEl = nav && nav.querySelector('.navigation-next');
-	const curSlide = pag && pag.querySelector('.pag-cur');
-	const lastSlide = pag && pag.querySelector('.pag-last');
-	const lineSVG = pag && pag.querySelector('svg path');
-	const svg = pag && pag.querySelector('svg');
-	console.log('slider, prevEl, nextEl: ', slider, prevEl, nextEl, prevEl ? true : false);
-	const sliderSw = new Swiper(slider, {
-		modules: [Pagination],
-		slidesPerView: 1,
-		spaceBetween: 20,
-		allowTouchMove: true,
-		navigation: {
-			prevEl: prevEl ? prevEl : false,
-			nextEl: nextEl ? nextEl : false,
-		},
-		pagination: {
-			el: slider.querySelector('.pagination') || false,
-		},
-		on: {
-			init: swiper => {
-				curSlide && (curSlide.textContent = `0${swiper.activeIndex + 1}`);
-				lastSlide && (lastSlide.textContent = `0${swiper.slides.length}`);
-				if (svg) {
-					const svgWidth = svg.clientWidth;
-					console.log(svgWidth);
-					const oneSlideWidth = swiper.slides.length ? svgWidth / swiper.slides.length : 0;
-					console.log(oneSlideWidth, svgWidth);
-					lineSVG?.setAttribute('d', `M0 1H${oneSlideWidth}`);
-				}
+if (sliders.length > 0) {
+	sliders.forEach(slider => {
+		const nav = slider.querySelector('.navigation');
+		const pag = slider.querySelector('.pagination');
+		const prevEl = nav && nav.querySelector('.navigation-prev');
+		const nextEl = nav && nav.querySelector('.navigation-next');
+		const curSlide = pag && pag.querySelector('.pag-cur');
+		const lastSlide = pag && pag.querySelector('.pag-last');
+		const lineSVG = pag && pag.querySelector('svg path');
+		const svg = pag && pag.querySelector('svg');
+		console.log('slider, prevEl, nextEl: ', slider, prevEl, nextEl, prevEl ? true : false);
+		const sliderSw = new Swiper(slider, {
+			modules: [Pagination],
+			slidesPerView: 1,
+			spaceBetween: 20,
+			allowTouchMove: true,
+			navigation: {
+				prevEl: prevEl ? prevEl : false,
+				nextEl: nextEl ? nextEl : false,
 			},
-			slideChange: function (swiper) {
-				curSlide && (curSlide.textContent = `0${swiper.activeIndex + 1}`);
-				if (svg) {
-					const svgWidth = svg.clientWidth;
-					const oneSlideWidth = swiper.slides.length ? svgWidth / swiper.slides.length : 0;
-					const lineWidth = (swiper.activeIndex + 1) * oneSlideWidth;
-					console.log(oneSlideWidth, svgWidth);
-					lineSVG?.setAttribute('d', `M0 1H${lineWidth}`);
-				}
-				// Находим ближайшую svg этой полоски и берем ее path
-				// path d="M0 1H62.4" stroke="#D3965F" stroke-width="1.4"
-				// Далее у path нужно взять атрибут d - и у него поменять последние цифры после H,
-				// чтобы отрисовать линию зависящую от слайдов и менять ее относительно текущего
+			pagination: {
+				el: slider.querySelector('.pagination') || false,
 			},
-		},
-		breakpoints: {
-			1200: {
-				pagination: false,
+			on: {
+				init: swiper => {
+					curSlide && (curSlide.textContent = `0${swiper.activeIndex + 1}`);
+					lastSlide && (lastSlide.textContent = `0${swiper.slides.length}`);
+					if (svg) {
+						const svgWidth = svg.clientWidth;
+						console.log(svgWidth);
+						const oneSlideWidth = swiper.slides.length ? svgWidth / swiper.slides.length : 0;
+						console.log(oneSlideWidth, svgWidth);
+						lineSVG?.setAttribute('d', `M0 1H${oneSlideWidth}`);
+					}
+				},
+				slideChange: function (swiper) {
+					curSlide && (curSlide.textContent = `0${swiper.activeIndex + 1}`);
+					if (svg) {
+						const svgWidth = svg.clientWidth;
+						const oneSlideWidth = swiper.slides.length ? svgWidth / swiper.slides.length : 0;
+						const lineWidth = (swiper.activeIndex + 1) * oneSlideWidth;
+						console.log(oneSlideWidth, svgWidth);
+						lineSVG?.setAttribute('d', `M0 1H${lineWidth}`);
+					}
+					// Находим ближайшую svg этой полоски и берем ее path
+					// path d="M0 1H62.4" stroke="#D3965F" stroke-width="1.4"
+					// Далее у path нужно взять атрибут d - и у него поменять последние цифры после H,
+					// чтобы отрисовать линию зависящую от слайдов и менять ее относительно текущего
+				},
 			},
-			767: {
-				pagination: false,
+			breakpoints: {
+				1200: {
+					pagination: false,
+				},
+				767: {
+					pagination: false,
+				},
 			},
-		},
+		});
+		// prevEl.addEventListener('click', e => {
+		// 	sliderSw.slidePrev();
+		// });
+		// nextEl.addEventListener('click', e => {
+		// 	sliderSw.slideNext();
+		// });
 	});
-	// prevEl.addEventListener('click', e => {
-	// 	sliderSw.slidePrev();
-	// });
-	// nextEl.addEventListener('click', e => {
-	// 	sliderSw.slideNext();
-	// });
-});
+}
 
 const furnitureSlider = document.querySelector('.furniture__slider');
 
@@ -176,111 +177,112 @@ const facadesPrev = document.querySelector('.authors__facades .navigation-prev')
 const navExamples = document.querySelector('.examples .navigation');
 console.log('window.innerWidth: ', window.innerWidth);
 
-const swiperExText = new Swiper('.examples__slider-thumbs', {
-	modules: [EffectCreative],
-	slidesPerView: 5,
-	loop: true,
-	centeredSlides: true,
-	effect: 'creative',
-	creativeEffect: {
-		limitProgress: 3,
-		progressMultiplier: 4,
-		prev: {
-			origin: 'left center',
-			translate: ['-27%', 7, 0],
-			// rotate: [0, 100, 0],
+const exampelsSwiper = document.querySelector('.examples__slider');
+if (exampelsSwiper) {
+	const swiperExText = new Swiper('.examples__slider-thumbs', {
+		modules: [EffectCreative],
+		slidesPerView: 5,
+		loop: true,
+		centeredSlides: true,
+		effect: 'creative',
+		creativeEffect: {
+			limitProgress: 3,
+			progressMultiplier: 4,
+			prev: {
+				origin: 'left center',
+				translate: ['-27%', 7, 0],
+				// rotate: [0, 100, 0],
+			},
+			next: {
+				origin: 'right center',
+				translate: ['27%', 7, 0],
+				// rotate: [0, -100, 0],
+			},
 		},
-		next: {
-			origin: 'right center',
-			translate: ['27%', 7, 0],
-			// rotate: [0, -100, 0],
-		},
-	},
-	breakpoints: {
-		1201: {
-			// spaceBetween: 0,
-			// slidesPerView: 'auto',
-			// initialSlide: 3,
-		},
-		768: {
-			// effect: 'slide',
-			slidesPerView: 3,
-			initialSlide: 3,
-			loopAdditionalSlides: 2,
-			creativeEffect: {
-				limitProgress: 2,
-				progressMultiplier: 3,
-				prev: {
-					origin: 'left center',
-					translate: ['-32%', 11, 0],
-					// rotate: [0, 100, 0],
-				},
-				next: {
-					origin: 'right center',
-					translate: ['32%', 11, 0],
-					// rotate: [0, -100, 0],
+		breakpoints: {
+			1201: {
+				// spaceBetween: 0,
+				// slidesPerView: 'auto',
+				// initialSlide: 3,
+			},
+			768: {
+				// effect: 'slide',
+				slidesPerView: 3,
+				initialSlide: 3,
+				loopAdditionalSlides: 2,
+				creativeEffect: {
+					limitProgress: 2,
+					progressMultiplier: 3,
+					prev: {
+						origin: 'left center',
+						translate: ['-32%', 11, 0],
+						// rotate: [0, 100, 0],
+					},
+					next: {
+						origin: 'right center',
+						translate: ['32%', 11, 0],
+						// rotate: [0, -100, 0],
+					},
 				},
 			},
 		},
-	},
-});
-
-var swiper = new Swiper('.examples__slider', {
-	modules: [EffectCoverflow, Navigation, Pagination, Thumbs],
-	effect: 'coverflow',
-	grabCursor: true,
-	centeredSlides: true,
-	loop: true,
-	spaceBetween: remToPx(2),
-	slidesPerView: 1,
-	allowTouchMove: true,
-	thumbs: { swiper: swiperExText },
-	navigation: {
-		prevEl: navExamples.querySelector('.navigation-prev'),
-		nextEl: navExamples.querySelector('.navigation-next'),
-	},
-	coverflowEffect: {
-		rotate: 80,
-		stretch: -30,
-		depth: 300,
-		scale: 0.8,
-		modifier: 0.5,
-		slideShadows: true,
-	},
-	pagination: {
-		el: '.examples-pag',
-	},
-	breakpoints: {
-		1200: {
-			spaceBetween: 0,
-			slidesPerView: 'auto',
-			initialSlide: 3,
-			allowTouchMove: false,
+	});
+	var swiper = new Swiper('.examples__slider', {
+		modules: [EffectCoverflow, Navigation, Pagination, Thumbs],
+		effect: 'coverflow',
+		grabCursor: true,
+		centeredSlides: true,
+		loop: true,
+		spaceBetween: remToPx(2),
+		slidesPerView: 1,
+		allowTouchMove: true,
+		thumbs: { swiper: swiperExText },
+		navigation: {
+			prevEl: navExamples.querySelector('.navigation-prev'),
+			nextEl: navExamples.querySelector('.navigation-next'),
 		},
-		767: {
-			// effect: 'slide',
-			allowTouchMove: false,
-			slidesPerView: 'auto',
-			coverflowEffect: {
-				rotate: 60,
-				stretch: 40,
-				depth: 80,
-				scale: 0.8,
-				modifier: 1,
-				slideShadows: true,
+		coverflowEffect: {
+			rotate: 80,
+			stretch: -30,
+			depth: 300,
+			scale: 0.8,
+			modifier: 0.5,
+			slideShadows: true,
+		},
+		pagination: {
+			el: '.examples-pag',
+		},
+		breakpoints: {
+			1200: {
+				spaceBetween: 0,
+				slidesPerView: 'auto',
+				initialSlide: 3,
+				allowTouchMove: false,
+			},
+			767: {
+				// effect: 'slide',
+				allowTouchMove: false,
+				slidesPerView: 'auto',
+				coverflowEffect: {
+					rotate: 60,
+					stretch: 40,
+					depth: 80,
+					scale: 0.8,
+					modifier: 1,
+					slideShadows: true,
+				},
 			},
 		},
-	},
-});
-
-navExamples.querySelector('.navigation-prev').addEventListener('click', () => {
-	swiperExText.slidePrev();
-	swiper.slidePrev();
-});
-navExamples.querySelector('.navigation-next').addEventListener('click', () => {
-	swiperExText.slideNext();
-	swiper.slideNext();
-});
+	});
+	navExamples.querySelector('.navigation-prev').addEventListener('click', () => {
+		swiperExText.slidePrev();
+		swiper.slidePrev();
+	});
+	navExamples.querySelector('.navigation-next').addEventListener('click', () => {
+		swiperExText.slideNext();
+		swiper.slideNext();
+	});
+}
 
 let swiper3 = null;
 if (window.innerWidth < 769) {
