@@ -375,6 +375,21 @@
 	& .reviews__video-text--date {
 	}
 
+	& .reviews__video-link {
+		justify-content: flex-start;
+	}
+	& .reviews__video-img--play {
+		&:hover {
+			&:before {
+				background: rgba(255, 255, 255, 0.5);
+			}
+		}
+	}
+	& .reviews__video-img--play::before {
+		background: rgba(255, 255, 255, 0.2);
+		transition: background-color 0.3s;
+
+	}
 	// .reviews__video-text--title
 
 	& .reviews__video-text--title {
