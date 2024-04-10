@@ -1,139 +1,157 @@
 .fancybox__backdrop {
-    background: rgba(19, 15, 11, 0.3) !important;
-    backdrop-filter: blur(32px);
+	background: rgba(19, 15, 11, 0.3) !important;
+	backdrop-filter: blur(32px);
+	-webkit-backdrop-filter: blur(32px);
 }
 .fancybox__toolbar.is-absolute {
-    padding: 0 6rem;
+	padding: 0 6rem;
 }
 .fancybox__toolbar__column.is-right {
-    .f-button {
-        width: 4.8rem;
-        height: 4.8rem;
-        background: none;
+	.f-button {
+		width: 4.8rem;
+		height: 4.8rem;
+		background: none;
 
-        &:hover {
-            background: none;
-        }
+		&:hover {
+			background: none;
+		}
 
-        svg {
-            width: 3.2rem;
-            height: 3.2rem;
-        }
-    }
+		svg {
+			width: 3.2rem;
+			height: 3.2rem;
+		}
+	}
 }
 .fancybox__nav {
-    .f-button {
-        width: 7.6rem;
-        height: 6.2rem;
+	.f-button {
+		width: 7.6rem;
+		height: 6.2rem;
 
-        svg {
-            width: 7.6rem;
-            height: 6.2rem;
-        }
-    }
+		svg {
+			width: 7.6rem;
+			height: 6.2rem;
+		}
+	}
 }
 .is-horizontal .fancybox__nav .f-button.is-next {
-    right: 6rem !important;
+	right: 6rem !important;
 }
 .is-horizontal .fancybox__nav .f-button.is-prev {
-    left: 6rem !important;
+	left: 6rem !important;
 }
 
 .has-html5video {
-    .fancybox__content {
-        background: initial !important;
-        .fancybox__html5video {
-            width: fit-content;
-            margin: auto;
-        }
-    }
+	.fancybox__content {
+		background: initial !important;
+		.fancybox__html5video {
+			width: fit-content;
+			margin: auto;
+		}
+	}
 }
 
-
 @media (max-width: 75em) {
-    .fancybox__toolbar.is-absolute {
-        padding: 0 4rem;
-    }
-    .fancybox__toolbar__column.is-right {
-        .f-button {
-            width: 9.6rem;
-            height: 9.6rem;
-    
-            &:hover {
-                background: none;
-            }
-    
-            svg {
-                width: 6.4rem;
-                height: 6.4rem;
-            }
-        }
-    }
-    .fancybox__nav {
-        .f-button {
-            width: 12rem;
-            height: 8.2rem;
-    
-            svg {
-                width: 12rem;
-                height: 8.2rem;
-            }
-        }
-    }
-    .is-horizontal .fancybox__nav .f-button.is-next {
-        right: 4rem !important;
-        top: auto !important;
-        bottom: 6.4rem;
-        transform: initial !important;
-    }
-    .is-horizontal .fancybox__nav .f-button.is-prev {
-        left: 4rem !important;
-        top: auto !important;
-        bottom: 6.4rem;
-        transform: initial !important;
-    }
+	.fancybox__toolbar.is-absolute {
+		padding: 0 4rem;
+	}
+	.fancybox__toolbar__column.is-right {
+		.f-button {
+			width: 9.6rem;
+			height: 9.6rem;
+
+			&:hover {
+				background: none;
+			}
+
+			svg {
+				width: 6.4rem;
+				height: 6.4rem;
+			}
+		}
+	}
+	.fancybox__nav {
+		.f-button {
+			width: 12rem;
+			height: 8.2rem;
+
+			svg {
+				width: 12rem;
+				height: 8.2rem;
+			}
+		}
+	}
+	.is-horizontal .fancybox__nav .f-button.is-next {
+		right: 4rem !important;
+		top: auto !important;
+		bottom: 6.4rem;
+		transform: initial !important;
+	}
+	.is-horizontal .fancybox__nav .f-button.is-prev {
+		left: 4rem !important;
+		top: auto !important;
+		bottom: 6.4rem;
+		transform: initial !important;
+	}
+
+	.has-html5video {
+		.fancybox__content {
+            height: 70%!important;
+			.fancybox__html5video {
+				width: auto;
+			}
+		}
+	}
 }
 
 @media (max-width: 47.9375em) {
-    .fancybox__toolbar.is-absolute {
-        padding: 0 2.8rem;
-    }
-    .fancybox__toolbar__column.is-right {
-        .f-button {
-            width: 9.6rem;
-            height: 9.6rem;
-    
-            &:hover {
-                background: none;
-            }
-    
-            svg {
-                width: 6.4rem;
-                height: 6.4rem;
-            }
-        }
-    }
-    .fancybox__nav {
-        .f-button {
-            width: 12rem;
-            height: 8.2rem;
-    
-            svg {
-                width: 12rem;
-                height: 8.2rem;
-            }
-        }
-    }
-    .is-horizontal .fancybox__nav .f-button.is-next {
-        right: 2.8rem !important;
-        top: auto !important;
-        bottom: 6rem;
-        transform: initial !important;
-    }
-    .is-horizontal .fancybox__nav .f-button.is-prev {
-        left: 2.8rem !important;
-        top: auto !important;
-        bottom: 6rem;
-        transform: initial !important;
-    }
+	.fancybox__toolbar.is-absolute {
+		padding: 0 2.8rem;
+	}
+	.fancybox__toolbar__column.is-right {
+		.f-button {
+			width: 9.6rem;
+			height: 9.6rem;
+
+			&:hover {
+				background: none;
+			}
+
+			svg {
+				width: 6.4rem;
+				height: 6.4rem;
+			}
+		}
+	}
+	.fancybox__nav {
+		.f-button {
+			width: 12rem;
+			height: 8.2rem;
+
+			svg {
+				width: 12rem;
+				height: 8.2rem;
+			}
+		}
+	}
+	.is-horizontal .fancybox__nav .f-button.is-next {
+		right: 2.8rem !important;
+		top: auto !important;
+		bottom: 6rem;
+		transform: initial !important;
+	}
+	.is-horizontal .fancybox__nav .f-button.is-prev {
+		left: 2.8rem !important;
+		top: auto !important;
+		bottom: 6rem;
+		transform: initial !important;
+	}
+
+    .has-html5video {
+		.fancybox__content {
+            height: 70%!important;
+			.fancybox__html5video {
+				width: auto;
+			}
+		}
+	}
 }
