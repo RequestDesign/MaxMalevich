@@ -5,10 +5,10 @@ import { rem } from '../utils/constants';
 
 document.addEventListener('DOMContentLoaded', () => {
 	try {
-		lettersSwiper()
+		lettersSwiper();
 	} catch {}
 	try {
-		premiumApproachSwiper()
+		premiumApproachSwiper();
 	} catch {}
 });
 
@@ -20,14 +20,14 @@ function lettersSwiper() {
 
 	const swiper = new Swiper('.letters-slider__swiper', {
 		slidesPerView: 1,
-		spaceBetween: rem(2),
+		spaceBetween: rem(4),
 		loop: true,
 		grabCursor: true,
 		pagination: {
 			el: '.letters-slider__pagination',
 			type: 'bullets',
 		},
-        navigation: {
+		navigation: {
 			prevEl: '.letters-slider__navigation .navigation-prev',
 			nextEl: '.letters-slider__navigation .navigation-next',
 		},
@@ -35,18 +35,18 @@ function lettersSwiper() {
 			1201: {
 				slidesPerView: 3,
 				spaceBetween: rem(4.8),
-			
+
 				pagination: {
 					type: 'progressbar',
 				},
 			},
-            768: {
-                slidesPerView: 1,
-			
-                pagination: {
+			768: {
+				slidesPerView: 1,
+
+				pagination: {
 					type: 'progressbar',
 				},
-            }
+			},
 		},
 		on: {
 			init: swiper => {
@@ -60,7 +60,6 @@ function lettersSwiper() {
 	});
 }
 
-
 function premiumApproachSwiper() {
 	const pagBox = document.querySelector('.premium-approach__pagination-box');
 	const pag = document.querySelector('.premium-approach__pagination');
@@ -68,14 +67,14 @@ function premiumApproachSwiper() {
 	const lastSlide = pagBox.querySelector('.pag-last');
 
 	const swiperPhoto = new Swiper('.premium-approach__photo-swiper', {
-		slidesPerView: 1,
+		slidesPerView: '1',
 		spaceBetween: rem(2),
 		loop: true,
 		pagination: {
 			el: '.premium-approach__pagination',
 			type: 'bullets',
 		},
-        navigation: {
+		navigation: {
 			prevEl: '.premium-approach__navigation-box .navigation-prev',
 			nextEl: '.premium-approach__navigation-box .navigation-next',
 		},
@@ -87,13 +86,13 @@ function premiumApproachSwiper() {
 					type: 'progressbar',
 				},
 			},
-            768: {
-                slidesPerView: 'auto',
-				spaceBetween: rem(3.2),
-                pagination: {
+			768: {
+				slidesPerView: 'auto',
+				spaceBetween: rem(6.4),
+				pagination: {
 					type: 'progressbar',
 				},
-            }
+			},
 		},
 		on: {
 			init: swiper => {
@@ -124,8 +123,6 @@ function premiumApproachSwiper() {
 				slidesPerGroup: 1,
 				direction: 'vertical',
 			},
-           
 		},
-		
 	});
 }

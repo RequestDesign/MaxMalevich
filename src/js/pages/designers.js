@@ -3,7 +3,6 @@ import 'swiper/css/bundle';
 import popup from '../utils/popup';
 import form from '../utils/form';
 
-
 import { rem } from '../utils/constants';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -29,7 +28,7 @@ function disignersBannerSwiper() {
 	let rows = Math.ceil(sliders.length / 2);
 	const swiper = new Swiper('.designers-banner__swiper', {
 		slidesPerView: 1,
-		spaceBetween: rem(2),
+		spaceBetween: rem(4),
 		grid: {
 			rows: 1,
 		},
@@ -78,14 +77,14 @@ function reviewsDisignersSwiper() {
 
 	const swiper = new Swiper('.reviews-disigners__video-swiper', {
 		slidesPerView: 1,
-		spaceBetween: rem(2),
+		spaceBetween: rem(4),
 		loop: true,
 		autoHeight: true,
 		pagination: {
 			el: '.reviews-disigners__video-pagination',
 			type: 'bullets',
 		},
-        navigation: {
+		navigation: {
 			prevEl: '.reviews-disigners__video-navigation .navigation-prev',
 			nextEl: '.reviews-disigners__video-navigation .navigation-next',
 		},
@@ -97,14 +96,13 @@ function reviewsDisignersSwiper() {
 				pagination: {
 					type: 'progressbar',
 				},
-			
 			},
-            768: {
-                slidesPerView: 1,
-                pagination: {
+			768: {
+				slidesPerView: 1,
+				pagination: {
 					type: 'progressbar',
 				},
-            }
+			},
 		},
 		on: {
 			init: swiper => {

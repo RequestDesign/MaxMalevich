@@ -246,6 +246,7 @@
 				width: 80.4rem !important;
 			}
 			@media (max-width: 47.9375em) {
+				width: 71rem !important;
 			}
 			& ~ .swiper-slide {
 				width: 41.4rem !important;
@@ -253,7 +254,7 @@
 					width: 58.6rem !important;
 				}
 				@media (max-width: 47.9375em) {
-					width: 70.8rem !important;
+					width: 71rem !important;
 				}
 				& .premium-approach__photo-img-box {
 					width: 41.4rem;
@@ -263,7 +264,7 @@
 						height: 49rem;
 					}
 					@media (max-width: 47.9375em) {
-						width: 70.8rem;
+						width: 71rem;
 						height: 84.2rem;
 					}
 				}
@@ -277,7 +278,8 @@
 			width: 80.4rem !important;
 		}
 		@media (max-width: 47.9375em) {
-			width: 70.8rem !important;
+			width: 71rem !important;
+			transition: unset;
 		}
 	}
 
@@ -315,7 +317,7 @@
 			height: 86.2rem;
 		}
 		@media (max-width: 47.9375em) {
-			width: 70.8rem;
+			width: 71rem;
 			height: 84.2rem;
 		}
 	}
