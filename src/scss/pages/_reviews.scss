@@ -80,6 +80,7 @@
 					border-radius: 50%;
 					z-index: -1;
 					backdrop-filter: blur(4.86px);
+					-webkit-backdrop-filter:  blur(4.86px);
 					transition: background-color 0.3s;
 				}
 				svg {

@@ -69,6 +69,7 @@ $('.subcategory-more__container').each(function(index){
         modules: [Navigation, Pagination],
         speed: 2000,
         slidesPerView: 1,
+        slidesPerView: 'auto',
         loop: true,
         spaceBetween: `${remToPx(4.8)}rem`,
         allowTouchMove: false,

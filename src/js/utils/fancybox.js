@@ -40,4 +40,5 @@ Fancybox.bind('[data-fancybox="img-gallery"]', {
 	},
 });
 
+
 Fancybox.bind("[data-fancybox='video']", {});
