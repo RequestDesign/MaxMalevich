@@ -13,26 +13,26 @@
 
 	&__categories {
 		position: relative;
-
 		.navigation {
 			&-prev,
 			&-next {
-				position: absolute;
+				position: absolute!important;
 				top: 0;
 				z-index: 10;
 				background-color: $black;
 
 				&.swiper-button-disabled {
-					display: none;
+					// display: none;
+					opacity: 0;
 				}
 			}
 
 			&-next {
-				right: -2rem;
+				right: -2rem!important;
 			}
 
 			&-prev {
-				left: -2rem;
+				left: -2rem!important;
 			}
 		}
 	}

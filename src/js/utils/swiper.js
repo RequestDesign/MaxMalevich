@@ -379,12 +379,14 @@ const swiperNews = new Swiper('.news__slider', {
 	},
 	breakpoints: {
 		1201: {
+			centeredSlides: true,
 			spaceBetween: remToPx(4.8),
 			pagination: {
 				el: null,
 			},
 		},
 		768: {
+			centeredSlides: true,
 			pagination: {
 				el: null,
 			},
