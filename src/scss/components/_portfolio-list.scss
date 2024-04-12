@@ -54,8 +54,8 @@
 		z-index: 1;
 		display: block;
 		height: 100%;
-		width: calc(100% + 50.85rem);
-		margin-left: -50.85rem;
+		// width: calc(100% + 50.85rem);
+		// margin-left: -50.85rem;
 
 		&-slide {
 			width: 56.8rem;
@@ -176,8 +176,8 @@
 		}
 
 		&__swiper {
-			width: calc(100% + 56.8rem);
-			margin-left: -56.8rem;
+			// width: calc(100% + 56.8rem);
+			// margin-left: -56.8rem;
 
 			&-slide {
 				width: 88.8rem;
@@ -249,14 +249,16 @@
 		}
 
 		&__swiper {
-			margin-left: -15.8rem;
-			width: calc(100% + 15.8rem);
+			// margin-left: -15.8rem;
+			// width: calc(100% + 15.8rem);
 
 			&-slide {
 				width: 55.2rem;
 			}
 
 			&-pagination {
+				display: flex;
+
 				&.swiper-pagination-bullets.swiper-pagination-horizontal {
 					display: flex;
 					position: absolute;
