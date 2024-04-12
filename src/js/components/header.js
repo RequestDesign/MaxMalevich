@@ -29,10 +29,10 @@ function openBurgerMenu() {
 		menu.toggleClass('burger-menu_active');
 
 		if (menu.hasClass('burger-menu_active')) {
-			$('body').css('overlow', 'hidden');
+			$('body').css('overflow', 'hidden');
 			$('.header').addClass('active');
 		} else {
-			$('body').css('overlow', 'visible');
+			$('body').css('overflow', 'visible');
 			$('.header').removeClass('active');
 		}
 	}
