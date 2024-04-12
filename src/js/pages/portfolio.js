@@ -61,7 +61,11 @@ const portfolioSwipers = () => {
 			},
 
 			breakpoints: {
-				1200: {
+				768: {
+					freeMode: true,
+				},
+
+				1201: {
 					freeMode: false,
 				},
 			},
@@ -142,16 +146,17 @@ const portfolioSwipers = () => {
 
 				on: {
 					init: swiper => {
-						const svgWidth = lineSVG.getAttribute('x2');
+						const svgWidth = svg.querySelector('line').getAttribute('x2');
 						const oneSlideWidth = svgWidth / swiper.slides.length;
 
 						curSlide.textContent = `0${swiper.activeIndex + 1}`;
 						lastSlide.textContent = `0${swiper.slides.length}`;
 
+						console.log(oneSlideWidth, svgWidth, swiper.slides.length);
 						lineSVG.setAttribute('d', `M0 1H${oneSlideWidth}`);
 					},
 					slideChange: function (swiper) {
-						const svgWidth = lineSVG.getAttribute('x2');
+						const svgWidth = svg.querySelector('line').getAttribute('x2');
 						const oneSlideWidth = svgWidth / swiper.slides.length;
 						const lineWidth = (swiper.activeIndex + 1) * oneSlideWidth;
 
