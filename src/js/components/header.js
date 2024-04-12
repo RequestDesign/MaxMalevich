@@ -111,22 +111,10 @@ function headerNav() {
 // --------
 
 const headerSublists = () => {
-	if (window.screen.width <= 768 && document.querySelector('.header')) {
+	if (window.screen.width <= 1200 && window.screen.width > 768 && document.querySelector('.header')) {
 		const linksContainer = document.querySelector('.header__inner-main'),
 			links = document.querySelectorAll('.burger-menu_link'),
 			lists = document.querySelectorAll('.header__inner-sublists .header__list');
-
-		// links.forEach((link, i) => {
-		// 	link.addEventListener('click', e => {
-		// 		if (lists[i]) {
-		// 			e.preventDefault();
-
-		// 			lists.forEach(list => list.classList.remove('active'));
-
-		// 			lists[i].classList.add('active');
-		// 		}
-		// 	});
-		// });
 
 		linksContainer.addEventListener('click', e => {
 			const target = e.target;
@@ -134,8 +122,6 @@ const headerSublists = () => {
 			let activeIndex = 0;
 
 			if (target.classList.contains('burger-menu_link')) {
-				e.preventDefault();
-
 				links.forEach((link, i) => {
 					if (link === target) {
 						activeIndex = i;
@@ -143,6 +129,8 @@ const headerSublists = () => {
 
 					link.classList.remove('active');
 				});
+
+				lists[activeIndex] && e.preventDefault();
 
 				target.classList.add('active');
 
@@ -154,6 +142,50 @@ const headerSublists = () => {
 					lists[activeIndex].classList.add('active');
 				}
 			}
+		});
+	}
+
+	if (window.screen.width <= 768 && document.querySelector('.header')) {
+		const linksContainer = document.querySelector('.header__inner-main'),
+			links = document.querySelectorAll('.burger-menu_link'),
+			listsContainer = document.querySelector('.header__inner-sublists'),
+			lists = listsContainer.querySelectorAll('.header__inner-sublists .header__list'),
+			listTitle = listsContainer.querySelector('.header__inner-sublists--title');
+
+		linksContainer.addEventListener('click', e => {
+			const target = e.target;
+
+			let activeIndex = 0;
+
+			if (target.classList.contains('burger-menu_link')) {
+				const text = target.querySelector('span').textContent;
+
+				links.forEach((link, i) => {
+					if (link === target) {
+						activeIndex = i;
+					}
+
+					link.classList.remove('active');
+				});
+
+				lists[activeIndex] && e.preventDefault();
+
+				listTitle.querySelector('div:last-child').textContent = text;
+
+				lists.forEach(list => {
+					list.classList.remove('active');
+				});
+
+				if (lists[activeIndex]) {
+					lists[activeIndex].classList.add('active');
+				}
+
+				listsContainer.classList.add('active');
+			}
+		});
+
+		listTitle.addEventListener('click', () => {
+			listsContainer.classList.contains('active') && listsContainer.classList.remove('active');
 		});
 	}
 };

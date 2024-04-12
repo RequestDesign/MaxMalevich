@@ -94,84 +94,72 @@ const portfolioSwipers = () => {
 			new Swiper(slider, {
 				slidesPerView: 'auto',
 				slidesPerGroup: 1,
-				effect: 'coverflow',
-				centeredSlides: true,
+				effect: 'creative',
+				loop: true,
+				loopAddBlankSlides: true,
 
-				coverflowEffect: {
-					rotate: 0,
-					stretch: 170,
-					depth: 150,
-					modifier: 1,
-					slideShadows: true,
+				creativeEffect: {
+					limitProgress: 2,
+					perspective: true,
+
+					next: {
+						translate: ['20.1rem', 0, -1],
+						scale: 0.85,
+						shadow: true,
+					},
+
+					prev: {
+						translate: ['-100%', 0, 0],
+					},
 				},
 
 				breakpoints: {
-					1586: {
-						coverflowEffect: {
-							stretch: 200,
-							depth: 300,
+					768: {
+						creativeEffect: {
+							next: {
+								translate: ['63.7rem', 0, -1],
+							},
 						},
 					},
-					1345: {
-						coverflowEffect: {
-							stretch: 200,
-							depth: 236.5,
-						},
-					},
-					1166: {
-						coverflowEffect: {
-							stretch: 200,
-							depth: 170,
-						},
-					},
-					996: {
-						coverflowEffect: {
-							stretch: 150,
-							depth: 229,
-						},
-					},
-					811: {
-						coverflowEffect: {
-							stretch: 100,
-							depth: 310,
-						},
-					},
-					769: {
-						coverflowEffect: {
-							stretch: 50,
-							depth: 425,
+
+					1201: {
+						creativeEffect: {
+							limitProgress: 5,
+
+							next: {
+								translate: ['21.25rem', 0, -1],
+							},
 						},
 					},
 				},
 
 				on: {
 					init: swiper => {
-						const svgWidth = svg.querySelector('line').getAttribute('x2');
-						const oneSlideWidth = svgWidth / swiper.slides.length;
+						if (window.screen.width > 768) {
+							const svgWidth = svg.querySelector('line').getAttribute('x2');
+							const oneSlideWidth = svgWidth / swiper.slides.length;
 
-						curSlide.textContent = `0${swiper.activeIndex + 1}`;
-						lastSlide.textContent = `0${swiper.slides.length}`;
+							curSlide.textContent = `0${swiper.activeIndex + 1}`;
+							lastSlide.textContent = `0${swiper.slides.length}`;
 
-						console.log(oneSlideWidth, svgWidth, swiper.slides.length);
-						lineSVG.setAttribute('d', `M0 1H${oneSlideWidth}`);
+							lineSVG.setAttribute('d', `M0 1H${oneSlideWidth}`);
+						}
 					},
 					slideChange: function (swiper) {
-						const svgWidth = svg.querySelector('line').getAttribute('x2');
-						const oneSlideWidth = svgWidth / swiper.slides.length;
-						const lineWidth = (swiper.activeIndex + 1) * oneSlideWidth;
+						if (window.screen.width > 768) {
+							const svgWidth = svg.querySelector('line').getAttribute('x2');
+							const oneSlideWidth = svgWidth / swiper.slides.length;
+							const lineWidth = (swiper.activeIndex + 1) * oneSlideWidth;
 
-						curSlide.textContent = `0${swiper.activeIndex + 1}`;
+							curSlide.textContent = `0${swiper.activeIndex + 1}`;
 
-						lineSVG.setAttribute('d', `M0 1H${lineWidth}`);
-						// Находим ближайшую svg этой полоски и берем ее path
-						// path d="M0 1H62.4" stroke="#D3965F" stroke-width="1.4"
-						// Далее у path нужно взять атрибут d - и у него поменять последние цифры после H,
-						// чтобы отрисовать линию зависящую от слайдов и менять ее относительно текущего
+							lineSVG.setAttribute('d', `M0 1H${lineWidth}`);
+						}
 					},
 				},
 
 				pagination: {
-					el: window.screen.width > 767 ? slider.querySelector('.pagination') : '.portfolio-list__swiper-pagination',
+					el: window.screen.width <= 768 && slider.closest('.portfolio-list__item').querySelector('.portfolio-list__swiper-pagination'),
 				},
 
 				navigation: {
