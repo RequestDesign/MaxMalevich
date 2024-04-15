@@ -79,3 +79,11 @@ const imageContainer = document.querySelector('.image_slider__container');
 document.querySelector('.image_slider')?.addEventListener('input', e => {
 	imageContainer.style.setProperty('--position', `${e.target.value}%`);
 });
+
+const cookie = document.querySelector('.cookie')
+
+if(cookie) {
+	document.querySelector('.cookie__btn').addEventListener('click', () => {
+		cookie.classList.remove('cookie--show')
+	})
+}

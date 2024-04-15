@@ -204,7 +204,7 @@
 		width: 32.6rem;
 		flex-shrink: 0;
 		@media (max-width: 75em) {
-			width: 61.4rem;
+			width: 50rem;
 			font-size: 2.8rem;
 		}
 		@media (max-width: 47.9375em) {
@@ -215,6 +215,7 @@
 	&__btn {
 		flex-grow: 1;
 		justify-content: space-between;
+		white-space: nowrap;
 		@media (max-width: 75em) {
 			height: 100%;
 		}
