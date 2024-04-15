@@ -1,7 +1,7 @@
 body::before {
 	content: '';
 	position: fixed;
-	z-index: 250;
+	z-index: 1500;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -17,7 +17,7 @@ body::before {
 	opacity: 1;
 }
 .popup_show {
-	z-index: 300;
+	z-index: 1600;
 	visibility: visible !important;
 	overflow: auto;
 	pointer-events: auto;
