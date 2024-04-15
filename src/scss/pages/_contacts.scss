@@ -137,7 +137,7 @@
         }
         &__blocks {
             margin-bottom: 8rem;
-
+            overflow: hidden;
             &-pagination {
                 &.swiper-pagination-horizontal.swiper-pagination-bullets {
                     display: flex;
@@ -163,6 +163,7 @@
             border-radius: 2.4rem;
             flex: none;
             height: auto;
+        
     
             &-number {
                 font-size: 4rem;

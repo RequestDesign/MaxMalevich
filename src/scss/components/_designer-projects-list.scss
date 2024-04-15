@@ -18,6 +18,7 @@
 	&__title {
 		align-self: center;
 		font-weight: 300;
+		text-transform: uppercase;
 		@media (max-width: 75em) {
 			font-weight: 300;
 			font-size: 9.2rem;
@@ -35,13 +36,15 @@
 			align-items: center;
 			gap: 2.4rem;
 			align-self: center;
-			margin: 0 auto;
+			margin: 8rem auto 0;
 	
 			@media (max-width: 75em) {
 				gap: 7.6rem;
+				margin: 16rem auto 0;
 			}
 			@media (max-width: 47.9375em) {
 				gap: 4.4rem;
+				margin: 10.2rem auto 0;
 			}
 			&:hover {
 				.designer-projects-list__show-more-img-circle {
@@ -116,6 +119,14 @@
 			@media (max-width: 47.9375em) {
 				width: 8.8rem;
 				height: 8.8rem;
+			}
+		}
+
+		& .portfolio-list__item {
+			@media (max-width: 47.9375em) {
+				&:not(:last-of-type) {
+					margin-bottom: 8rem;
+				}
 			}
 		}
 
