@@ -231,7 +231,9 @@
 			right: 0;
 			display: flex;
 			align-items: end;
-			gap: 43.9rem;
+			// gap: 43.9rem;
+			justify-content: space-between;
+			width: 127.3rem;
 		}
 		.swiper-slide-active,
 		.swiper-slide-prev {
@@ -803,6 +805,11 @@
 		&-link {
 			width: 8.6rem;
 			height: 6.8rem;
+			&:hover {
+				.link--arrow-right-img-circle {
+					background: rgba(255, 255, 255, 0.5);
+				}
+			}
 			img {
 				height: 100%;
 			}
