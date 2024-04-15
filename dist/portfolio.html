@@ -6,7 +6,8 @@
 		<title>Главная</title>
 	<script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
 	<body>
-		<header class="header anim">
+		<div class="body__inner">
+			<header class="header anim">
 	<div class="container">
 		<div class="header__container">
 			<div class="header-wrapper">
@@ -274,7 +275,7 @@
 	</div>
 </header>
 
-		<div id="popup__success-meet" aria-hidden="true" class="popup popup--success">
+			<div id="popup__success-meet" aria-hidden="true" class="popup popup--success">
 	<div class="popup__wrapper">
 		<div class="popup__content">
 			<div class="popup__body">
@@ -694,8 +695,8 @@
 	</div>
 </div>
 
-		<main>
-			<div class="cookie cookie--show">
+			<main>
+				<div class="cookie cookie--show">
 	<div class="cookie__container container">
 		<div class="cookie__inner">
 			<p class="cookie__text text-18-r">Продолжая использовать этот сайт и нажимая кнопку «Принимаю», вы даете согласие на обработку файлов cookie</p>
@@ -720,29 +721,29 @@
 	</div>
 </div>
 
-			<section class="portfolio-head">
-				<div class="portfolio-head__container container">
-					<div class="portfolio-head__title">Портфолио</div>
-					<div class="portfolio-head__categories">
-						<div class="portfolio-head__swiper">
-							<div class="swiper-wrapper">
-								<div class="portfolio-head__swiper-slide swiper-slide active">Кухни</div>
-								<div class="portfolio-head__swiper-slide swiper-slide">Шкафы/хранение</div>
-								<div class="portfolio-head__swiper-slide swiper-slide">Спальни</div>
-								<div class="portfolio-head__swiper-slide swiper-slide">Деловые пространства</div>
-								<div class="portfolio-head__swiper-slide swiper-slide">Дизайнерская отделка</div>
-								<div class="portfolio-head__swiper-slide swiper-slide">Детские пространства</div>
-								<div class="portfolio-head__swiper-slide swiper-slide">Гостиные</div>
-								<div class="portfolio-head__swiper-slide swiper-slide">Кухни</div>
-								<div class="portfolio-head__swiper-slide swiper-slide">Шкафы/хранение</div>
-								<div class="portfolio-head__swiper-slide swiper-slide">Спальни</div>
-								<div class="portfolio-head__swiper-slide swiper-slide">Деловые пространства</div>
-								<div class="portfolio-head__swiper-slide swiper-slide">Дизайнерская отделка</div>
-								<div class="portfolio-head__swiper-slide swiper-slide">Детские пространства</div>
-								<div class="portfolio-head__swiper-slide swiper-slide">Гостиные</div>
+				<section class="portfolio-head">
+					<div class="portfolio-head__container container">
+						<div class="portfolio-head__title">Портфолио</div>
+						<div class="portfolio-head__categories">
+							<div class="portfolio-head__swiper">
+								<div class="swiper-wrapper">
+									<div class="portfolio-head__swiper-slide swiper-slide active">Кухни</div>
+									<div class="portfolio-head__swiper-slide swiper-slide">Шкафы/хранение</div>
+									<div class="portfolio-head__swiper-slide swiper-slide">Спальни</div>
+									<div class="portfolio-head__swiper-slide swiper-slide">Деловые пространства</div>
+									<div class="portfolio-head__swiper-slide swiper-slide">Дизайнерская отделка</div>
+									<div class="portfolio-head__swiper-slide swiper-slide">Детские пространства</div>
+									<div class="portfolio-head__swiper-slide swiper-slide">Гостиные</div>
+									<div class="portfolio-head__swiper-slide swiper-slide">Кухни</div>
+									<div class="portfolio-head__swiper-slide swiper-slide">Шкафы/хранение</div>
+									<div class="portfolio-head__swiper-slide swiper-slide">Спальни</div>
+									<div class="portfolio-head__swiper-slide swiper-slide">Деловые пространства</div>
+									<div class="portfolio-head__swiper-slide swiper-slide">Дизайнерская отделка</div>
+									<div class="portfolio-head__swiper-slide swiper-slide">Детские пространства</div>
+									<div class="portfolio-head__swiper-slide swiper-slide">Гостиные</div>
+								</div>
 							</div>
-						</div>
-						<div class="navigation">
+							<div class="navigation">
 	<button class="navigation-prev swiper-button-prev porfolio-head__swiper-prev">
 		<img src="../../assets/images/icons/arrow_prev.svg" alt="">
 	</button>
@@ -751,26 +752,26 @@
 	</button>
 </div>
 
+						</div>
 					</div>
-				</div>
-			</section>
+				</section>
 
-			<section class="portfolio-list">
-				<div class="portfolio-list__container container">
-					<div class="portfolio-list__item">
-						<div class="portfolio-list__item-left">
-							<div class="portfolio-list__item-name">Дизайнер проекта Лия Хаертдинова</div>
-							<div class="portfolio-list__item-title h3">ПРОЕКТ ЖК УТЕСОВ</div>
-							<a href="#" class="btn btn__primary">
-								<span class="btn__text">Подробнее</span>
-								<div class="btn__svg-box">
-									<svg width="54" height="12" viewBox="0 0 54 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M1 5.72266C0.585786 5.72266 0.25 6.05844 0.25 6.47266C0.25 6.88687 0.585786 7.22266 1 7.22266L1 5.72266ZM53.5303 7.00298C53.8232 6.71009 53.8232 6.23521 53.5303 5.94232L48.7574 1.16935C48.4645 0.876458 47.9896 0.876458 47.6967 1.16935C47.4038 1.46224 47.4038 1.93712 47.6967 2.23001L51.9393 6.47265L47.6967 10.7153C47.4038 11.0082 47.4038 11.4831 47.6967 11.776C47.9896 12.0688 48.4645 12.0688 48.7574 11.776L53.5303 7.00298ZM1 7.22266L53 7.22265L53 5.72265L1 5.72266L1 7.22266Z" fill="white" />
-									</svg>
-									<div class="btn__svg-box-circle"></div>
-								</div>
-							</a>
-							<div class="pagination">
+				<section class="portfolio-list">
+					<div class="portfolio-list__container container">
+						<div class="portfolio-list__item">
+							<div class="portfolio-list__item-left">
+								<div class="portfolio-list__item-name">Дизайнер проекта Лия Хаертдинова</div>
+								<div class="portfolio-list__item-title h3">ПРОЕКТ ЖК УТЕСОВ</div>
+								<a href="#" class="btn btn__primary">
+									<span class="btn__text">Подробнее</span>
+									<div class="btn__svg-box">
+										<svg width="54" height="12" viewBox="0 0 54 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 5.72266C0.585786 5.72266 0.25 6.05844 0.25 6.47266C0.25 6.88687 0.585786 7.22266 1 7.22266L1 5.72266ZM53.5303 7.00298C53.8232 6.71009 53.8232 6.23521 53.5303 5.94232L48.7574 1.16935C48.4645 0.876458 47.9896 0.876458 47.6967 1.16935C47.4038 1.46224 47.4038 1.93712 47.6967 2.23001L51.9393 6.47265L47.6967 10.7153C47.4038 11.0082 47.4038 11.4831 47.6967 11.776C47.9896 12.0688 48.4645 12.0688 48.7574 11.776L53.5303 7.00298ZM1 7.22266L53 7.22265L53 5.72265L1 5.72266L1 7.22266Z" fill="white" />
+										</svg>
+										<div class="btn__svg-box-circle"></div>
+									</div>
+								</a>
+								<div class="pagination">
 	<span class="pagination__number pag-cur">01</span>
 
 	<svg width="100%" height="2" viewBox="0 0 312 2" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -781,38 +782,38 @@
 	<span class="pagination__number pag-last">05</span>
 </div>
 
-							<div class="portfolio-list__swiper-pagination"></div>
-						</div>
-						<div class="portfolio-list__item-right">
-							<div class="portfolio-list__swiper">
-								<div class="swiper-wrapper">
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-1-img-1.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-1-img-2.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-1-img-3.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-1-img-4.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-1-img-1.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-1-img-2.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-1-img-3.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-1-img-4.webp" alt="" />
+								<div class="portfolio-list__swiper-pagination"></div>
+							</div>
+							<div class="portfolio-list__item-right">
+								<div class="portfolio-list__swiper">
+									<div class="swiper-wrapper">
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-1-img-1.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-1-img-2.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-1-img-3.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-1-img-4.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-1-img-1.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-1-img-2.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-1-img-3.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-1-img-4.webp" alt="" />
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="navigation">
+								<div class="navigation">
 	<button class="navigation-prev swiper-button-prev">
 		<img src="../../assets/images/icons/arrow_prev.svg" alt="">
 	</button>
@@ -821,22 +822,22 @@
 	</button>
 </div>
 
+							</div>
 						</div>
-					</div>
-					<div class="portfolio-list__item">
-						<div class="portfolio-list__item-left">
-							<div class="portfolio-list__item-name">Дизайнер проекта Лия Хаертдинова</div>
-							<div class="portfolio-list__item-title h3">ПРОЕКТ ЖК УТЕСОВ</div>
-							<a href="#" class="btn btn__primary">
-								<span class="btn__text">Подробнее</span>
-								<div class="btn__svg-box">
-									<svg width="54" height="12" viewBox="0 0 54 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M1 5.72266C0.585786 5.72266 0.25 6.05844 0.25 6.47266C0.25 6.88687 0.585786 7.22266 1 7.22266L1 5.72266ZM53.5303 7.00298C53.8232 6.71009 53.8232 6.23521 53.5303 5.94232L48.7574 1.16935C48.4645 0.876458 47.9896 0.876458 47.6967 1.16935C47.4038 1.46224 47.4038 1.93712 47.6967 2.23001L51.9393 6.47265L47.6967 10.7153C47.4038 11.0082 47.4038 11.4831 47.6967 11.776C47.9896 12.0688 48.4645 12.0688 48.7574 11.776L53.5303 7.00298ZM1 7.22266L53 7.22265L53 5.72265L1 5.72266L1 7.22266Z" fill="white" />
-									</svg>
-									<div class="btn__svg-box-circle"></div>
-								</div>
-							</a>
-							<div class="pagination">
+						<div class="portfolio-list__item">
+							<div class="portfolio-list__item-left">
+								<div class="portfolio-list__item-name">Дизайнер проекта Лия Хаертдинова</div>
+								<div class="portfolio-list__item-title h3">ПРОЕКТ ЖК УТЕСОВ</div>
+								<a href="#" class="btn btn__primary">
+									<span class="btn__text">Подробнее</span>
+									<div class="btn__svg-box">
+										<svg width="54" height="12" viewBox="0 0 54 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 5.72266C0.585786 5.72266 0.25 6.05844 0.25 6.47266C0.25 6.88687 0.585786 7.22266 1 7.22266L1 5.72266ZM53.5303 7.00298C53.8232 6.71009 53.8232 6.23521 53.5303 5.94232L48.7574 1.16935C48.4645 0.876458 47.9896 0.876458 47.6967 1.16935C47.4038 1.46224 47.4038 1.93712 47.6967 2.23001L51.9393 6.47265L47.6967 10.7153C47.4038 11.0082 47.4038 11.4831 47.6967 11.776C47.9896 12.0688 48.4645 12.0688 48.7574 11.776L53.5303 7.00298ZM1 7.22266L53 7.22265L53 5.72265L1 5.72266L1 7.22266Z" fill="white" />
+										</svg>
+										<div class="btn__svg-box-circle"></div>
+									</div>
+								</a>
+								<div class="pagination">
 	<span class="pagination__number pag-cur">01</span>
 
 	<svg width="100%" height="2" viewBox="0 0 312 2" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -847,38 +848,38 @@
 	<span class="pagination__number pag-last">05</span>
 </div>
 
-							<div class="portfolio-list__swiper-pagination"></div>
-						</div>
-						<div class="portfolio-list__item-right">
-							<div class="portfolio-list__swiper">
-								<div class="swiper-wrapper">
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-2-img-1.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-2-img-2.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-2-img-3.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-2-img-4.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-2-img-1.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-2-img-2.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-2-img-3.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-2-img-4.webp" alt="" />
+								<div class="portfolio-list__swiper-pagination"></div>
+							</div>
+							<div class="portfolio-list__item-right">
+								<div class="portfolio-list__swiper">
+									<div class="swiper-wrapper">
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-2-img-1.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-2-img-2.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-2-img-3.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-2-img-4.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-2-img-1.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-2-img-2.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-2-img-3.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-2-img-4.webp" alt="" />
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="navigation">
+								<div class="navigation">
 	<button class="navigation-prev swiper-button-prev">
 		<img src="../../assets/images/icons/arrow_prev.svg" alt="">
 	</button>
@@ -887,22 +888,22 @@
 	</button>
 </div>
 
+							</div>
 						</div>
-					</div>
-					<div class="portfolio-list__item">
-						<div class="portfolio-list__item-left">
-							<div class="portfolio-list__item-name">Дизайнер проекта Лия Хаертдинова</div>
-							<div class="portfolio-list__item-title h3">ПРОЕКТ ЖК УТЕСОВ</div>
-							<a href="#" class="btn btn__primary">
-								<span class="btn__text">Подробнее</span>
-								<div class="btn__svg-box">
-									<svg width="54" height="12" viewBox="0 0 54 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M1 5.72266C0.585786 5.72266 0.25 6.05844 0.25 6.47266C0.25 6.88687 0.585786 7.22266 1 7.22266L1 5.72266ZM53.5303 7.00298C53.8232 6.71009 53.8232 6.23521 53.5303 5.94232L48.7574 1.16935C48.4645 0.876458 47.9896 0.876458 47.6967 1.16935C47.4038 1.46224 47.4038 1.93712 47.6967 2.23001L51.9393 6.47265L47.6967 10.7153C47.4038 11.0082 47.4038 11.4831 47.6967 11.776C47.9896 12.0688 48.4645 12.0688 48.7574 11.776L53.5303 7.00298ZM1 7.22266L53 7.22265L53 5.72265L1 5.72266L1 7.22266Z" fill="white" />
-									</svg>
-									<div class="btn__svg-box-circle"></div>
-								</div>
-							</a>
-							<div class="pagination">
+						<div class="portfolio-list__item">
+							<div class="portfolio-list__item-left">
+								<div class="portfolio-list__item-name">Дизайнер проекта Лия Хаертдинова</div>
+								<div class="portfolio-list__item-title h3">ПРОЕКТ ЖК УТЕСОВ</div>
+								<a href="#" class="btn btn__primary">
+									<span class="btn__text">Подробнее</span>
+									<div class="btn__svg-box">
+										<svg width="54" height="12" viewBox="0 0 54 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 5.72266C0.585786 5.72266 0.25 6.05844 0.25 6.47266C0.25 6.88687 0.585786 7.22266 1 7.22266L1 5.72266ZM53.5303 7.00298C53.8232 6.71009 53.8232 6.23521 53.5303 5.94232L48.7574 1.16935C48.4645 0.876458 47.9896 0.876458 47.6967 1.16935C47.4038 1.46224 47.4038 1.93712 47.6967 2.23001L51.9393 6.47265L47.6967 10.7153C47.4038 11.0082 47.4038 11.4831 47.6967 11.776C47.9896 12.0688 48.4645 12.0688 48.7574 11.776L53.5303 7.00298ZM1 7.22266L53 7.22265L53 5.72265L1 5.72266L1 7.22266Z" fill="white" />
+										</svg>
+										<div class="btn__svg-box-circle"></div>
+									</div>
+								</a>
+								<div class="pagination">
 	<span class="pagination__number pag-cur">01</span>
 
 	<svg width="100%" height="2" viewBox="0 0 312 2" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -913,38 +914,38 @@
 	<span class="pagination__number pag-last">05</span>
 </div>
 
-							<div class="portfolio-list__swiper-pagination"></div>
-						</div>
-						<div class="portfolio-list__item-right">
-							<div class="portfolio-list__swiper">
-								<div class="swiper-wrapper">
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-3-img-1.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-3-img-2.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-3-img-3.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-3-img-4.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-3-img-1.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-3-img-2.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-3-img-3.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-3-img-4.webp" alt="" />
+								<div class="portfolio-list__swiper-pagination"></div>
+							</div>
+							<div class="portfolio-list__item-right">
+								<div class="portfolio-list__swiper">
+									<div class="swiper-wrapper">
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-3-img-1.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-3-img-2.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-3-img-3.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-3-img-4.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-3-img-1.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-3-img-2.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-3-img-3.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-3-img-4.webp" alt="" />
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="navigation">
+								<div class="navigation">
 	<button class="navigation-prev swiper-button-prev">
 		<img src="../../assets/images/icons/arrow_prev.svg" alt="">
 	</button>
@@ -953,22 +954,22 @@
 	</button>
 </div>
 
+							</div>
 						</div>
-					</div>
-					<div class="portfolio-list__item">
-						<div class="portfolio-list__item-left">
-							<div class="portfolio-list__item-name">Дизайнер проекта Лия Хаертдинова</div>
-							<div class="portfolio-list__item-title h3">ПРОЕКТ ЖК УТЕСОВ</div>
-							<a href="#" class="btn btn__primary">
-								<span class="btn__text">Подробнее</span>
-								<div class="btn__svg-box">
-									<svg width="54" height="12" viewBox="0 0 54 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M1 5.72266C0.585786 5.72266 0.25 6.05844 0.25 6.47266C0.25 6.88687 0.585786 7.22266 1 7.22266L1 5.72266ZM53.5303 7.00298C53.8232 6.71009 53.8232 6.23521 53.5303 5.94232L48.7574 1.16935C48.4645 0.876458 47.9896 0.876458 47.6967 1.16935C47.4038 1.46224 47.4038 1.93712 47.6967 2.23001L51.9393 6.47265L47.6967 10.7153C47.4038 11.0082 47.4038 11.4831 47.6967 11.776C47.9896 12.0688 48.4645 12.0688 48.7574 11.776L53.5303 7.00298ZM1 7.22266L53 7.22265L53 5.72265L1 5.72266L1 7.22266Z" fill="white" />
-									</svg>
-									<div class="btn__svg-box-circle"></div>
-								</div>
-							</a>
-							<div class="pagination">
+						<div class="portfolio-list__item">
+							<div class="portfolio-list__item-left">
+								<div class="portfolio-list__item-name">Дизайнер проекта Лия Хаертдинова</div>
+								<div class="portfolio-list__item-title h3">ПРОЕКТ ЖК УТЕСОВ</div>
+								<a href="#" class="btn btn__primary">
+									<span class="btn__text">Подробнее</span>
+									<div class="btn__svg-box">
+										<svg width="54" height="12" viewBox="0 0 54 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 5.72266C0.585786 5.72266 0.25 6.05844 0.25 6.47266C0.25 6.88687 0.585786 7.22266 1 7.22266L1 5.72266ZM53.5303 7.00298C53.8232 6.71009 53.8232 6.23521 53.5303 5.94232L48.7574 1.16935C48.4645 0.876458 47.9896 0.876458 47.6967 1.16935C47.4038 1.46224 47.4038 1.93712 47.6967 2.23001L51.9393 6.47265L47.6967 10.7153C47.4038 11.0082 47.4038 11.4831 47.6967 11.776C47.9896 12.0688 48.4645 12.0688 48.7574 11.776L53.5303 7.00298ZM1 7.22266L53 7.22265L53 5.72265L1 5.72266L1 7.22266Z" fill="white" />
+										</svg>
+										<div class="btn__svg-box-circle"></div>
+									</div>
+								</a>
+								<div class="pagination">
 	<span class="pagination__number pag-cur">01</span>
 
 	<svg width="100%" height="2" viewBox="0 0 312 2" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -979,38 +980,38 @@
 	<span class="pagination__number pag-last">05</span>
 </div>
 
-							<div class="portfolio-list__swiper-pagination"></div>
-						</div>
-						<div class="portfolio-list__item-right">
-							<div class="portfolio-list__swiper">
-								<div class="swiper-wrapper">
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-2-img-1.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-2-img-2.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-2-img-3.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-2-img-4.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-2-img-1.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-2-img-2.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-2-img-3.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-1-img-4.webp" alt="" />
+								<div class="portfolio-list__swiper-pagination"></div>
+							</div>
+							<div class="portfolio-list__item-right">
+								<div class="portfolio-list__swiper">
+									<div class="swiper-wrapper">
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-2-img-1.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-2-img-2.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-2-img-3.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-2-img-4.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-2-img-1.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-2-img-2.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-2-img-3.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-1-img-4.webp" alt="" />
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="navigation">
+								<div class="navigation">
 	<button class="navigation-prev swiper-button-prev">
 		<img src="../../assets/images/icons/arrow_prev.svg" alt="">
 	</button>
@@ -1019,22 +1020,22 @@
 	</button>
 </div>
 
+							</div>
 						</div>
-					</div>
-					<div class="portfolio-list__item">
-						<div class="portfolio-list__item-left">
-							<div class="portfolio-list__item-name">Дизайнер проекта Лия Хаертдинова</div>
-							<div class="portfolio-list__item-title h3">ПРОЕКТ ЖК УТЕСОВ</div>
-							<a href="#" class="btn btn__primary">
-								<span class="btn__text">Подробнее</span>
-								<div class="btn__svg-box">
-									<svg width="54" height="12" viewBox="0 0 54 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M1 5.72266C0.585786 5.72266 0.25 6.05844 0.25 6.47266C0.25 6.88687 0.585786 7.22266 1 7.22266L1 5.72266ZM53.5303 7.00298C53.8232 6.71009 53.8232 6.23521 53.5303 5.94232L48.7574 1.16935C48.4645 0.876458 47.9896 0.876458 47.6967 1.16935C47.4038 1.46224 47.4038 1.93712 47.6967 2.23001L51.9393 6.47265L47.6967 10.7153C47.4038 11.0082 47.4038 11.4831 47.6967 11.776C47.9896 12.0688 48.4645 12.0688 48.7574 11.776L53.5303 7.00298ZM1 7.22266L53 7.22265L53 5.72265L1 5.72266L1 7.22266Z" fill="white" />
-									</svg>
-									<div class="btn__svg-box-circle"></div>
-								</div>
-							</a>
-							<div class="pagination">
+						<div class="portfolio-list__item">
+							<div class="portfolio-list__item-left">
+								<div class="portfolio-list__item-name">Дизайнер проекта Лия Хаертдинова</div>
+								<div class="portfolio-list__item-title h3">ПРОЕКТ ЖК УТЕСОВ</div>
+								<a href="#" class="btn btn__primary">
+									<span class="btn__text">Подробнее</span>
+									<div class="btn__svg-box">
+										<svg width="54" height="12" viewBox="0 0 54 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 5.72266C0.585786 5.72266 0.25 6.05844 0.25 6.47266C0.25 6.88687 0.585786 7.22266 1 7.22266L1 5.72266ZM53.5303 7.00298C53.8232 6.71009 53.8232 6.23521 53.5303 5.94232L48.7574 1.16935C48.4645 0.876458 47.9896 0.876458 47.6967 1.16935C47.4038 1.46224 47.4038 1.93712 47.6967 2.23001L51.9393 6.47265L47.6967 10.7153C47.4038 11.0082 47.4038 11.4831 47.6967 11.776C47.9896 12.0688 48.4645 12.0688 48.7574 11.776L53.5303 7.00298ZM1 7.22266L53 7.22265L53 5.72265L1 5.72266L1 7.22266Z" fill="white" />
+										</svg>
+										<div class="btn__svg-box-circle"></div>
+									</div>
+								</a>
+								<div class="pagination">
 	<span class="pagination__number pag-cur">01</span>
 
 	<svg width="100%" height="2" viewBox="0 0 312 2" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1045,38 +1046,38 @@
 	<span class="pagination__number pag-last">05</span>
 </div>
 
-							<div class="portfolio-list__swiper-pagination"></div>
-						</div>
-						<div class="portfolio-list__item-right">
-							<div class="portfolio-list__swiper">
-								<div class="swiper-wrapper">
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-1-img-1.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-1-img-2.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-1-img-3.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-1-img-4.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-1-img-1.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-1-img-2.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-1-img-3.webp" alt="" />
-									</div>
-									<div class="portfolio-list__swiper-slide swiper-slide">
-										<img src="./assets/images/pages/portfolio/slider-1-img-4.webp" alt="" />
+								<div class="portfolio-list__swiper-pagination"></div>
+							</div>
+							<div class="portfolio-list__item-right">
+								<div class="portfolio-list__swiper">
+									<div class="swiper-wrapper">
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-1-img-1.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-1-img-2.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-1-img-3.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-1-img-4.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-1-img-1.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-1-img-2.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-1-img-3.webp" alt="" />
+										</div>
+										<div class="portfolio-list__swiper-slide swiper-slide">
+											<img src="./assets/images/pages/portfolio/slider-1-img-4.webp" alt="" />
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="navigation">
+								<div class="navigation">
 	<button class="navigation-prev swiper-button-prev">
 		<img src="../../assets/images/icons/arrow_prev.svg" alt="">
 	</button>
@@ -1085,27 +1086,27 @@
 	</button>
 </div>
 
+							</div>
 						</div>
-					</div>
-					<!-- <button class="portfolio-list__more text-20-r">
+						<!-- <button class="portfolio-list__more text-20-r">
 						<div>Показать ещё</div>
 						<div>
 							<img src="./assets/images/pages/news/news-list-more.svg" alt="" />
 						</div>
 					</button> -->
-					<button class="designer-projects-list__show-more-btn">
-						<span class="designer-projects-list__show-more-text text-20-r">Показать ещё</span>
-						<div class="designer-projects-list__show-more-img-box">
-							<svg width="13" height="54" viewBox="0 0 13 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M7.25 1C7.25 0.585786 6.91421 0.25 6.5 0.25C6.08579 0.25 5.75 0.585786 5.75 1L7.25 1ZM5.96967 53.5303C6.26256 53.8232 6.73744 53.8232 7.03033 53.5303L11.8033 48.7574C12.0962 48.4645 12.0962 47.9896 11.8033 47.6967C11.5104 47.4038 11.0355 47.4038 10.7426 47.6967L6.5 51.9393L2.25736 47.6967C1.96447 47.4038 1.48959 47.4038 1.1967 47.6967C0.903806 47.9896 0.903806 48.4645 1.1967 48.7574L5.96967 53.5303ZM5.75 1L5.75 53H7.25L7.25 1L5.75 1Z" fill="white" />
-							</svg>
-							<div class="designer-projects-list__show-more-img-circle"></div>
-						</div>
-					</button>
-				</div>
-			</section>
+						<button class="designer-projects-list__show-more-btn">
+							<span class="designer-projects-list__show-more-text text-20-r">Показать ещё</span>
+							<div class="designer-projects-list__show-more-img-box">
+								<svg width="13" height="54" viewBox="0 0 13 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7.25 1C7.25 0.585786 6.91421 0.25 6.5 0.25C6.08579 0.25 5.75 0.585786 5.75 1L7.25 1ZM5.96967 53.5303C6.26256 53.8232 6.73744 53.8232 7.03033 53.5303L11.8033 48.7574C12.0962 48.4645 12.0962 47.9896 11.8033 47.6967C11.5104 47.4038 11.0355 47.4038 10.7426 47.6967L6.5 51.9393L2.25736 47.6967C1.96447 47.4038 1.48959 47.4038 1.1967 47.6967C0.903806 47.9896 0.903806 48.4645 1.1967 48.7574L5.96967 53.5303ZM5.75 1L5.75 53H7.25L7.25 1L5.75 1Z" fill="white" />
+								</svg>
+								<div class="designer-projects-list__show-more-img-circle"></div>
+							</div>
+						</button>
+					</div>
+				</section>
 
-			<section class="feedback">
+				<section class="feedback">
     <div class="container">
         <h2 class="feedback__title h3">Обратная связь</h2>
         <div class="feedback__wrapper">
@@ -1177,12 +1178,12 @@
         </div>
     </div>
 </section>
-		</main>
-		<button class="btn_top">
+			</main>
+			<button class="btn_top">
 	<img src="../../assets/images/icons/arrow_top.svg" alt="">
 </button>
 
-		<footer class="footer">
+			<footer class="footer">
 	<div class="container footer__container">
 		<div class="footer__top">
 			<div class="footer__main">
@@ -1445,5 +1446,6 @@
 	</div>
 </footer>
 
+		</div>
 	</body>
 </html>

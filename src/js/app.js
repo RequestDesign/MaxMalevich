@@ -15,6 +15,7 @@ const btnTop = document.querySelector('.btn_top');
 window.addEventListener('scroll', () => {
 	if (window.scrollY > 100) {
 		btnTop.style.display = 'flex';
+	
 	} else {
 		btnTop.style.display = 'none';
 	}

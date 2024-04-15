@@ -506,14 +506,15 @@ if (projectSlider) {
 	});
 }
 
-if (document.querySelector('.image_slider__container') && window.screen.width < 768) {
-	const imageSlider = new Swiper('.image_slider__container', {
-		slidesPerView: 1,
-		slidesPerGroup: 1,
-		spaceBetween: 10,
+// if (document.querySelector('.image_slider__container') && window.screen.width < 768) {
+// 	const imageSlider = new Swiper('.image_slider__container', {
+// 		slidesPerView: 1,
+// 		slidesPerGroup: 1,
+// 		spaceBetween: 10,
 
-		pagination: {
-			el: '.image-container__pagination',
-		},
-	});
-}
+// 		pagination: {
+// 			el: '.image-container__pagination',
+// 		},
+// 	});
+// }
+

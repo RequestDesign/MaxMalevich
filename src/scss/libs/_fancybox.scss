@@ -11,7 +11,6 @@
 		width: 4.8rem;
 		height: 4.8rem;
 		background: none;
-
 		&:hover {
 			background: none;
 		}
@@ -39,13 +38,41 @@
 .is-horizontal .fancybox__nav .f-button.is-prev {
 	left: 6rem !important;
 }
+.has-image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.fancybox__content {
+		width: 70.4rem !important;
+		height: 84rem !important;
+	}
+}
 
 .has-html5video {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	.fancybox__content {
 		background: initial !important;
+		width: 70.4rem !important;
+		height: 84rem !important;
+		margin: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&::before,
+		&::after {
+			display: block;
+		}
 		.fancybox__html5video {
-			width: fit-content;
-			margin: auto;
+			// width: fit-content;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.f-button {
+			top: -5rem !important;
+			right: -50rem !important;
 		}
 	}
 }
@@ -93,11 +120,23 @@
 		transform: initial !important;
 	}
 
+	.has-image {
+
+		.fancybox__content {
+			width: 105.6rem !important;
+			height: 157.8rem !important;
+		}
+	}
+
 	.has-html5video {
 		.fancybox__content {
-            height: 70%!important;
+			height: 100% !important ;
+			width: 100% !important ;
 			.fancybox__html5video {
-				width: auto;
+				object-fit: contain;
+			}
+			.f-button {
+				right: 0 !important;
 			}
 		}
 	}
@@ -145,13 +184,29 @@
 		bottom: 6rem;
 		transform: initial !important;
 	}
+	.has-image {
 
-    .has-html5video {
 		.fancybox__content {
-            height: 70%!important;
+			width: 70.8rem !important;
+			height: 127.6rem !important;
+		}
+	}
+	.has-html5video {
+		justify-content: flex-end;
+		align-items: flex-end;
+		.fancybox__content {
+			height: 95% !important;
+			margin: 0;
 			.fancybox__html5video {
-				width: auto;
+				object-fit: cover;
 			}
+			.f-button {
+				top: -7rem !important;
+			}
+		
+		}
+		&::after {
+			display: none;
 		}
 	}
 }
