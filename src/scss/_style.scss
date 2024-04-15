@@ -53,6 +53,61 @@
 		width: 8.6rem;
 		height: 6.8rem;
 	}
+	&:hover {
+		.btn__svg-box-circle {
+			background: rgba(255, 255, 255, 0.5);
+		}
+	}
+	&__svg-box {
+		width: 8.6rem;
+		height: 6.8rem;
+		flex-shrink: 0;
+		display: flex;
+		position: relative;
+		justify-content: flex-end;
+		align-items: center;
+		& svg {
+			position: absolute;
+			left: 0;
+			z-index: 1;
+			width: 5.4rem;
+			height: 1.2rem;
+			@media (max-width: 75em) {
+				width: 10.8rem;
+				height: 2.4rem;
+			}
+			@media (max-width: 47.9375em) {
+				width: 6.4rem;
+				height: 1.2rem;
+			}
+		}
+	
+		@media (max-width: 75em) {
+			width: 17.2rem;
+			height: 13.6rem;
+		}
+		@media (max-width: 47.9375em) {
+			width: 10.2rem;
+			height: 8rem;
+		}
+	}
+	&__svg-box-circle {
+		width: 6.8rem;
+		height: 6.8rem;
+		border-radius: 50%;
+		backdrop-filter: blur(10.199999809265137px);
+		-webkit-backdrop-filter:  blur(10.199999809265137px);
+		background: rgba(255, 255, 255, 0.2);
+		transition: background-color 0.3s;
+		@media (max-width: 75em) {
+			width: 13.6rem;
+			height: 13.6rem;
+		}
+		@media (max-width: 47.9375em) {
+			width: 8rem;
+			height: 8rem;
+		}
+	}
 	&__primary {
 		border-radius: 10rem;
 		background-color: #48413e;
@@ -255,7 +310,7 @@
 	}
 	.btn {
 		padding: 3.2rem 3.2rem 3.2rem 8rem;
-		img,svg {
+		img{
 			width: 17.2rem;
 			height: 13.6rem;
 		}
@@ -357,7 +412,7 @@
 	}
 	.btn {
 		padding: 1.6rem 1.6rem 1.6rem 4.8rem;
-		img,svg {
+		img {
 			width: 11.2rem;
 			height: 8.8rem;
 		}

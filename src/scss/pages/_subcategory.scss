@@ -6,6 +6,11 @@
 		overflow-x: auto;
 		margin-bottom: 6rem;
 		white-space: nowrap;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+		&::-webkit-scrollbar {
+			display: none;
+		}
 	}
 	&__btn {
 		cursor: pointer;
@@ -68,7 +73,12 @@
 	&__container {
 		display: flex;
 		gap: 4.8rem;
-		margin-bottom: 20rem;
+		&:not(:last-of-type) {
+			margin-bottom: 20rem;
+		}
+		&:last-of-type{
+			margin-bottom: 8rem;
+		}
 	}
 	&__left {
 		flex: 1;
@@ -322,7 +332,12 @@
 			font-size: 9.2rem;
 		}
 		&__container {
-			margin-bottom: 32rem;
+			&:not(:last-of-type) {
+				margin-bottom: 32rem;
+			}
+			&:last-of-type {
+				margin-bottom: 12rem;
+			}
 		}
 		&__left {
 			display: none;
@@ -457,7 +472,12 @@
 			font-size: 5.2rem;
 		}
 		&__container {
-			margin-bottom: 8rem;
+			&:not(:last-of-type) {
+				margin-bottom: 8rem;
+			}
+			&:last-of-type {
+				margin-bottom: 10.4rem;
+			}
 		}
 		&__box {
 			display: grid;

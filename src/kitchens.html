@@ -7,7 +7,10 @@
 	</head>
 	<body>
 		<include src="./components/header.html" data-text='{"header": {"class": "anim"}}'></include>
+		<include src="./components/modal.html"></include>
 		<main>
+			<include src="./components/ui/cookie.html"></include>
+
 			<section class="hero">
 				<div class="hero__container">
 					<div class="hero__slide">
@@ -146,118 +149,7 @@
 
 			<include src="./components/facades.html"></include>
 
-			<section class="process">
-				<div class="container">
-					<h2 class="process__title h3">Как мы работаем</h2>
-					<div class="process__main">
-						<div class="process__list-slider">
-							<div class="process__list swiper-wrapper">
-								<div class="process__list-item swiper-slide">
-									<div class="process__list-img">
-										<img src="./assets/images/pages/home/process_1.png" alt="" />
-									</div>
-
-									<div class="process__list-info">
-										<span class="process__list-number">01</span>
-										<span class="process__list-name"
-											>Выбор <br />
-											материала</span
-										>
-									</div>
-									<div class="process__list-desc">На встрече в офисе мы выбираем цвет, материалы для фасадов и внутренней отделки вашей будущей кухни. Распределяем зонирование.</div>
-									<a href="" class="process__list-link">
-										<img src="./assets/images/pages/home/arrow.svg" alt="" />
-									</a>
-								</div>
-								<div class="process__list-item swiper-slide">
-									<div class="process__list-img">
-										<img src="./assets/images/pages/home/process_2.png" alt="" />
-									</div>
-									<div class="process__list-info">
-										<span class="process__list-number">02</span>
-										<span class="process__list-name"
-											>Готовим 3D <br />
-											план-чертёж</span
-										>
-									</div>
-									<div class="process__list-desc">На встрече в офисе мы выбираем цвет, материалы для фасадов и внутренней отделки вашей будущей кухни. Распределяем зонирование.</div>
-									<a href="" class="process__list-link">
-										<img src="./assets/images/pages/home/arrow.svg" alt="" />
-									</a>
-								</div>
-								<div class="process__list-item swiper-slide">
-									<div class="process__list-img">
-										<img src="./assets/images/pages/home/process_3.png" alt="" />
-									</div>
-									<div class="process__list-info">
-										<span class="process__list-number">03</span>
-										<span class="process__list-name"
-											>Визуал для <br />
-											комплексной <br />
-											меблировки</span
-										>
-									</div>
-									<div class="process__list-desc">На встрече в офисе мы выбираем цвет, материалы для фасадов и внутренней отделки вашей будущей кухни. Распределяем зонирование.</div>
-									<a href="" class="process__list-link">
-										<img src="./assets/images/pages/home/arrow.svg" alt="" />
-									</a>
-								</div>
-								<div class="process__list-item swiper-slide">
-									<div class="process__list-img">
-										<img src="./assets/images/pages/home/process_4.png" alt="" />
-									</div>
-									<div class="process__list-info">
-										<span class="process__list-number">04</span>
-										<span class="process__list-name"
-											>Изготавливаем кухню <br />
-											и производим монтаж</span
-										>
-									</div>
-									<div class="process__list-desc">На встрече в офисе мы выбираем цвет, материалы для фасадов и внутренней отделки вашей будущей кухни. Распределяем зонирование.</div>
-									<a href="" class="process__list-link">
-										<img src="./assets/images/pages/home/arrow.svg" alt="" />
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="process__videos">
-							<div class="process__videos-item">
-								<!-- <div class="process__top">
-									<div class="process__top-icon">
-										<img src="./assets/images/icons/" alt="">
-									</div>
-									<span class="process__top-text">
-										Чертеж и 3D модель кухни
-									</span>
-								</div> -->
-								<div class="process__videos-video">
-									<include src="./components/ui/btn_play.html" data-text='{".btn__play": {"class": "btn-play"}}'></include>
-									<video class="video-company" src="./assets/video/intro.mp4">
-										<source src="./assets/video/intro.mp4" type="mp4" />
-									</video>
-								</div>
-								<span class="process__videos-name"> Чертеж и 3D модель кухни </span>
-
-								<!-- <video src="">
-									<source src="" type="" />
-								</video> -->
-							</div>
-							<div class="process__videos-item">
-								<!-- <video src="">
-									<source src="" type="" />
-								</video> -->
-								<div class="process__videos-video">
-									<include src="./components/ui/btn_play.html" data-text='{".btn__play": {"class": "btn-play"}}'></include>
-									<video class="video-company" src="./assets/video/intro.mp4">
-										<source src="./assets/video/intro.mp4" type="mp4" />
-									</video>
-								</div>
-								<span class="process__videos-name"> Рум-тур сданного объекта </span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+			<include src="./components/process.html"></include>
 
 			<section class="manufacturers">
 				<div class="manufacturers__container container">
@@ -269,16 +161,16 @@
 						<span class="manufacturers__top-desc">Выбираем только лучших производителей встраиваемой бытовой техники - Küppersbusch, DeDietrich, V- ZUG, FALMEC, Gutmann, Fulgor Milano, ILVE, Schulthess, LIEBHERR, Asko, Neff, Smeg и другие.</span>
 					</div>
 					<div class="manufacturers__list">
-						<div class="manufacturers__list-item">
+						<div class="manufacturers__list-item manufacturers__list-item--show">
 							<img src="./assets/images/pages/kitchen/manufacturer_1.png" alt="" />
 						</div>
-						<div class="manufacturers__list-item">
+						<div class="manufacturers__list-item manufacturers__list-item--show">
 							<img src="./assets/images/pages/kitchen/manufacturer_2.png" alt="" />
 						</div>
-						<div class="manufacturers__list-item">
+						<div class="manufacturers__list-item manufacturers__list-item--show">
 							<img src="./assets/images/pages/kitchen/manufacturer_3.png" alt="" />
 						</div>
-						<div class="manufacturers__list-item">
+						<div class="manufacturers__list-item manufacturers__list-item--show">
 							<img src="./assets/images/pages/kitchen/manufacturer_4.png" alt="" />
 						</div>
 						<div class="manufacturers__list-item">

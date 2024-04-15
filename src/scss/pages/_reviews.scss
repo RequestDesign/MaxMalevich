@@ -13,6 +13,7 @@
 			text-align: center;
 			margin-bottom: 6rem;
 			text-transform: uppercase;
+			font-weight: 300;
 		}
 		&-btns {
 			display: flex;
@@ -80,7 +81,7 @@
 					border-radius: 50%;
 					z-index: -1;
 					backdrop-filter: blur(4.86px);
-					-webkit-backdrop-filter:  blur(4.86px);
+					-webkit-backdrop-filter: blur(4.86px);
 					transition: background-color 0.3s;
 				}
 				svg {
@@ -172,7 +173,7 @@
 		align-items: center;
 		gap: 2.4rem;
 		align-self: center;
-        margin: 0 auto;
+		margin: 0 auto;
 
 		@media (max-width: 75em) {
 			gap: 7.6rem;
@@ -280,7 +281,13 @@
 				gap: 4rem;
 				justify-content: initial;
 				overflow-x: auto;
+				scrollbar-width: none;
+				-ms-overflow-style: none;
+				&::-webkit-scrollbar {
+					display: none;
+				}
 			}
+
 			&-btn {
 				padding: 3.2rem 8rem;
 				border-radius: 20rem;

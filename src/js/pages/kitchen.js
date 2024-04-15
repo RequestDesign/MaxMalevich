@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
 			fasadesSwiper();
 		}
 	} catch {}
+	try {
+		showMoreManufacturers()
+	} catch {}
 });
 
 function fasadesSwiper() {
@@ -54,6 +57,17 @@ function fasadesSwiper() {
 			swiper.slideTo(index); // Это изменит активный слайд на слайд с индексом index
 			slides.forEach(item => item.classList.remove('swiper-slide-active'));
 			slide.classList.add('swiper-slide-active');
+		});
+	});
+}
+
+function showMoreManufacturers() {
+	const manufacturersItem = document.querySelectorAll('.manufacturers__list-item');
+	const btn = document.querySelector('.manufacturers__show-more-btn');
+	btn.addEventListener('click', () => {
+		manufacturersItem.forEach(item => {
+			if (!item.classList.contains('manufacturers__list-item--show')) item.classList.add('manufacturers__list-item--show');
+			btn.remove()
 		});
 	});
 }
