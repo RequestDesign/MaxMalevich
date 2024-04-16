@@ -1,4 +1,8 @@
 .article-slider {
+	max-width: 192rem;
+	margin-left: auto;
+	margin-right: auto;
+
 	&__swiper {
 		margin-left: auto;
 		margin-right: auto;
@@ -34,6 +38,10 @@
 			justify-content: space-between;
 			align-items: center;
 		}
+
+		.pagination {
+			width: 36.6rem;
+		}
 	}
 
 	@media (max-width: 75em) {
@@ -51,6 +59,10 @@
 					display: flex;
 					justify-content: center;
 					column-gap: 3.2rem;
+
+					.swiper-pagination-bullet {
+						margin: 0;
+					}
 				}
 
 				.swiper-pagination-bullet {

@@ -329,8 +329,8 @@
 		}
 
 		.burger-menu {
-			width: 9.6rem;
-			height: 9.6rem;
+			width: 6.6rem;
+			height: 6.6rem;
 
 			a {
 				width: 100%;
@@ -417,6 +417,10 @@
 							font-size: 3.6rem;
 						}
 					}
+				}
+
+				&--title {
+					display: none;
 				}
 			}
 		}

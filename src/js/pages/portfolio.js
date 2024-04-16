@@ -92,11 +92,9 @@ const portfolioSwipers = () => {
 				svg = pag.querySelector('svg');
 
 			new Swiper(slider, {
-				slidesPerView: 'auto',
+				slidesPerView: 1,
 				slidesPerGroup: 1,
 				effect: 'creative',
-				loop: true,
-				loopAddBlankSlides: true,
 
 				creativeEffect: {
 					limitProgress: 2,
@@ -129,6 +127,10 @@ const portfolioSwipers = () => {
 							next: {
 								translate: ['21.25rem', 0, -1],
 							},
+
+							prev: {
+								translate: ['-100%', 0, 0],
+							},
 						},
 					},
 				},
@@ -151,9 +153,13 @@ const portfolioSwipers = () => {
 							const oneSlideWidth = svgWidth / swiper.slides.length;
 							const lineWidth = (swiper.activeIndex + 1) * oneSlideWidth;
 
+							const activeSLide = swiper.slides[swiper.activeIndex];
+
 							curSlide.textContent = `0${swiper.activeIndex + 1}`;
 
 							lineSVG.setAttribute('d', `M0 1H${lineWidth}`);
+
+							console.log(swiper.activeIndex, swiper.slides.length);
 						}
 					},
 				},
