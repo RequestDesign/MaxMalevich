@@ -30,6 +30,11 @@ if (sliders.length > 0) {
 			slidesPerView: 1,
 			spaceBetween: 20,
 			allowTouchMove: true,
+			speed: 1000,
+			effect: slider.classList.contains('production__slider--fade')? 'fade' : '',
+			fadeEffect: {
+			  crossFade: true
+			},
 			navigation: {
 				prevEl: prevEl ? prevEl : false,
 				nextEl: nextEl ? nextEl : false,
@@ -242,7 +247,8 @@ if (exampelsSwiper) {
 			nextEl: navExamples.querySelector('.navigation-next'),
 		},
 		coverflowEffect: {
-			rotate: 80,
+			// rotate: 80,
+			rotate: 75,
 			stretch: -30,
 			depth: 300,
 			scale: 0.8,
