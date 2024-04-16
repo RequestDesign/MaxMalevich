@@ -39,7 +39,7 @@
 		gap: 3.2rem;
 		color: #fff;
 		font-weight: 400;
-		letter-spacing: 0.06rem;
+		letter-spacing: 0.06em;
 		opacity: 1;
 		transition: opacity 1s ease-in-out;
 
@@ -64,7 +64,7 @@
 		font-weight: 300;
 		font-size: 10rem;
 		line-height: 1.1;
-		letter-spacing: 0.06rem;
+		letter-spacing: 0.06em;
 		text-transform: uppercase;
 		color: #fff;
 		opacity: 1;
@@ -278,7 +278,7 @@
 			font-weight: 300;
 			font-size: 1.8rem;
 			line-height: 1.4;
-			letter-spacing: 0.06rem;
+			letter-spacing: 0.06em;
 			color: $orange;
 			z-index: -1;
 			&:nth-child(1) {
@@ -308,7 +308,7 @@
 		font-weight: 300;
 		font-size: 3.6rem;
 		line-height: 1.3;
-		letter-spacing: 0.06rem;
+		letter-spacing: 0.06em;
 		text-align: center;
 		&-title {
 			max-width: 82.3rem;
@@ -422,7 +422,7 @@
 			gap: 4.8rem;
 			font-weight: 400;
 			font-size: 3.6rem;
-			letter-spacing: 0.06rem;
+			letter-spacing: 0.06em;
 			text-transform: uppercase;
 			color: #fff;
 			img {
@@ -437,7 +437,7 @@
 			font-weight: 400;
 			font-size: 2rem;
 			line-height: 1.4;
-			letter-spacing: 0.06rem;
+			letter-spacing: 0.06em;
 			color: rgba(255, 255, 255, 0.65);
 		}
 	}
@@ -538,7 +538,7 @@
 			font-weight: 400;
 			font-size: 2rem;
 			line-height: 1.4;
-			letter-spacing: 0.06rem;
+			letter-spacing: 0.06em;
 			text-align: right;
 			color: rgba(255, 255, 255, 0.6);
 		}
@@ -546,7 +546,7 @@
 			font-weight: 400;
 			font-size: 2.4rem;
 			line-height: 1.4;
-			letter-spacing: 0.06rem;
+			letter-spacing: 0.06em;
 			color: #fff;
 		}
 	}
@@ -739,7 +739,7 @@
 			gap: 4rem;
 			font-weight: 400;
 			font-size: 3.6rem;
-			letter-spacing: 0.06rem;
+			letter-spacing: 0.06em;
 			text-transform: uppercase;
 			color: #fff;
 			&.swiper-slide {
@@ -794,7 +794,7 @@
 			font-weight: 300;
 			font-size: 1.8rem;
 			line-height: 1.4;
-			letter-spacing: 0.06rem;
+			letter-spacing: 0.06em;
 			color: var(--white);
 			b {
 				font-weight: 400;
@@ -822,7 +822,10 @@
 		border-top: 1px solid rgba(255, 255, 255, 0.2);
 		overflow: hidden;
 		&-title {
-			display: none;
+			&--mob {
+				display: none;
+			}
+	
 		}
 		&-slider {
 			width: 60.9rem;
@@ -833,24 +836,26 @@
 			display: flex;
 			flex-direction: column;
 			gap: 2.8rem;
-			justify-content: center;
+			// justify-content: center;
+			justify-content: flex-end;
 			font-weight: 400;
 			font-size: 2rem;
 			line-height: 1.4;
-			letter-spacing: 0.06rem;
+			letter-spacing: 0.06em;
 			text-align: center;
 		}
 		&-left {
 			align-self: flex-end;
 			width: 28.1rem;
-			height: 27.2rem;
+			// height: 27.2rem;
+			height: 100%;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
 			font-weight: 400;
 			font-size: 2.8rem;
 			line-height: 1.4;
-			letter-spacing: 0.1rem;
+			letter-spacing: 0.1em;
 		}
 		&-img {
 			display: flex;
@@ -1010,7 +1015,7 @@
 			font-weight: 300;
 			font-size: 6rem;
 			line-height: 1.1;
-			letter-spacing: 0.06rem;
+			letter-spacing: 0.06em;
 			text-transform: uppercase;
 			color: rgba(255, 255, 255, 0.6);
 			transition: font-size 0.5s;
@@ -1020,7 +1025,7 @@
 			font-weight: 400;
 			font-size: 2rem;
 			line-height: 1.4;
-			letter-spacing: 0.06rem;
+			letter-spacing: 0.06em;
 			transition: font-size 0.5s;
 		}
 		&-link {
@@ -1131,7 +1136,7 @@
 			font-weight: 300;
 			font-size: 1.8rem;
 			line-height: 1.4;
-			letter-spacing: 0.06rem;
+			letter-spacing: 0.06em;
 			&.paragraphs {
 				margin-top: 2.4rem;
 				margin-bottom: 4rem;
@@ -1173,7 +1178,7 @@
 		font-weight: 300;
 		font-size: 1.8rem;
 		line-height: 1.4;
-		letter-spacing: 0.06rem;
+		letter-spacing: 0.06em;
 	}
 	&__content {
 		display: flex;
@@ -1199,7 +1204,7 @@
 			font-weight: 400;
 			font-size: 2.4rem;
 			line-height: 1.4;
-			letter-spacing: 0.06rem;
+			letter-spacing: 0.06em;
 			border-top: 1px solid rgba(255, 255, 255, 0.2);
 			&:last-child {
 				border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -1219,7 +1224,7 @@
 		inset: 0;
 		content: '';
 		background: url(./assets/images/pages/news/events-background.png) no-repeat top/cover;
-		opacity: 0.5;
+		// opacity: 0.5;
 	}
 	overflow: hidden;
 	&__title {
@@ -1250,7 +1255,7 @@
 			font-weight: 400;
 			font-size: 2rem;
 			line-height: 1.4;
-			letter-spacing: 0.06rem;
+			letter-spacing: 0.06em;
 			text-align: center;
 		}
 	}
@@ -1325,7 +1330,7 @@
 			font-weight: 300;
 			font-size: 18rem;
 			line-height: 1.1;
-			letter-spacing: 0.06rem;
+			letter-spacing: 0.06em;
 			text-transform: uppercase;
 			span {
 				// display: inline-flex;
@@ -1602,7 +1607,8 @@
 		}
 		&__main {
 			flex-direction: column;
-			gap: 6.4rem;
+			// gap: 6.4rem;
+			gap: 12rem;
 		}
 		&__content {
 			width: 100%;
@@ -1690,9 +1696,9 @@
 		}
 		&__facades {
 			gap: 8.8rem;
-			border-top: none;
-			padding: 4.8rem 0 0 4rem;
-			padding-top: 4.8rem;
+			// border-top: none;
+			padding: 8rem 0 0 4rem;
+			// padding-top: 4.8rem;
 
 			&-pag {
 				margin-top: 6.4rem;
@@ -1750,7 +1756,7 @@
 				font-weight: 300;
 				font-size: 3.6rem;
 				line-height: 1.4;
-				letter-spacing: 0.06rem;
+				letter-spacing: 0.06em;
 				b {
 					font-size: 5.6rem;
 				}
@@ -1873,7 +1879,7 @@
 				width: 100%;
 				font-size: 3.6rem;
 				line-height: 1.4;
-				letter-spacing: 0.06rem;
+				letter-spacing: 0.06em;
 			}
 			&-text {
 				&.paragraphs {
@@ -1993,7 +1999,7 @@
 			font-weight: 300;
 			font-size: 9.2rem;
 			line-height: 1.1;
-			letter-spacing: 0.06rem;
+			letter-spacing: 0.06em;
 			text-transform: uppercase;
 			span {
 				display: inline-flex;
@@ -2264,6 +2270,7 @@
 		&__title {
 			padding: 0;
 			margin-bottom: 6.4rem;
+			letter-spacing: 0.06em;
 		}
 		&__main {
 			flex-direction: column;
@@ -2362,7 +2369,7 @@
 				display: block;
 				font-weight: 400;
 				font-size: 4rem;
-				letter-spacing: 0.06rem;
+				letter-spacing: 0.06em;
 				text-align: center;
 			}
 			&-name {
@@ -2402,7 +2409,7 @@
 				font-weight: 300;
 				font-size: 3.2rem;
 				line-height: 1.4;
-				letter-spacing: 0.06rem;
+				letter-spacing: 0.06em;
 				b {
 					font-size: 4rem;
 				}
@@ -2477,6 +2484,9 @@
 		}
 		.pagination {
 			gap: 2.4rem;
+			.swiper-pagination-bullet {
+				margin: 0 !important;
+			}
 		}
 	}
 	.feedback {
@@ -2527,7 +2537,7 @@
 				font-weight: 300;
 				font-size: 3.2rem;
 				line-height: 1.4;
-				letter-spacing: 0.06rem;
+				letter-spacing: 0.06em;
 				transform: translateY(0);
 				background-color: transparent;
 				z-index: 5;
@@ -2598,7 +2608,7 @@
 				width: 100%;
 				font-size: 3.2rem;
 				line-height: 1.4;
-				letter-spacing: 0.06rem;
+				letter-spacing: 0.06em;
 			}
 		}
 	}
