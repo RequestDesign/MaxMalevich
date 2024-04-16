@@ -62,6 +62,10 @@
         width: 6rem;
         height: 6rem;
     }
+    
+    [class*="ymaps-2"][class*="-ground-pane"] {
+        filter: grayscale(1) brightness(1) invert(1)
+    }
 }
 
 .visit {
