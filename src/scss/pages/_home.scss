@@ -766,9 +766,17 @@
 			background-image: url('../../assets/images/pages/home/facades_bg.svg');
 			background-size: 100% 100%;
 			transform: translateY(-50%);
+			cursor: pointer;
+
+			&--wrapper {
+				overflow: hidden;
+				border-radius: 50%;
+			}
+
 			img {
 				width: 25rem;
 				height: 25rem;
+				transition: transform 0.2s ease-in-out;
 			}
 		}
 	}
@@ -825,7 +833,6 @@
 			&--mob {
 				display: none;
 			}
-	
 		}
 		&-slider {
 			width: 60.9rem;
@@ -856,6 +863,10 @@
 			font-size: 2.8rem;
 			line-height: 1.4;
 			letter-spacing: 0.1em;
+
+			.authors__facades-title {
+				display: block;
+			}
 		}
 		&-img {
 			display: flex;
@@ -868,6 +879,7 @@
 			img {
 				width: 21.3rem;
 				height: 21.3rem;
+				pointer-events: none;
 			}
 		}
 	}

@@ -337,13 +337,53 @@ const swiper1 = new Swiper('.authors__facades-slider', {
 	},
 	loop: true,
 	thumbs: { swiper: swiper2 },
+	effect: 'creative',
+	creativeEffect: {
+		limitProgress: 3,
+
+		prev: {
+			opacity: 0,
+		},
+
+		next: {
+			opacity: 1,
+			translate: ['25rem', 0, 0],
+		},
+	},
+
 	breakpoints: {
-		1200: {
+		768: {
+			creativeEffect: {
+				next: {
+					translate: ['54rem', 0, 0],
+				},
+			},
+		},
+		1201: {
 			spaceBetween: remToPx(2),
 			allowTouchMove: false,
+			creativeEffect: {
+				next: {
+					translate: ['27rem', 0, 0],
+				},
+			},
 		},
 	},
 });
+
+if (document.querySelector('.authors__selected-img') && window.screen.width > 1200) {
+	const imgs = document.querySelectorAll('.authors__selected-img');
+
+	imgs.forEach(img => {
+		img.addEventListener('click', e => {
+			img.classList.toggle('active');
+
+			console.log(e.target);
+
+			img.classList.contains('active') ? (img.querySelector('img').style.transform = 'scale(1.4)') : (img.querySelector('img').style.transform = 'scale(1)');
+		});
+	});
+}
 
 const btnZoom = document.querySelectorAll('.authors__selected-zoom');
 btnZoom.forEach(btn => {
@@ -523,4 +563,3 @@ if (projectSlider) {
 // 		},
 // 	});
 // }
-
