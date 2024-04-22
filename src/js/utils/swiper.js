@@ -31,9 +31,9 @@ if (sliders.length > 0) {
 			spaceBetween: 20,
 			allowTouchMove: true,
 			speed: 1000,
-			effect: slider.classList.contains('production__slider--fade')? 'fade' : '',
+			effect: slider.classList.contains('production__slider--fade') ? 'fade' : '',
 			fadeEffect: {
-			  crossFade: true
+				crossFade: true,
 			},
 			navigation: {
 				prevEl: prevEl ? prevEl : false,
@@ -370,20 +370,6 @@ const swiper1 = new Swiper('.authors__facades-slider', {
 		},
 	},
 });
-
-if (document.querySelector('.authors__selected-img') && window.screen.width > 1200) {
-	const imgs = document.querySelectorAll('.authors__selected-img');
-
-	imgs.forEach(img => {
-		img.addEventListener('click', e => {
-			img.classList.toggle('active');
-
-			console.log(e.target);
-
-			img.classList.contains('active') ? (img.querySelector('img').style.transform = 'scale(1.4)') : (img.querySelector('img').style.transform = 'scale(1)');
-		});
-	});
-}
 
 const btnZoom = document.querySelectorAll('.authors__selected-zoom');
 btnZoom.forEach(btn => {
