@@ -778,6 +778,14 @@
 				height: 25rem;
 				transition: transform 0.2s ease-in-out;
 			}
+
+			@media (min-width: 75em) {
+				&:hover {
+					img {
+						transform: scale(1.4);
+					}
+				}
+			}
 		}
 	}
 
