@@ -524,6 +524,33 @@
 			transition: background-color 0.3s;
 		}
 	}
+
+	.kitchen-baner {
+		overflow: hidden;
+		.container  {
+			width: 100%;
+			position: relative;
+			padding: 0;
+		}
+		&_swiper {
+			position: absolute;
+			width: 153rem;
+			top: 75.2rem;
+			left: 4rem;
+		}
+		&_slide {
+			&-title {
+				font-size: 13rem;
+				margin-bottom: 4rem;
+			}
+			&-text {
+				font-size: 4.8rem;
+			}
+		}
+		&_img {
+			height: 190rem;
+		}
+	}
 }
 @media (max-width: 47.9375em) {
 	.director {
@@ -658,6 +685,30 @@
 					background-color: #fff;
 				}
 			}
+		}
+	}
+
+	.kitchen-baner {
+		.container  {
+			padding: 0;
+		}
+		&_swiper {
+			position: absolute;
+			width: 71rem;
+			top: 52.6rem;
+			left: 2rem;
+		}
+		&_slide {
+			&-title {
+				font-size: 8rem;
+				margin-bottom: 3.2rem;
+			}
+			&-text {
+				font-size: 3.6rem;
+			}
+		}
+		&_img {
+			height: 138.8rem;
 		}
 	}
 }
