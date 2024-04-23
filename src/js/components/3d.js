@@ -102,8 +102,9 @@ import {
 } from "swiper/modules";
 
 const swiper = new Swiper('.kitchen-baner_swiper', {
-	modules: [Navigation, Pagination, EffectCreative],
+	modules: [Pagination, EffectCreative],
 	loop: true,
+	allowTouchMove: false,
 	speed: 5000,
 	autoplay: {
 		delay: 5000,
@@ -119,4 +120,7 @@ const swiper = new Swiper('.kitchen-baner_swiper', {
 		  scale: 1,
         },
     },
+	pagination: {
+		el: '.kitchen-baner_pagination',
+	},
 });
