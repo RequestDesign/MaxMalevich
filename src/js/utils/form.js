@@ -1,6 +1,6 @@
 import './forms';
-import { formFieldsInit, formSubmit } from './forms';
 import 'inputmask';
+import { formFieldsInit, formSubmit } from './forms';
 window.$ = window.jQuery = require('jquery');
 const form = () => {
 	// form fields
@@ -8,10 +8,12 @@ const form = () => {
 
 	// submit form
 	phoneMask();
+	mailMask() 
 	formSubmit();
 	nameValidate();
+	// mailValidate();
 	inputFile();
-	inputDate ()
+	inputDate();
 
 	function nameValidate() {
 		const name = document.querySelectorAll('.input--name');
@@ -22,6 +24,26 @@ const form = () => {
 				const parent = item.parentElement.parentElement;
 
 				if (!/^[a-zA-Zа-яА-Я\s\-]+$/.test(inputValue) && inputValue != '') {
+					span.classList.add('active');
+					parent.classList.add('_form-error');
+				} else {
+					span.classList.remove('active');
+					parent.classList.remove('_form-error');
+				}
+			});
+		});
+	}
+
+	function mailValidate() {
+		const mail = document.querySelectorAll('.input--mail');
+
+		mail.forEach(item => {
+			item.addEventListener('input', () => {
+				const inputValue = item.value.trim();
+				const parent = item.parentElement.parentElement;
+				const span = item.parentElement.nextElementSibling;
+
+				if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(inputValue) && inputValue != '') {
 					span.classList.add('active');
 					parent.classList.add('_form-error');
 				} else {
@@ -92,18 +114,22 @@ const form = () => {
 	}
 
 	function phoneMask() {
-		console.log('123');
 		const mask = new Inputmask('+7 (999) 999 99 99');
 		mask.mask($('.phone-mask'));
 	}
+	
+	function mailMask() {
+		const mask = new Inputmask('email');
+		mask.mask($('.input--mail'));
+	}
 
-	function inputDate () {
-		const input = document.querySelectorAll('.input--date')
+
+	function inputDate() {
+		const input = document.querySelectorAll('.input--date');
 		let currentDate = new Date();
 		currentDate.setDate(currentDate.getDate() + 1);
 		let formattedDate = currentDate.toISOString().split('T')[0];
-		input.forEach(item => item.value = formattedDate)
-
+		input.forEach(item => (item.value = formattedDate));
 	}
 };
 
