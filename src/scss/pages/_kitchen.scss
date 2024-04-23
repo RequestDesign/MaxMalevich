@@ -114,6 +114,9 @@
 }
 
 .facades {
+	& .subcategory__btns {
+		margin-bottom: 14rem;
+	}
 	&__container {
 	}
 	&__title {
@@ -395,6 +398,9 @@
 	}
 
 	.facades {
+		& .subcategory__btns {
+			margin-bottom: 9.6rem;
+		}
 		&__container {
 		}
 		&__title {
@@ -673,6 +679,9 @@
 	}
 
 	.facades {
+		& .subcategory__btns {
+			margin-bottom: 8rem;
+		}
 		&__container {
 			position: relative;
 		}
