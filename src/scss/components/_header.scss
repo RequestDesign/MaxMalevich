@@ -1,5 +1,6 @@
 .header {
-	position: absolute;
+	// position: absolute;
+	position: fixed;
 	width: 100%;
 	top: 0;
 	left: 0;
@@ -255,6 +256,7 @@
 
 @media (max-width: 75em) {
 	.header {
+		position: absolute;
 		&__logo {
 			width: 33rem;
 			height: 9.2rem;
