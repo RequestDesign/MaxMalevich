@@ -16,8 +16,8 @@ let arrInterval = []
 function animAudio() {
     $('.audio-top').find('div').each(function() {
         const interval = setInterval(() => {
-            $( this ).css( "height", `${Math.floor(Math.random() * 101)+1}%` );
-        }, 1000)
+            $( this ).css( "height", `${Math.floor(Math.random() * 101)+2}%` );
+        }, 750)
         arrInterval.push(interval)
     });
 }

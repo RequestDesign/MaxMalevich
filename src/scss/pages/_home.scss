@@ -1347,6 +1347,7 @@
 			height: 1%;
 			background: #FFF;
 			transition: height .5s;
+			transition-timing-function: cubic-bezier(0.6, -0.28, 0.74, 0.05);
 		}
 	}
 
