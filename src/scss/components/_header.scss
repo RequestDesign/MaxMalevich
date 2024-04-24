@@ -3,15 +3,17 @@
 	width: 100%;
 	top: 0;
 	left: 0;
-	z-index: 1000;
+	z-index: 1200;
 	transform: translateY(0);
 	transition: transform 1s ease-in-out;
 
 	// Если нужна будет анимация баннера убрать коммент
-
-	// &.anim {
-	// 	transform: translateY(-100%);
-	// }
+	&.no-tran {
+		transition: none;
+	}
+	&.anim {
+		transform: translateY(-100%);
+	}
 	&__mob {
 		display: none;
 	}
