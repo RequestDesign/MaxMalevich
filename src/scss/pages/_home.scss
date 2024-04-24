@@ -72,7 +72,7 @@
 	}
 	&__anim {
 		//Анимация блока
-		display: none;
+		// display: none;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -87,6 +87,23 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+		}
+		&-text {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: transparent;
+			opacity: 1;
+			transition: opacity 1s ease-in-out;
+			z-index: 1011;
+			&.anim {
+				opacity: 0;
+			}
+			&.no-tran {
+				transition: none;
+			}
 		}
 		.banner__anim-img.main {
 			background-color: #fff;
