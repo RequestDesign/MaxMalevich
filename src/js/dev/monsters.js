@@ -4,6 +4,7 @@ import '../utils/fancybox';
 import '../pages/contacts';
 import '../pages/project-detail';
 import '../pages/subcategory';
+import '../pages/audio';
 
 import "animate.css";
 import WOW from "wow.js";
