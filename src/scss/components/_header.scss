@@ -9,11 +9,12 @@
 	transition: transform 1s ease-in-out;
 
 	// Если нужна будет анимация баннера убрать коммент
-	&.no-tran {
-		transition: none;
-	}
 	&.anim {
 		transform: translateY(-100%);
+		transition: none;
+	}
+	&.no-tran {
+		transform: none;
 	}
 	&__mob {
 		display: none;

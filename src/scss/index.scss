@@ -36,7 +36,12 @@ body {
 		}
 		.banner {
 			&__anim {
-				display: none;
+				// display: none;
+				z-index: -1;
+				position: absolute;
+				.banner__anim-wrapper {
+					display: none;
+				}
 			}
 			&__container {
 				width: 100%;
