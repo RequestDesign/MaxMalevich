@@ -77,7 +77,7 @@
 		justify-content: space-between;
 	}
 	&__bottom {
-		padding-top: 10rem;
+		// padding-top: 10rem;
 		width: 100%;
 		display: grid;
 		grid-template-rows: 0fr;
@@ -289,7 +289,7 @@
 
 @media (max-width: 75em) and (min-width: 47.9375em) {
 	.header {
-		padding-bottom: 12rem;
+		// padding-bottom: 12rem;
 
 		&.active {
 			.header__inner-menu {

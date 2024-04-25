@@ -95,7 +95,9 @@ if (furnitureSlider) {
 	const last = furnitureSlider.closest('.container').querySelector('.pag-last');
 	const lineSVG = pagination.querySelector('svg path');
 	const svg = pagination.querySelector('svg');
-	new Swiper(furnitureSlider, {
+	const navFurniture = document.querySelector('.furniture .navigation');
+
+	const furnitureSwiper = new Swiper(furnitureSlider, {
 		modules: [Navigation, Pagination, EffectCreative],
 		slidesPerView: 1,
 		speed: 1200,
@@ -105,7 +107,7 @@ if (furnitureSlider) {
 				cur.textContent = `0${swiper.activeIndex + 1}`;
 				last.textContent = `0${swiper.slides.length}`;
 				if (svg) {
-					const svgWidth = 312;
+					const svgWidth = 77;
 					console.log(svgWidth);
 					if (svgWidth) {
 						const oneSlideWidth = svgWidth / swiper.slides.length;
@@ -115,9 +117,10 @@ if (furnitureSlider) {
 				}
 			},
 			slideChange: function (swiper) {
+				console.log(123);
 				cur.textContent = `0${swiper.activeIndex + 1}`;
 				if (svg) {
-					const svgWidth = 312;
+					const svgWidth = 77;
 					if (svgWidth) {
 						const oneSlideWidth = svgWidth / swiper.slides.length;
 						const lineWidth = (swiper.activeIndex + 1) * oneSlideWidth;
@@ -143,6 +146,10 @@ if (furnitureSlider) {
 		pagination: {
 			el: window.screen.width < 768 && '.furniture__slider-bottom .pagination',
 		},
+		// navigation: {
+		// 	prevEl: navFurniture.querySelector('.navigation-prev'),
+		// 	nextEl: navFurniture.querySelector('.navigation-next'),
+		// },
 		breakpoints: {
 			1201: {
 				allowTouchMove: true,
@@ -174,6 +181,12 @@ if (furnitureSlider) {
 			},
 		},
 	});
+	navFurniture.querySelector('.navigation-prev').addEventListener('click', (e) => {
+		furnitureSwiper.slidePrev()
+	})
+	navFurniture.querySelector('.navigation-next').addEventListener('click', (e) => {
+		furnitureSwiper.slideNext()
+	})
 }
 
 const facadesNext = document.querySelector('.authors__facades .navigation-next');

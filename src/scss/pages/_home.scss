@@ -274,8 +274,17 @@
 			display: flex;
 			align-items: end;
 			// gap: 43.9rem;
-			justify-content: space-between;
 			width: 127.3rem;
+
+			.pagination {
+				svg {
+					width: 7.7rem;
+				}
+				margin-right: 11rem;
+			}
+			.navigation {
+				margin-right: auto;
+			}
 		}
 		.swiper-slide-active,
 		.swiper-slide-prev {
@@ -1506,9 +1515,13 @@
 					width: 70.8rem;
 					font-size: 6.4rem;
 					gap: 9.2rem;
+					margin-right: auto;
 					svg {
 						width: 36.4rem;
 					}
+				}
+				.navigation {
+					display: none;
 				}
 			}
 			.swiper-slide {
