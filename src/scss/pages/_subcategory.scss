@@ -11,6 +11,14 @@
 		&::-webkit-scrollbar {
 			display: none;
 		}
+
+		&--sticky {
+			position: sticky;
+			width: 180rem;
+			margin: 0 auto 6rem;
+			top: 13rem;
+			z-index: 2;
+		}
 	}
 	&__btn {
 		cursor: pointer;
@@ -292,6 +300,13 @@
 		&__btns {
 			gap: 3.6rem;
 			margin-bottom: 9.6rem;
+
+			&--sticky {
+				width: 145.6rem;
+				margin: 0 auto 9.6rem;
+				top: 20rem;
+				z-index: 2;
+			}
 		}
 		&__btn {
 			padding: 3.2rem 8rem;
@@ -441,6 +456,13 @@
 		margin-top: 20.8rem;
 		&__btns {
 			margin-bottom: 8rem;
+
+			&--sticky {
+				width: 71rem;
+				margin: 0 auto 8rem;
+				top: 15rem;
+				z-index: 2;
+			}
 		}
 		&__btn {
 			padding: 2.4rem 4.8rem;
