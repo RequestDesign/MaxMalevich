@@ -441,8 +441,17 @@ const swiperNews = new Swiper('.news__slider', {
 
 if (window.innerWidth < 1201) {
 	const swiperProcess = new Swiper('.process__list-slider', {
-		slidesPerView: 'auto',
+		modules: [Pagination],
+		slidesPerView: 1,
 		spaceBetween: remToPx(9.6),
+		pagination: {
+			el: '.process__pagination',
+		},
+		breakpoints: {
+			768: {
+				slidesPerView: 'auto',
+			},
+		},
 	});
 }
 
