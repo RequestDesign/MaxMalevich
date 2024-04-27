@@ -130,22 +130,25 @@
 	// .to-customers-banner__swiper-slide
 
 	&__swiper-slide {
-		width: 40rem !important;
-		height: 39.2 !important;
-		@media (max-width: 75em) {
-			width: 80rem !important;
-			height: 78rem !important;
-		}
-		@media (max-width: 47.9375em) {
-			width: 42rem !important;
-			height: 42rem !important;
-		}
+		// &.swiper-slide {
+		// 	width: 40rem;
+		// }
+		// // width: 40rem !important;
+		// height: 39.2 !important;
+		// @media (max-width: 75em) {
+		// 	// width: 80rem !important;
+		// 	height: 78rem !important;
+		// }
+		// @media (max-width: 47.9375em) {
+		// 	// width: 42rem !important;
+		// 	height: 42rem !important;
+		// }
 	}
 
 	// .to-customers-banner__swiper-slide-inner
 
 	&__swiper-slide-inner {
-		width: 40rem;
+		width: 100%;
 		height: 39.2;
 		border-radius: 2rem;
 		overflow: hidden;
@@ -155,13 +158,70 @@
 			object-fit: cover;
 		}
 		@media (max-width: 75em) {
-			width: 80rem;
-			height: 78rem;
+			width: 100%;
+			height: 150rem;
 		}
 		@media (max-width: 47.9375em) {
-			width: 42rem;
-			height: 42rem;
+			width: 100%;
+			height: 71rem;
 			border-radius: 1.6rem;
+		}
+	}
+
+	&__slider-bottom {
+		width: 180rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: auto;
+		margin-top: -8rem;
+		.pagination {
+
+			svg {
+				width: 22.2rem;
+			}
+		}
+		@media (max-width: 75em) {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin: auto;
+			margin-top: -8rem;
+			.pagination {
+	
+				svg {
+					width: 22.2rem;
+				}
+			}
+		}
+		@media (max-width: 47.9375em) {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin: auto;
+			margin-top: -5rem;
+			.pagination {
+				display: flex;
+				gap: 2.4rem;
+				margin: auto;
+				width: fit-content;
+				&.swiper-pagination-horizontal.swiper-pagination-bullets {
+					
+					.swiper-pagination-bullet {
+						margin: 0;
+						opacity: 0.6;
+
+						&.swiper-pagination-bullet-active {
+							opacity: 1;
+						}
+					}
+				}
+			}
+			.navigation {
+				display: none;
+			}
 		}
 	}
 }
