@@ -72,7 +72,7 @@ if($('.banner').length) {
 		mainImg.classList.add('active');
 		header.classList.remove('anim');
 		// bannerText.classList.remove('anim');
-	}, 4200);
+	}, window.screen.width < 1200 ? 2200 : 4200 );
 	
 	// setTimeou
 	
@@ -80,7 +80,7 @@ if($('.banner').length) {
 		bannerSlider.classList.remove('anim');
 		document.body.classList.add('anim-ended');
 		banner_slider.autoplay.start()
-	}, 5200);
+	}, window.screen.width < 1200 ? 3200 : 5200 );
 
 }
 	

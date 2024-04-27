@@ -144,6 +144,10 @@
 			gap: 10rem;
 			transform: translateX(0);
 			transition: transform 4s cubic-bezier(0.68, 1.61, 0.63, 0.94);
+
+			@media (max-width: 75em) {
+				transition: transform 2s cubic-bezier(0.68, 1.61, 0.63, 0.94);
+			}
 			&:nth-child(1) {
 				// animation: animBanner1 4s linear;
 				&.active {
