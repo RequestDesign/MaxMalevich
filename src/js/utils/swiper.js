@@ -203,6 +203,7 @@ if (exampelsSwiper) {
 		loop: true,
 		centeredSlides: true,
 		effect: 'creative',
+		allowTouchMove: false,
 		creativeEffect: {
 			limitProgress: 3,
 			progressMultiplier: 4,
@@ -275,10 +276,11 @@ if (exampelsSwiper) {
 			1200: {
 				spaceBetween: 0,
 				slidesPerView: 'auto',
-				initialSlide: 3,
 				allowTouchMove: false,
+				initialSlide: 1,
 			},
 			767: {
+				initialSlide: 0,
 				// effect: 'slide',
 				allowTouchMove: false,
 				slidesPerView: 'auto',
