@@ -15,11 +15,11 @@ if($('.banner').length) {
 		
 	const banner_slider = new Swiper('.banner__slider', {
 		modules: [Pagination, EffectCreative],
-		loop: true,
 		allowTouchMove: false,
 		speed: 5000,
 		autoplay: {
 			delay: 5000,
+			stopOnLastSlide: true,
 		},
 		effect: "creative",
 		creativeEffect: {
@@ -55,33 +55,47 @@ if($('.banner').length) {
 	const bannerSlider = document.querySelector('.banner__slider');
 	const bannerText = document.querySelector('.banner__anim-text');
 	
-	setTimeout(() => {
-		bannerWrapper.forEach((wrapper, id) => {
-			wrapper.classList.add('active');
-			if (id === 1) {
-				console.log('id: ', id);
-				// const wrapperSlides = wrapper.querySelector('.banner__anim-img');
-				// bannerWrapper[1].style.transform = `translateX(${translateValue})`;
+	if(localStorage.getItem('seeBanerAnim') !== 'true') {
+		setTimeout(() => {
+			bannerWrapper.forEach((wrapper, id) => {
+				wrapper.classList.add('active');
+				if (id === 1) {
+					console.log('id: ', id);
+					// const wrapperSlides = wrapper.querySelector('.banner__anim-img');
+					// bannerWrapper[1].style.transform = `translateX(${translateValue})`;
+				}
+			});
+			header.classList.remove('no-tran');
+			// bannerText.classList.remove('no-tran');
+		}, 1);
+		
+		setTimeout(() => {
+			mainImg.classList.add('active');
+			header.classList.remove('anim');
+			// bannerText.classList.remove('anim');
+		}, window.screen.width < 1200 ? 2200 : 4200 );
+		
+		// setTimeou
+		
+		setTimeout(() => {
+			if(mainImg.querySelector('video')) {
+				mainImg.querySelector('video').play()
 			}
-		});
-		header.classList.remove('no-tran');
-		// bannerText.classList.remove('no-tran');
-	}, 1);
-	
-	setTimeout(() => {
+			bannerSlider.classList.remove('anim');
+			document.body.classList.add('anim-ended');
+			banner_slider.autoplay.start()
+			localStorage.setItem('seeBanerAnim', 'true')
+		}, window.screen.width < 1200 ? 3200 : 5200 );
+	} else {
+		if(mainImg.querySelector('video')) {
+			mainImg.querySelector('video').play()
+		}
+		mainImg.style.transition = "none";
 		mainImg.classList.add('active');
-		header.classList.remove('anim');
-		// bannerText.classList.remove('anim');
-	}, window.screen.width < 1200 ? 2200 : 4200 );
-	
-	// setTimeou
-	
-	setTimeout(() => {
 		bannerSlider.classList.remove('anim');
 		document.body.classList.add('anim-ended');
 		banner_slider.autoplay.start()
-	}, window.screen.width < 1200 ? 3200 : 5200 );
-
+	}
 }
 	
 const btnPlays = document.querySelectorAll('.btn-play');

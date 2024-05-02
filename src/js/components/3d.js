@@ -103,11 +103,11 @@ import {
 
 const swiper = new Swiper('.kitchen-baner_swiper', {
 	modules: [Pagination, EffectCreative],
-	loop: true,
 	allowTouchMove: false,
 	speed: 5000,
 	autoplay: {
 		delay: 5000,
+		stopOnLastSlide: true,
 	},
 	effect: "creative",
 	creativeEffect: {
