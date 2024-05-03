@@ -1397,18 +1397,6 @@
 		.audio-bottom-paused {
 			position: relative;
 			display: flex;
-
-			&::after {
-				content: '';
-				display: block;
-				width: 2.4rem;
-				height: 2px;
-				background: white;
-				position: absolute;
-				transform: rotate(-35deg);
-				bottom: 1rem;
-				left: -0.2rem;
-			}
 		}
 	}
 }
@@ -2153,16 +2141,6 @@
 	
 			}
 	
-		}
-		&-paused {
-			.audio-bottom-paused {
-	
-				&::after {
-					width: 4.4rem;
-					bottom: 1.8rem;
-					left: -0.4rem;
-				}
-			}
 		}
 	}
 }
