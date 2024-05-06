@@ -57,11 +57,13 @@ if(to_customers_banner) {
 				slidesPerView: 3.9,
                 spaceBetween: rem(4.8),
                 centeredSlides: true,
+				initialSlide: 2,
 			},
 			768: {
 				slidesPerView: 1,
                 spaceBetween: rem(4),
                 centeredSlides: true,
+				initialSlide: 0,
 			},
 		},
 	});
