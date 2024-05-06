@@ -25,18 +25,22 @@ function animAudioClear() {
     arrInterval.map((interval)=>{
         clearInterval(interval)
     })
-    $('.audio-top').find('div').css( "height", '1%' )
+    // $('.audio-top').find('div').css( "height", '1%' )
     arrInterval = []
 }
-
-$('.audio').on('click', function(){
-    if($(this).hasClass('audio-paused')){
-        $(this).removeClass('audio-paused')
-        $(this).find('audio')[0].play()
-        animAudio()
-    } else {
-        $(this).addClass('audio-paused')
-        $(this).find('audio')[0].pause()
-        animAudioClear()
-    }
-})
+if($('.audio').length) {
+    $('.audio-top').find('div').each(function() {
+        $( this ).css( "height", `${Math.floor(Math.random() * 101)+2}%` );
+    });
+    $('.audio').on('click', function(){
+        if($(this).hasClass('audio-paused')){
+            $(this).removeClass('audio-paused')
+            $(this).find('audio')[0].play()
+            animAudio()
+        } else {
+            $(this).addClass('audio-paused')
+            $(this).find('audio')[0].pause()
+            animAudioClear()
+        }
+    })
+}

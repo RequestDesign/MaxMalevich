@@ -239,13 +239,13 @@
 	&__title {
 		width: fit-content;
 		margin-right: -7rem;
-		margin-bottom: 17.5rem;
+		margin-bottom: 9.6rem;
 		display: flex;
 		flex-direction: column;
 		text-transform: uppercase;
 		span {
 			&:last-child {
-				margin-right: -4rem;
+				margin-right: -5rem;
 				text-align: end;
 			}
 		}
@@ -276,18 +276,19 @@
 			bottom: 0;
 			right: 0;
 			display: flex;
-			align-items: end;
+			align-items: center;
 			// gap: 43.9rem;
 			width: 127.3rem;
+			justify-content: flex-end;
 
 			.pagination {
 				svg {
 					width: 7.7rem;
 				}
-				margin-right: 11rem;
+				margin-right: 3rem;
 			}
 			.navigation {
-				margin-right: auto;
+				margin-right: 3rem;
 			}
 		}
 		.swiper-slide-active,

@@ -114,6 +114,7 @@ const swiper = new Swiper('.kitchen-baner_swiper', {
         prev: {
 		  opacity: 0,
 		  scale: 3,
+		  translate: ["50%", 0, 0],
         },
         next: {
 		  opacity: 0,
