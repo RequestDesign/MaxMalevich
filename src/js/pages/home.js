@@ -36,7 +36,13 @@ if($('.banner').length) {
 			el: '.banner_pagination',
 		},
 	});
+	const banner_img = new Swiper('.banner__anim-img_swapper', {
+		speed: 2500,
+	})
 	banner_slider.autoplay.stop()
+	banner_slider.on('slideChange', function (e) {
+		banner_img.slideTo(banner_slider.activeIndex)
+	});
 
 	const bannerWrapper = document.querySelectorAll('.banner__anim-wrapper');
 	const slideWidth = 60; // ширина одного слайда в процентах

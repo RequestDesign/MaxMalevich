@@ -328,6 +328,13 @@
 	}
 	&_img {
 		height: 90rem;
+
+		.swiper-wrapper {
+			z-index: 0;
+		}
+		&_swapper {
+			height: 100%;
+		}
 	}
 	&_pagination {
 		&.swiper-pagination-bullets.swiper-pagination-horizontal {

@@ -101,7 +101,7 @@ import {
 	Mousewheel,
 } from "swiper/modules";
 
-const swiper = new Swiper('.kitchen-baner_swiper', {
+const kitchen_baner_swiper = new Swiper('.kitchen-baner_swiper', {
 	modules: [Pagination, EffectCreative],
 	allowTouchMove: false,
 	speed: 5000,
@@ -124,4 +124,11 @@ const swiper = new Swiper('.kitchen-baner_swiper', {
 	pagination: {
 		el: '.kitchen-baner_pagination',
 	},
+});
+
+const kitchen_baner_img = new Swiper('.kitchen-baner_img_swapper', {
+	speed: 2500,
+})
+kitchen_baner_swiper.on('slideChange', function (e) {
+	kitchen_baner_img.slideTo(kitchen_baner_swiper.activeIndex)
 });
