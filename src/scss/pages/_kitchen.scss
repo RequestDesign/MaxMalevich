@@ -309,6 +309,27 @@
 		width: 149.2rem;
 		top: 28.9rem;
 		left: 21.4rem;
+
+		&r {
+			position: absolute;
+			width: 149.2rem;
+			top: 28.9rem;
+			left: 21.4rem;
+			
+			&r {
+				position: absolute;
+				width: 149.2rem;
+				top: 28.9rem;
+				left: 21.4rem;
+
+				&r {
+					position: absolute;
+					width: 149.2rem;
+					top: 28.9rem;
+					left: 21.4rem;
+				}
+			}
+		}
 	}
 	&_slide {
 		&-title {
@@ -577,6 +598,30 @@
 			width: 153rem;
 			top: 75.2rem;
 			left: 4rem;
+
+			&r {
+				position: absolute;
+				width: 153rem;
+				top: 75.2rem;
+				left: 4rem;
+	
+				
+				&r {
+					position: absolute;
+					width: 153rem;
+					top: 75.2rem;
+					left: 4rem;
+		
+	
+					&r {
+						position: absolute;
+						width: 153rem;
+						top: 75.2rem;
+						left: 4rem;
+			
+					}
+				}
+			}
 		}
 		&_slide {
 			&-title {
@@ -755,6 +800,30 @@
 			width: 71rem;
 			top: 52.6rem;
 			left: 2rem;
+
+			&r {
+				position: absolute;
+				width: 71rem;
+				top: 52.6rem;
+				left: 2rem;
+	
+				
+				&r {
+					position: absolute;
+					width: 71rem;
+					top: 52.6rem;
+					left: 2rem;
+		
+	
+					&r {
+						position: absolute;
+						width: 71rem;
+						top: 52.6rem;
+						left: 2rem;
+			
+					}
+				}
+			}
 		}
 		&_slide {
 			&-title {

@@ -135,3 +135,96 @@ kitchen_baner_swiper.on('slideChange', function (e) {
 		kitchen_baner_swiper.pagination.bullets[0].classList.add("swiper-pagination-bullet-active")
 	}
 });
+
+const kitchen_baner_swiperr = new Swiper('.kitchen-baner_swiperr', {
+	modules: [Pagination, EffectCreative],
+	allowTouchMove: false,
+	speed: 5000,
+	autoplay: {
+		delay: 7000,
+		stopOnLastSlide: true,
+	},
+	effect: "creative",
+	creativeEffect: {
+        prev: {
+		  opacity: 0,
+		  scale: 3,
+		  translate: ["50%", 0, 0],
+        },
+        next: {
+		  opacity: 0,
+		  scale: 1,
+        },
+    },
+	pagination: {
+		el: '.kitchen-baner_pagination',
+	},
+});
+kitchen_baner_swiperr.on('slideChange', function (e) {
+	kitchen_baner_img.slideTo(kitchen_baner_swiperr.activeIndex)
+	if(kitchen_baner_swiperr.slides.length -1 === kitchen_baner_swiperr.activeIndex) {
+		kitchen_baner_swiperr.pagination.bullets[0].classList.add("swiper-pagination-bullet-active")
+	}
+});
+
+const kitchen_baner_swiperrr = new Swiper('.kitchen-baner_swiperrr', {
+	modules: [Pagination, EffectCreative],
+	allowTouchMove: false,
+	speed: 5000,
+	autoplay: {
+		delay: 10000,
+		stopOnLastSlide: true,
+	},
+	effect: "creative",
+	creativeEffect: {
+        prev: {
+		  opacity: 0,
+		  scale: 3,
+		  translate: ["50%", 0, 0],
+        },
+        next: {
+		  opacity: 0,
+		  scale: 1,
+        },
+    },
+	pagination: {
+		el: '.kitchen-baner_pagination',
+	},
+});
+kitchen_baner_swiperrr.on('slideChange', function (e) {
+	kitchen_baner_img.slideTo(kitchen_baner_swiperrr.activeIndex)
+	if(kitchen_baner_swiperrr.slides.length -1 === kitchen_baner_swiperrr.activeIndex) {
+		kitchen_baner_swiperrr.pagination.bullets[0].classList.add("swiper-pagination-bullet-active")
+	}
+});
+
+const kitchen_baner_swiperrrr = new Swiper('.kitchen-baner_swiperrrr', {
+	modules: [Pagination, EffectCreative],
+	allowTouchMove: false,
+	speed: 5000,
+	autoplay: {
+		delay: 15000,
+		stopOnLastSlide: true,
+	},
+	effect: "creative",
+	creativeEffect: {
+        prev: {
+		  opacity: 0,
+		  scale: 3,
+		  translate: ["50%", 0, 0],
+        },
+        next: {
+		  opacity: 0,
+		  scale: 1,
+        },
+    },
+	pagination: {
+		el: '.kitchen-baner_pagination',
+	},
+});
+kitchen_baner_swiperrrr.on('slideChange', function (e) {
+	kitchen_baner_img.slideTo(kitchen_baner_swiperrrr.activeIndex)
+	if(kitchen_baner_swiperrrr.slides.length -1 === kitchen_baner_swiperrrr.activeIndex) {
+		kitchen_baner_swiperrrr.pagination.bullets[0].classList.add("swiper-pagination-bullet-active")
+	}
+});
