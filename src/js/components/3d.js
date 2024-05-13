@@ -131,4 +131,7 @@ const kitchen_baner_img = new Swiper('.kitchen-baner_img_swapper', {
 })
 kitchen_baner_swiper.on('slideChange', function (e) {
 	kitchen_baner_img.slideTo(kitchen_baner_swiper.activeIndex)
+	if(kitchen_baner_swiper.slides.length -1 === kitchen_baner_swiper.activeIndex) {
+		kitchen_baner_swiper.pagination.bullets[0].classList.add("swiper-pagination-bullet-active")
+	}
 });

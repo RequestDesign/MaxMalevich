@@ -229,6 +229,10 @@
 			background-color: #FFF;
 			opacity: 0.6;
 
+			&:last-child {
+				display: none;
+			}
+
 			&.swiper-pagination-bullet-active {
 				background-color: #FFF;
 				opacity: 1;
