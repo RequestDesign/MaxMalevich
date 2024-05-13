@@ -141,7 +141,7 @@ const kitchen_baner_swiperr = new Swiper('.kitchen-baner_swiperr', {
 	allowTouchMove: false,
 	speed: 5000,
 	autoplay: {
-		delay: 7000,
+		delay: 700,
 		stopOnLastSlide: true,
 	},
 	effect: "creative",
@@ -172,7 +172,7 @@ const kitchen_baner_swiperrr = new Swiper('.kitchen-baner_swiperrr', {
 	allowTouchMove: false,
 	speed: 5000,
 	autoplay: {
-		delay: 10000,
+		delay: 1000,
 		stopOnLastSlide: true,
 	},
 	effect: "creative",
@@ -203,7 +203,7 @@ const kitchen_baner_swiperrrr = new Swiper('.kitchen-baner_swiperrrr', {
 	allowTouchMove: false,
 	speed: 5000,
 	autoplay: {
-		delay: 15000,
+		delay: 1500,
 		stopOnLastSlide: true,
 	},
 	effect: "creative",
