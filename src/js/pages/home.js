@@ -42,6 +42,9 @@ if($('.banner').length) {
 	banner_slider.autoplay.stop()
 	banner_slider.on('slideChange', function (e) {
 		banner_img.slideTo(banner_slider.activeIndex)
+		if(banner_slider.slides.length -1 === banner_slider.activeIndex) {
+			banner_slider.pagination.bullets[0].classList.add("swiper-pagination-bullet-active")
+		}
 	});
 
 	const bannerWrapper = document.querySelectorAll('.banner__anim-wrapper');
