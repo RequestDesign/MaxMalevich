@@ -45,7 +45,7 @@ function headerNav() {
 
 	navButtons.each(function (index, item) {
 		let itemMenu = item.dataset.menu;
-		$(item).find('button').length &&
+		$(item).data('menu') &&
 			$(item).on('mouseover', function (e) {
 				header.addClass('active');
 				e.preventDefault();
