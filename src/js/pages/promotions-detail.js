@@ -3,8 +3,13 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 const Timer = () => {
-	const deadlineArr = document.querySelector('.timer__items').dataset.deadline.split(' '),
-		deadline = new Date(...deadlineArr),
+	const deadlineArr = document.querySelector('.timer__items').dataset.deadline.split(' ');
+	if (Number(deadlineArr[1]) - 1 > 9) {
+		deadlineArr[1] =(Number(deadlineArr[1]) - 1).toString()
+	} else {
+		deadlineArr[1] ='0'+(Number(deadlineArr[1]) - 1).toString()
+	}
+	const	deadline = new Date(...deadlineArr),
 		daysContainer = document.querySelector('.timer__days'),
 		hoursContainer = document.querySelector('.timer__hours'),
 		minutesContainer = document.querySelector('.timer__minutes'),

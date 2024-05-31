@@ -22,8 +22,8 @@ function openBurgerMenu() {
 		toggleMenu();
 	});
 
-	// links.on('click', () => toggleMenu());
-	// overlay.on('click', () => toggleMenu());
+	links.on('click', () => toggleMenu());
+	overlay.on('click', () => toggleMenu());
 
 	function toggleMenu() {
 		menu.toggleClass('burger-menu_active');
@@ -46,7 +46,7 @@ function headerNav() {
 	navButtons.each(function (index, item) {
 		let itemMenu = item.dataset.menu;
 		$(item).data('menu') &&
-			$(item).on('mouseover', function (e) {
+			$(item).on('mouseenter', function (e) {
 				header.addClass('active');
 				e.preventDefault();
 				$(navButtons).removeClass('active');
@@ -83,9 +83,9 @@ function headerNav() {
 	} else {
 		$('.header__menu-btn').css('display', 'none');
 		$('.header__menu-social').css('display', 'flex');
-		navLinks.on('mouseover', () => {
+		navLinks.on('mouseover', (e) => {
 			navButtons.removeClass('active');
-			if (header.hasClass('active') && !header.hasClass('closing')) {
+			if (header.hasClass('active') && !header.hasClass('closing') && !$(e.target).closest('li').data('menu')) {
 				header.addClass('closing');
 				setTimeout(() => {
 					header.removeClass('active');
